@@ -1,0 +1,32 @@
+.section-header, 
+.wp-block.section-header {
+	width: 100%;
+	max-width: 100%;
+}
+
+.section-header * {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 700;
+	@media screen and (min-width: $small-width) {
+		font-size: 30px;
+		line-height: 38px;
+	}
+}
+
+.section-header {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.section-header:after {
+	content: "";
+	flex: 1;
+	height: 1.5px;
+	background: $dark-grey;
+	margin-left: 10px;
+}

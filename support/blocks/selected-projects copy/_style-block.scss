@@ -1,0 +1,110 @@
+.wp-block.selected-resources {
+	width: 100%;
+	max-width: 100%;
+	padding-top: 8.125rem;
+	padding-bottom: 8.125rem;
+}
+
+.section-header {
+	text-align: center;
+}
+
+.wp-block.selected-resources .swiper-slide {
+	width: 33.33333%;
+	margin-right: 40px;
+}
+
+.resources-block .block-wrapper {
+	width: 100%;
+	max-width: $max-cont-w;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	margin: 0 auto;
+}
+
+.resources-block .resources-slides {
+	position: relative;
+	width: calc(100% - 4rem);
+	margin-left: 2em;
+	margin-right: 2rem;
+	@media screen and (min-width: $small-width) {
+		width: calc(100% - 5rem);
+		margin-left: 2.5rem;
+		margin-right: 2.5rem;
+	}
+}
+
+.resources-block .header-title {
+	margin-top: 3rem;
+	@media screen and (min-width: $small-width) {
+		margin-top: 5rem;
+	}
+}
+
+.swiper-wrapper {
+	align-items: stretch;
+}
+
+.resources-block .swiper-slide {
+	height: auto;
+}
+
+.resources-block .swiper {
+	overflow: hidden;
+}
+
+.resources-block .swiper-button-prev:after {
+	content: '';
+}
+
+.resources-block .swiper-button-prev {
+	left: -2rem;
+	background: url(img/left-chevron.svg) no-repeat left center / 14px;
+	@media screen and (min-width: $small-width) {
+		left: -2.5rem;
+		background: url(img/left-chevron.svg) no-repeat left center / 17px;
+	}
+}
+
+.resources-block .swiper-button-next {
+	right: -2rem;
+	background: url(img/right-chevron.svg) no-repeat right center / 14px;
+	@media screen and (min-width: $small-width) {
+		right: -2.5rem;
+		background: url(img/right-chevron.svg) no-repeat right center / 17px;
+	}
+}
+
+.resources-block .swiper-button-next:after {
+	content: '';
+}
+
+.wp-block.selected-resources .swiper-wrapper {
+	overflow-x: scroll;
+}
+
+.selected-resources {
+	margin-bottom: 2.5rem;
+	@media screen and (min-width: $small-width) {
+		margin-bottom: 3.5em;
+	}
+}
+
+.selected-resources:last-child {
+	margin-bottom: 0;
+	@media screen and (min-width: $small-width) {
+		margin-bottom: 0;
+	}
+}
+
+.selected-resources header.section-header {
+	padding-top: 0;
+}
+
+.selected-resources .wp-block-buttons {
+	justify-content: center;
+	margin-top: 35px;
+	@media screen and (min-width: $small-width) {
+		margin-top: 50px;
+	}
+}
