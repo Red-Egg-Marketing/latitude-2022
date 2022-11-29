@@ -1,10 +1,20 @@
-$font-body: 'Mulish', sans-serif;
-$font-head: 'Plus Jakarta Sans', sans-serif;
+$font-head: 'gill_sansbold', sans-serif;
+$font-head-black: 'gill_sansbold', sans-serif;
+$font-head-alt: 'gill_sansbold', serif;
+$font-body: 'gill_sansregular', sans-serif;
+$font-body-light: 'gill_sanslight', sans-serif;
+
+$head-color: #1B2C58;
+$head-alt-color: #EEA320;
+$bg-blue: $head-alt-color;
+$bg-grey: #414042;
+$border-color: #ECA239;
+$orange: #EEA32F;
+$bullet-color: #BE5B33;
+$body-color: #000000;
+
 $font-head-2: $font-head;
 
-$head-color: #19303F;
-$body-color: #707070;
-$border-color: #F6AD42;
 $border-color-2: #4d5057;
 $bg-color-1: #3bc24a; // green
 $bg-color-1: #3bc24a; // green
@@ -16,7 +26,6 @@ $bg-color-6: #ffffff; // white
 $bg-color-7: #19303F; // blue
 $navy: #0D1F40;
 $light-grey: #F4F4F4;
-$orange: #F79A6C;
 $dark-grey: #878787;
 $light-blue: #EDF5FF;
 $purple: #671C61;

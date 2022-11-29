@@ -1,9 +1,30 @@
+
 @font-face {
-    font-family: 'retroicaregular';
-    src: url('fonts/retroica-webfont.woff2') format('woff2'),
-         url('fonts/retroica-webfont.woff') format('woff'),
-         url('fonts/retroica-webfont.ttf') format('truetype'),
-         url('fonts/retroica-webfont.svg#retroicaregular') format('svg');
+    font-family: 'gill_sansbold';
+    src: url('fonts/gillsans-bold-02-webfont.woff2') format('woff2'),
+         url('fonts/gillsans-bold-02-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gill_sanslight';
+    src: url('fonts/gillsans-light-08-webfont.woff2') format('woff2'),
+         url('fonts/gillsans-light-08-webfont.woff') format('woff'),
+         url('fonts/gillsans-light-08-webfont.ttf') format('truetype'),
+         url('fonts/gillsans-light-08-webfont.svg#gill_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gill_sansregular';
+    src: url('fonts/gillsans-01-webfont.woff2') format('woff2'),
+         url('fonts/gillsans-01-webfont.woff') format('woff'),
+         url('fonts/gillsans-01-webfont.ttf') format('truetype'),
+         url('fonts/gillsans-01-webfont.svg#gill_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
