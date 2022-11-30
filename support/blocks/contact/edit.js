@@ -9,8 +9,8 @@ import Icons from '../../components/Icons.js';
 import BackgroundColor from '../../components/BackgroundColor.js';
 
 const template = [
-	['yosi-health-blocks/contact-content'],
-	['yosi-health-blocks/contact-forms']
+	['latitude-blocks/contact-content'],
+	['latitude-blocks/contact-forms']
 ];
 
 const EditContact = ( { attributes, setAttributes } ) => {
@@ -40,7 +40,7 @@ const EditContact = ( { attributes, setAttributes } ) => {
 					<div className="block-wrapper">
 						<div className="block-content">
 							<InnerBlocks 
-								allowedBlocks={ ['yosi-health-blocks/contact-content', 'yosi-health-blocks/contact-forms'] }
+								allowedBlocks={ ['latitude-blocks/contact-content', 'latitude-blocks/contact-forms'] }
 								template={ template }
 							/>
 						</div>

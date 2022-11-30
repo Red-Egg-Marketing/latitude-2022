@@ -9,8 +9,8 @@ import Columns from '../../components/Columns.js';
 
 const template = [
 	['core/heading', {'level' : 2, 'placeholder' : 'Heading...'}],
-	['yosi-health-blocks/faq', {}],
-	['yosi-health-blocks/faq', {}],
+	['latitude-blocks/faq', {}],
+	['latitude-blocks/faq', {}],
 ];
 
 const EditFAQSection = ( { attributes, setAttributes } ) => {
@@ -25,7 +25,7 @@ const EditFAQSection = ( { attributes, setAttributes } ) => {
 					<div className="block-wrapper">
 						<InnerBlocks
 							template={ template }
-							allowedBlocks={['yosi-health-blocks/faq', 'core/heading']}
+							allowedBlocks={['latitude-blocks/faq', 'core/heading']}
 						/>
 					</div>
 				</div>

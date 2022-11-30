@@ -7,8 +7,8 @@ import Content from '../../components/Content.js';
 import Header from '../../components/Header.js';
 
 const template = [
-	['yosi-health-blocks/savings-form', {},],
-	['yosi-health-blocks/cta', {}]
+	['latitude-blocks/savings-form', {},],
+	['latitude-blocks/cta', {}]
 ];
 
 const EditSavingsCalculator = ( { attributes, setAttributes } ) => {
@@ -27,7 +27,7 @@ const EditSavingsCalculator = ( { attributes, setAttributes } ) => {
 					<div className="block-wrapper">
 						<InnerBlocks
 							template={ template }
-							allowedBlocks={ ['yosi-health-blocks/savings-form', 'yosi-health-blocks/cta'] }
+							allowedBlocks={ ['latitude-blocks/savings-form', 'latitude-blocks/cta'] }
 						/>
 					</div>
 				</div>

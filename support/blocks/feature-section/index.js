@@ -5,9 +5,9 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/feature-section', {
-	title: __( 'Feature Section', 'yosi-health-blocks' ),
-	description: __( 'Feature Section with animation features', 'yosi-health-blocks' ),
+registerBlockType( 'latitude-blocks/feature-section', {
+	title: __( 'Feature Section', 'latitude-blocks' ),
+	description: __( 'Feature Section with animation features', 'latitude-blocks' ),
 	apiVersion: 2,
 	icon: 'columns',
 	category: 'layout',

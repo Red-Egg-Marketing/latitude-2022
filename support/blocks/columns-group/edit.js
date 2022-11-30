@@ -3,36 +3,34 @@ const { Fragment } = wp.element;
 const { RichText, MediaUpload, InnerBlocks, InspectorControls, useBlockProps } = wp.blockEditor;
 const { Button, PanelBody, SelectControl, ColorPalette, ToggleControl, RangeControl } = wp.components;
 const { __ } = wp.i18n;
-import BackgroundColor from '../../components/BackgroundColor.js';
+import Content from '../../components/Content.js';
+import Columns from '../../components/Columns.js';
 
 const template = [
 	['latitude-blocks/header-intro', {}],
-	['core/shortcode', {}],
+	['latitude-blocks/image-text', {}],
 ];
 
-const EditShortcodeSection = ( { attributes, setAttributes } ) => {
+const EditColumnsGroup = ( { attributes, setAttributes } ) => {
 
-		const { bgSlug, bgColor } = attributes;
+		const onChangeContent = (value) => {
+			setAttributes({
+				content: value
+			});
+		}
 
 		const blockProps = useBlockProps({
-			className: 'shortcode-section' + (bgSlug != '' ? ' ' + bgSlug + ' with-bg' : '')
+			className: 'columns-group'
 		});	
 		
 		return (
 			<Fragment>
-				<InspectorControls>
-					<BackgroundColor
-						bgColor={ bgColor }
-						bgSlug={ bgSlug }
-						setAttributes={ setAttributes }
-					/>
-				</InspectorControls>
 				<div {...blockProps}>
 					<div className="block-wrapper">
 						<div className="block-content">							
 							<InnerBlocks
 								template={ template }
-								allowedBlocks={ ['latitude-blocks/header-intro', 'core/shortcode'] }
+								allowedBlocks={ ['latitude-blocks/image-text', 'latitude-blocks/header-intro'] }
 							/>
 						</div>
 					</div>
@@ -41,4 +39,4 @@ const EditShortcodeSection = ( { attributes, setAttributes } ) => {
 		);
 }
 
-export default EditShortcodeSection;
+export default EditColumnsGroup;

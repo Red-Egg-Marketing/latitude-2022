@@ -5,13 +5,13 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/icon-cta', {
-	title: __( 'Icon or CTA', 'yosi-health-blocks' ),
-	description: __( 'Option for CTA (button) or icon and title.', 'yosi-health-blocks' ),
+registerBlockType( 'latitude-blocks/icon-cta', {
+	title: __( 'Icon or CTA', 'latitude-blocks' ),
+	description: __( 'Option for CTA (button) or icon and title.', 'latitude-blocks' ),
 	apiVersion: 2,
 	icon: 'button',
 	category: 'layout',
-	parent: ['yosi-health-blocks/grid-icons'],
+	parent: ['latitude-blocks/grid-icons'],
 	attributes: {
 		template: {
 			type: 'array',

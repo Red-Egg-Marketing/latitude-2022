@@ -5,13 +5,13 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/image-link', {
-	title: __( 'Image & Text Link', 'yosi-health-blocks' ),
-	description: __( 'Useful for displaying a group of links to various services, or posts and pages.', 'yosi-health-blocks' ),
+registerBlockType( 'latitude-blocks/image-link', {
+	title: __( 'Image & Text Link', 'latitude-blocks' ),
+	description: __( 'Useful for displaying a group of links to various services, or posts and pages.', 'latitude-blocks' ),
 	apiVersion: 2,
 	icon: 'format-image',
 	category: 'layout',
-	parent: ['yosi-health-blocks/image-swiper'],
+	parent: ['latitude-blocks/image-swiper'],
 	attributes: {
 		link : {
 			type: 'string',

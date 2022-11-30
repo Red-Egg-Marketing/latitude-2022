@@ -5,9 +5,9 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/title-image-cta-group', {
-	title: __( 'CTA Group - Title/Image/Button', 'yosi-health-blocks' ),
-	description: __( 'Group of CTAs featuring image, title, description and button.', 'yosi-health-blocks' ),
+registerBlockType( 'latitude-blocks/title-image-cta-group', {
+	title: __( 'CTA Group - Title/Image/Button', 'latitude-blocks' ),
+	description: __( 'Group of CTAs featuring image, title, description and button.', 'latitude-blocks' ),
 	apiVersion: 2,
 	icon: 'schedule',
 	category: 'layout',

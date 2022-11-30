@@ -5,9 +5,9 @@ const { Button, PanelBody, SelectControl, ColorPalette, ToggleControl, RangeCont
 const { __ } = wp.i18n;
 
 const template = [
-	['yosi-health-blocks/image-link'],
-	['yosi-health-blocks/image-link'],
-	['yosi-health-blocks/image-link'],
+	['latitude-blocks/image-link'],
+	['latitude-blocks/image-link'],
+	['latitude-blocks/image-link'],
 ];
 
 const EditImageSwiper = ( { attributes, setAttributes } ) => {
@@ -23,7 +23,7 @@ const EditImageSwiper = ( { attributes, setAttributes } ) => {
 						<div className="swiper-wrapper">
 							<InnerBlocks
 								template={ template }
-								allowedBlocks={['yosi-health-blocks/image-link']}
+								allowedBlocks={['latitude-blocks/image-link']}
 							/>
 						</div>
 						<div class="swiper-button-prev"></div>

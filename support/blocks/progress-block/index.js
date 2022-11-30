@@ -3,10 +3,10 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/progress-block', {
+registerBlockType( 'latitude-blocks/progress-block', {
 	apiVersion: 2,
-	title: __( 'Progress Block', 'yosi-health-blocks' ),
-	description: __( 'Block useful for displaying steps or progress of items. Has scroll and lock feature', 'yosi-health-blocks' ),
+	title: __( 'Progress Block', 'latitude-blocks' ),
+	description: __( 'Block useful for displaying steps or progress of items. Has scroll and lock feature', 'latitude-blocks' ),
 	icon: 'dashboard',
 	category: 'layout',
 	attributes: {

@@ -5,10 +5,10 @@ const { __ } = wp.i18n;
 import edit from "./edit";
 import save from "./save";
 
-registerBlockType("yosi-health-blocks/faq", {
-	title: __("FAQ", "yosi-health-blocks"),
+registerBlockType("latitude-blocks/faq", {
+	title: __("FAQ", "latitude-blocks"),
 	description: __("Block for displaying FAQ."),
-	parent: ['yosi-health-blocks/faq'],
+	parent: ['latitude-blocks/faq'],
 	apiVersion: 2,
 	icon: "info",
 	category: "layout",

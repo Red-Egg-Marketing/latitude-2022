@@ -18873,26 +18873,26 @@ p.savings {
   }
 }
 
-.wp-block-yosi-health-blocks-resources {
+.wp-block-latitude-blocks-resources {
   padding-bottom: 8.125rem;
 }
 
-.wp-block-yosi-health-blocks-resources .resources-block {
+.wp-block-latitude-blocks-resources .resources-block {
   padding-top: 0;
 }
 
-.wp-block-yosi-health-blocks-resources .resources-block .header-title {
+.wp-block-latitude-blocks-resources .resources-block .header-title {
   margin-top: 2rem;
 }
 
 @media screen and (min-width: 768px) {
-  .wp-block-yosi-health-blocks-resources .resources-block .header-title {
+  .wp-block-latitude-blocks-resources .resources-block .header-title {
     margin-top: 3rem;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .wp-block-yosi-health-blocks-resources header.section-header {
+  .wp-block-latitude-blocks-resources header.section-header {
     padding-top: 4.125rem;
   }
 }

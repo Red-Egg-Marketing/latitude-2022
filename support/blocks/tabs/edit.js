@@ -7,8 +7,8 @@ const { __ } = wp.i18n;
 import Anchor from '../../components/Anchor.js';
 
 const template = [
-	['yosi-health-blocks/header-intro', {}],
-	['yosi-health-blocks/tab-group', {}]
+	['latitude-blocks/header-intro', {}],
+	['latitude-blocks/tab-group', {}]
 ];
 
 const EditTabs = ( { attributes, setAttributes, clientId } ) => {
@@ -33,7 +33,7 @@ const EditTabs = ( { attributes, setAttributes, clientId } ) => {
 					<div className="block-wrapper">
 						<InnerBlocks
 							template={ template }
-							allowedBlocks={ ['yosi-health-blocks/tab-group', 'yosi-health-blocks/header-intro'] }
+							allowedBlocks={ ['latitude-blocks/tab-group', 'latitude-blocks/header-intro'] }
 						/>
 					</div>
 				</div>

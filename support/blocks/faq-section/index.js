@@ -5,8 +5,8 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/faq-section', {
-	title: __( 'FAQ Section', 'yosi-health-blocks' ),
+registerBlockType( 'latitude-blocks/faq-section', {
+	title: __( 'FAQ Section', 'latitude-blocks' ),
 	apiVersion: 2,
 	icon: 'schedule',
 	category: 'layout',

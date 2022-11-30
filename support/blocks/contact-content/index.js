@@ -5,12 +5,12 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/contact-content', {
-	title: __( 'Header Intro in Columns', 'yosi-health-blocks' ),
-	description: __( ' Can contain blocks for header and description in column format. Useful for introduction to section.', 'yosi-health-blocks' ),
+registerBlockType( 'latitude-blocks/contact-content', {
+	title: __( 'Header Intro in Columns', 'latitude-blocks' ),
+	description: __( ' Can contain blocks for header and description in column format. Useful for introduction to section.', 'latitude-blocks' ),
 	apiVersion: 2,
 	icon: 'align-center',
-	parent: ['yosi-health-blocks/contact'],
+	parent: ['latitude-blocks/contact'],
 	category: 'layout',
 	attributes: {
 		title: {

@@ -3,10 +3,10 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/selected-projects', {
+registerBlockType( 'latitude-blocks/selected-projects', {
 	apiVersion: 2,
-	title: __( 'Selected Projects', 'yosi-health-blocks' ),
-	description: __( 'Block for a selecting Projects', 'yosi-health-blocks' ),
+	title: __( 'Selected Projects', 'latitude-blocks' ),
+	description: __( 'Block for a selecting Projects', 'latitude-blocks' ),
 	icon: 'welcome-write-blog',
 	category: 'layout',
 	attributes: {

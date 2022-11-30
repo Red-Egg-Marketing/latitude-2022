@@ -5,9 +5,9 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/hero', {
+registerBlockType( 'piper-electric-blocks/hero', {
 	apiVersion: 2,
-	title: __( 'Hero', 'yosi-health-blocks' ),
+	title: __( 'Hero', 'piper-electric-blocks' ),
 	icon: 'id',
 	category: 'layout',
 	attributes: {

@@ -5,9 +5,9 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/promo-image', {
-	title: __( 'Promo/Image Offset Card', 'yosi-health-blocks' ),
-	description: __( 'Contains Image, Title, Description and Buttons. Has offset display.', 'yosi-health-blocks' ),
+registerBlockType( 'latitude-blocks/promo-image', {
+	title: __( 'Promo/Image Offset Card', 'latitude-blocks' ),
+	description: __( 'Contains Image, Title, Description and Buttons. Has offset display.', 'latitude-blocks' ),
 	apiVersion: 2,
 	icon: 'columns',
 	category: 'layout',

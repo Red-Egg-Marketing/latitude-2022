@@ -214,7 +214,7 @@ const EditSelectedCaseStudies = ( { setAttributes, attributes, isSelected } ) =>
 									}
 							</div>
 							{ resources.length == 0 && (
-								<p style={ warningStyle }>{__('No Case Studies found. Try a different category.', 'yosi-health-blocks')}</p>
+								<p style={ warningStyle }>{__('No Case Studies found. Try a different category.', 'latitude-blocks')}</p>
 							)}
 							<InnerBlocks 
 								template={ template }

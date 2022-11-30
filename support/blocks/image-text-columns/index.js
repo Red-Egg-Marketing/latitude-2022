@@ -5,9 +5,9 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/image-text', {
-	title: __( 'Image & Text Columns', 'yosi-health-blocks' ),
-	description: __( 'Contains Image, Title, Description and Buttons. Has offset display.', 'yosi-health-blocks' ),
+registerBlockType( 'latitude-blocks/image-text', {
+	title: __( 'Image & Text Columns', 'latitude-blocks' ),
+	description: __( 'Contains Image, Title, Description and Buttons. Has offset display.', 'latitude-blocks' ),
 	apiVersion: 2,
 	icon: 'columns',
 	category: 'layout',

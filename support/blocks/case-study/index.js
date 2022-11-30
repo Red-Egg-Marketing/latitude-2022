@@ -5,9 +5,9 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/case-study', {
-	title: __( 'Case Study Block', 'yosi-health-blocks' ),
-	description: __( 'Block with Statistics, short description, quote, and image', 'yosi-health-blocks' ),
+registerBlockType( 'latitude-blocks/case-study', {
+	title: __( 'Case Study Block', 'latitude-blocks' ),
+	description: __( 'Block with Statistics, short description, quote, and image', 'latitude-blocks' ),
 	apiVersion: 2,
 	icon: 'button',
 	category: 'layout',

@@ -5,13 +5,13 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/tab', {
-	title: __( 'Tab', 'yosi-health-blocks' ),
-	description: __( 'Tab', 'yosi-health-blocks' ),
+registerBlockType( 'latitude-blocks/tab', {
+	title: __( 'Tab', 'latitude-blocks' ),
+	description: __( 'Tab', 'latitude-blocks' ),
 	apiVersion: 2,
 	icon: 'button',
 	category: 'layout',
-	parent: ['yosi-health-blocks/tab-group'],
+	parent: ['latitude-blocks/tab-group'],
 	attributes: {
 		title: {
 			type: 'string',

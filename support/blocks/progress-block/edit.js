@@ -8,7 +8,7 @@ import Header from '../../components/Header.js';
 import BackgroundColor from '../../components/BackgroundColor.js';
 
 const template = [
-	['yosi-health-blocks/header-intro-column', {}]
+	['latitude-blocks/header-intro-column', {}]
 ];
 
 const mainControl = {

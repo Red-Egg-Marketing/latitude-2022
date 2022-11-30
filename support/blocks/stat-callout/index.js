@@ -5,9 +5,9 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/stat-callout', {
-	title: __( 'Stat Callout', 'yosi-health-blocks' ),
-	description: __( 'Block with Statistic and short description', 'yosi-health-blocks' ),
+registerBlockType( 'latitude-blocks/stat-callout', {
+	title: __( 'Stat Callout', 'latitude-blocks' ),
+	description: __( 'Block with Statistic and short description', 'latitude-blocks' ),
 	apiVersion: 2,
 	icon: 'button',
 	category: 'layout',

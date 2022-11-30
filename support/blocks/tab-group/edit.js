@@ -8,8 +8,8 @@ import Content from '../../components/Content.js';
 import Columns from '../../components/Columns.js';
 
 const template = [
-	['yosi-health-blocks/tab', {}],
-	['yosi-health-blocks/tab', {}],
+	['latitude-blocks/tab', {}],
+	['latitude-blocks/tab', {}],
 ];
 
 const EditTabGroup = ( { attributes, setAttributes, clientId } ) => {
@@ -34,7 +34,7 @@ const EditTabGroup = ( { attributes, setAttributes, clientId } ) => {
 						>
 							<InnerBlocks
 								template={ template }
-								allowedBlocks={ ['yosi-health-blocks/tab'] }
+								allowedBlocks={ ['latitude-blocks/tab'] }
 							/>
 						</div>
 					</div>

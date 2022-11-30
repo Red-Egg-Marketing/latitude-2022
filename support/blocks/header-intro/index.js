@@ -5,9 +5,9 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/header-intro', {
-	title: __( 'Header Intro', 'yosi-health-blocks' ),
-	description: __( ' Can contain blocks for header and description. Useful for introduction to section.', 'yosi-health-blocks' ),
+registerBlockType( 'latitude-blocks/header-intro', {
+	title: __( 'Header Intro', 'latitude-blocks' ),
+	description: __( ' Can contain blocks for header and description. Useful for introduction to section.', 'latitude-blocks' ),
 	apiVersion: 2,
 	icon: 'align-center',
 	category: 'layout',

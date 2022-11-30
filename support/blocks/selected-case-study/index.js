@@ -3,10 +3,10 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/selected-case-study', {
+registerBlockType( 'latitude-blocks/selected-case-study', {
 	apiVersion: 2,
-	title: __( 'Featured Case Study with Statistic block.', 'yosi-health-blocks' ),
-	description: __( 'Block for a selecting Case Studies by category. Displays statistics block associated with Case Study.', 'yosi-health-blocks' ),
+	title: __( 'Featured Case Study with Statistic block.', 'latitude-blocks' ),
+	description: __( 'Block for a selecting Case Studies by category. Displays statistics block associated with Case Study.', 'latitude-blocks' ),
 	icon: 'welcome-write-blog',
 	category: 'layout',
 	attributes: {

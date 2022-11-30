@@ -5,9 +5,9 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/wrap', {
+registerBlockType( 'latitude-blocks/wrap', {
 	apiVersion: 2,
-	title: __( 'Wrap', 'yosi-health-blocks' ),
+	title: __( 'Wrap', 'latitude-blocks' ),
 	description: __('Generic Wrap, has no utility/function'),
 	attributes: {
 		allowBlocks : {

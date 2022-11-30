@@ -5,9 +5,9 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/promo', {
-	title: __( 'Promo Block', 'yosi-health-blocks' ),
-	description: __( 'Promotional Block. Useful for promoting services. ', 'yosi-health-blocks' ),
+registerBlockType( 'latitude-blocks/promo', {
+	title: __( 'Promo Block', 'latitude-blocks' ),
+	description: __( 'Promotional Block. Useful for promoting services. ', 'latitude-blocks' ),
 	apiVersion: 2,
 	icon: 'megaphone',
 	category: 'layout',

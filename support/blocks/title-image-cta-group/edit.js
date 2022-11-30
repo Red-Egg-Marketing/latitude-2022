@@ -8,9 +8,9 @@ import BackgroundSelector from '../../components/BackgroundSelector.js';
 import Columns from '../../components/Columns.js';
 
 const template = [
-	['yosi-health-blocks/header-intro', {}],
-	['yosi-health-blocks/title-image-cta'],
-	['yosi-health-blocks/title-image-cta'],
+	['latitude-blocks/header-intro', {}],
+	['latitude-blocks/title-image-cta'],
+	['latitude-blocks/title-image-cta'],
 	['core/buttons', {},
 		[
 			['core/button', {'placeholder' : 'View Portfolio...'}]
@@ -67,7 +67,7 @@ const EditTitleImageCTAGroup = ( { attributes, setAttributes } ) => {
 						<div className="links-wrapper">
 							<InnerBlocks
 								template={ template }
-								allowedBlocks={['yosi-health-blocks/title-image-cta', 'yosi-health-blocks/header-intro', 'core/buttons']}
+								allowedBlocks={['latitude-blocks/title-image-cta', 'latitude-blocks/header-intro', 'core/buttons']}
 							/>
 						</div>	
 					</div>

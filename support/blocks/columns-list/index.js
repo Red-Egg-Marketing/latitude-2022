@@ -5,9 +5,9 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/columns-list', {
-	title: __( 'List Columns', 'yosi-health-blocks' ),
-	description: __( 'List as columns. Optional CTA and title', 'yosi-health-blocks' ),
+registerBlockType( 'latitude-blocks/columns-list', {
+	title: __( 'List Columns', 'latitude-blocks' ),
+	description: __( 'List as columns. Optional CTA and title', 'latitude-blocks' ),
 	apiVersion: 2,
 	icon: 'button',
 	category: 'layout',

@@ -5,9 +5,9 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/cta', {
-	title: __( 'Call to Action', 'yosi-health-blocks' ),
-	description: __( 'Button with short blurb.', 'yosi-health-blocks' ),
+registerBlockType( 'latitude-blocks/cta', {
+	title: __( 'Call to Action', 'latitude-blocks' ),
+	description: __( 'Button with short blurb.', 'latitude-blocks' ),
 	apiVersion: 2,
 	icon: 'button',
 	category: 'layout',

@@ -29,7 +29,7 @@ const EditCTA = ( { attributes, setAttributes } ) => {
 								tag="h3"
 								title={ title }
 								setAttributes={ setAttributes }
-								placeholder={ __('Stat...','yosi-health-blocks/stat-')}
+								placeholder={ __('Stat...','latitude-blocks/stat-')}
 								updateProp="title"
 							/>
 							<Content 
@@ -37,7 +37,7 @@ const EditCTA = ( { attributes, setAttributes } ) => {
 								content={ content }
 								setAttributes={ setAttributes }
 								multiline="p"
-								placeholder={ __('Stat description...','yosi-health-blocks/cta')}
+								placeholder={ __('Stat description...','latitude-blocks/cta')}
 								classProp="content"
 								updateProp="content"
 							/>

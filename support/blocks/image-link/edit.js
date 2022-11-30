@@ -60,7 +60,7 @@ const EditImageLink = ( { attributes, setAttributes } ) => {
 							tag="h3"
 							title={ title }
 							setAttributes={ setAttributes }
-							placeholder={ __('Title...', 'yosi-health-blocks')}
+							placeholder={ __('Title...', 'latitude-blocks')}
 						/>
 						<ImageComp
 							id={ media.id }

@@ -5,13 +5,13 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/bio', {
-	title: __( 'Bio (biography)', 'yosi-health-blocks' ),
-	description: __( 'Bio block. Useful for displaying info about a person.', 'yosi-health-blocks' ),
+registerBlockType( 'latitude-blocks/bio', {
+	title: __( 'Bio (biography)', 'latitude-blocks' ),
+	description: __( 'Bio block. Useful for displaying info about a person.', 'latitude-blocks' ),
 	apiVersion: 2,
 	icon: 'users',
 	category: 'layout',
-	parent: ['yosi-health-blocks/bios'],
+	parent: ['latitude-blocks/bios'],
 	attributes: {
 		name: {
 			type: 'string',

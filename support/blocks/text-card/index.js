@@ -5,13 +5,13 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/text-card', {
-	title: __( 'Text Card', 'yosi-health-blocks' ),
-	description: __( 'Card with title short blurb.', 'yosi-health-blocks' ),
+registerBlockType( 'latitude-blocks/text-card', {
+	title: __( 'Text Card', 'latitude-blocks' ),
+	description: __( 'Card with title short blurb.', 'latitude-blocks' ),
 	apiVersion: 2,
 	icon: 'button',
 	category: 'layout',
-	parent: ['yosi-health-blocks/cards-grid'],
+	parent: ['latitude-blocks/cards-grid'],
 	attributes: {
 		bgColor: {
 			type: 'string',

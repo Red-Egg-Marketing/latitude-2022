@@ -5,9 +5,9 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/section', {
-	title: __( 'Section', 'yosi-health-blocks' ),
-	description: __( 'Title & related content. Can include Bios, Image & Text, and Title & Content custom blocks.', 'yosi-health-blocks' ),
+registerBlockType( 'latitude-blocks/section', {
+	title: __( 'Section', 'latitude-blocks' ),
+	description: __( 'Title & related content. Can include Bios, Image & Text, and Title & Content custom blocks.', 'latitude-blocks' ),
 	apiVersion: 2,
 	icon: 'schedule',
 	category: 'layout',

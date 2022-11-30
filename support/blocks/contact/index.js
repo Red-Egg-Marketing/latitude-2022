@@ -5,9 +5,9 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/contact', {
-	title: __( 'Contact Section', 'yosi-health-blocks' ),
-	description: __( 'Section for displaying contact info, and contact form (Gravity Form)', 'yosi-health-blocks' ),
+registerBlockType( 'latitude-blocks/contact', {
+	title: __( 'Contact Section', 'latitude-blocks' ),
+	description: __( 'Section for displaying contact info, and contact form (Gravity Form)', 'latitude-blocks' ),
 	apiVersion: 2,
 	icon: 'forms',
 	category: 'layout',

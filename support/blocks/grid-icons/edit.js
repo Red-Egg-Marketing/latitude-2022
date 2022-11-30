@@ -11,10 +11,10 @@ const colors = [
 ];
 
 const template = [
-	['yosi-health-blocks/icon-cta'],
-	['yosi-health-blocks/icon-cta'],
-	['yosi-health-blocks/icon-cta'],
-	['yosi-health-blocks/icon-cta', {'template' :[
+	['latitude-blocks/icon-cta'],
+	['latitude-blocks/icon-cta'],
+	['latitude-blocks/icon-cta'],
+	['latitude-blocks/icon-cta', {'template' :[
 		['core/buttons', {},
 			[
 				['core/button', {'placeholder' : 'Get a Quote'}]
@@ -47,7 +47,7 @@ const EditGridIcons = ( { attributes, setAttributes } ) => {
 						<div className="icon-wrapper">
 							<InnerBlocks
 								template={ template }
-								allowedBlocks={['yosi-health-blocks/icon-cta']}
+								allowedBlocks={['latitude-blocks/icon-cta']}
 							/>
 						</div>	
 					</div>

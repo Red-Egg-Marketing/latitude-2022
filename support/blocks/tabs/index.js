@@ -3,10 +3,10 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/tabs', {
+registerBlockType( 'latitude-blocks/tabs', {
 	apiVersion: 2,
-	title: __( 'Tabs', 'yosi-health-blocks' ),
-	description: __( 'Block for a tabs', 'yosi-health-blocks' ),
+	title: __( 'Tabs', 'latitude-blocks' ),
+	description: __( 'Block for a tabs', 'latitude-blocks' ),
 	icon: 'table-col-after',
 	category: 'layout',
 	attributes: {

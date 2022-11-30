@@ -231,21 +231,21 @@ const EditCaseStudy = ( { attributes, setAttributes } ) => {
 										tagName="p"
 										value={ quote.snippet }
 										className="quote-snippet"
-										placeholder={ __('Quote...','yosi-health-blocks')}
+										placeholder={ __('Quote...','latitude-blocks')}
 										onChange={ updateQuote }
 									/>
 									<RichText 
 										tagName="p"
 										value={ quote.name }
 										className="quote-name"
-										placeholder={ __('Name...','yosi-health-blocks')}
+										placeholder={ __('Name...','latitude-blocks')}
 										onChange={ updateName }
 									/>
 									<RichText 
 										tagName="p"
 										value={ quote.title }
 										className="quote-title"
-										placeholder={ __('Title...','yosi-health-blocks')}
+										placeholder={ __('Title...','latitude-blocks')}
 										onChange={ updateTitle }
 									/>
 								</div>
@@ -264,7 +264,7 @@ const EditCaseStudy = ( { attributes, setAttributes } ) => {
 													tagName="h3"
 													value={ title }
 													className="header-title"
-													placeholder={ __('Stat...','yosi-health-blocks')}
+													placeholder={ __('Stat...','latitude-blocks')}
 													onChange={ updateStatTitle }
 													unstableOnFocus={ () => {
 					 										setRownumber(index);
@@ -276,7 +276,7 @@ const EditCaseStudy = ( { attributes, setAttributes } ) => {
 													value={ content }
 													multiline="p"
 													className="description"
-													placeholder={ __('Stat description...','yosi-health-blocks')}
+													placeholder={ __('Stat description...','latitude-blocks')}
 													onChange={ updateStatContent }
 													unstableOnFocus={ () => {
 					 										setRownumber(index);

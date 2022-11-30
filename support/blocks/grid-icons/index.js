@@ -5,9 +5,9 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/grid-icons', {
-	title: __( 'Grid of Icons or CTAs', 'yosi-health-blocks' ),
-	description: __( 'Grid of Icons or CTAs', 'yosi-health-blocks' ),
+registerBlockType( 'latitude-blocks/grid-icons', {
+	title: __( 'Grid of Icons or CTAs', 'latitude-blocks' ),
+	description: __( 'Grid of Icons or CTAs', 'latitude-blocks' ),
 	apiVersion: 2,
 	icon: 'schedule',
 	category: 'layout',

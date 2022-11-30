@@ -6,27 +6,9 @@ import edit from './edit';
 import save from './save';
 
 registerBlockType( 'latitude-blocks/cards-grid', {
-	title: __( 'Text Cards Grid', 'latitude-blocks' ),
-	description: __( 'Grid of Text Cards', 'latitude-blocks' ),
+	title: __( 'Columns Group', 'latitude-blocks' ),
+	description: __( 'Group of columns with optional header intro', 'latitude-blocks' ),
 	apiVersion: 2,
-	attributes: {
-		columns: {
-			type: 'string',
-			default: '3'
-		},
-		bgColor: {
-			type: 'string',
-			default: ''
-		},
-		bgSlug: {
-			type: 'string',
-			default: ''
-		},
-		color: {
-			type: 'string',
-			default: ''
-		},
-	},
 	icon: 'grid-view',
 	category: 'layout',
 	edit: edit,

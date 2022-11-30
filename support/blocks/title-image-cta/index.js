@@ -5,13 +5,13 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/title-image-cta', {
-	title: __( 'CTA - Title, Image', 'yosi-health-blocks' ),
-	description: __( 'Useful for displaying CTA with title image', 'yosi-health-blocks' ),
+registerBlockType( 'latitude-blocks/title-image-cta', {
+	title: __( 'CTA - Title, Image', 'latitude-blocks' ),
+	description: __( 'Useful for displaying CTA with title image', 'latitude-blocks' ),
 	apiVersion: 2,
 	icon: 'format-image',
 	category: 'layout',
-	parent: ['yosi-health-blocks/title-image-cta-group'],
+	parent: ['latitude-blocks/title-image-cta-group'],
 	attributes: {
 		introTitle : {
 			type: 'string',

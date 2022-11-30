@@ -20,7 +20,7 @@ const SaveSavingsForm = ( { attributes } ) => {
 				<div className="col">
 					<form className="form-savings">
 						<div className="input-wrap">
-							<label className="label-block" for="doctors">{ __('How many doctors are in your clinic?', 'yosi-health-blocks') }</label>
+							<label className="label-block" for="doctors">{ __('How many doctors are in your clinic?', 'latitude-blocks') }</label>
 							<input
 								type="range"
 								id="doctors"
@@ -43,7 +43,7 @@ const SaveSavingsForm = ( { attributes } ) => {
 							/>
 						</div>
 						<div className="input-wrap">
-							<label className="label-block" for="patients">{ __('How many patients per provider per day?', 'yosi-health-blocks') }</label>
+							<label className="label-block" for="patients">{ __('How many patients per provider per day?', 'latitude-blocks') }</label>
 							<input
 								type="range"
 								id="patients"

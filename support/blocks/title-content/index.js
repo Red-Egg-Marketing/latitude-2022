@@ -5,9 +5,9 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/title-content', {
-	title: __( 'Title & Content', 'yosi-health-blocks' ),
-	description: __( 'Title & content blurb. Centered text.', 'yosi-health-blocks' ),
+registerBlockType( 'latitude-blocks/title-content', {
+	title: __( 'Title & Content', 'latitude-blocks' ),
+	description: __( 'Title & content blurb. Centered text.', 'latitude-blocks' ),
 	apiVersion: 2,
 	icon: 'align-center',
 	category: 'layout',

@@ -5,9 +5,9 @@ const { Button, PanelBody, SelectControl, ColorPalette, ToggleControl, RangeCont
 const { __ } = wp.i18n;
 
 const template = [
-	['yosi-health-blocks/bio'],
-	['yosi-health-blocks/bio'],
-	['yosi-health-blocks/bio'],
+	['latitude-blocks/bio'],
+	['latitude-blocks/bio'],
+	['latitude-blocks/bio'],
 ];
 
 const EditBios = ( { attributes, setAttributes } ) => {
@@ -23,7 +23,7 @@ const EditBios = ( { attributes, setAttributes } ) => {
 						<div className="fake-grid">
 							<InnerBlocks
 								template={ template }
-								allowedBlocks={['yosi-health-blocks/bio']}
+								allowedBlocks={['latitude-blocks/bio']}
 							/>
 						</div>
 					</div>

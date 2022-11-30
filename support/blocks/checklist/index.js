@@ -5,9 +5,9 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/checklist', {
-	title: __( 'Check List', 'yosi-health-blocks' ),
-	description: __( 'Checklist block', 'yosi-health-blocks' ),
+registerBlockType( 'latitude-blocks/checklist', {
+	title: __( 'Check List', 'latitude-blocks' ),
+	description: __( 'Checklist block', 'latitude-blocks' ),
 	apiVersion: 2,
 	icon: 'button',
 	category: 'layout',

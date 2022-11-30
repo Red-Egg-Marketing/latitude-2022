@@ -5,9 +5,9 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'yosi-health-blocks/featured-link', {
-	title: __( 'Featured Link', 'yosi-health-blocks' ),
-	description: __( 'Large promo for specific page, post, project, etc.. Has Options for title, super title, image, and description.', 'yosi-health-blocks' ),
+registerBlockType( 'latitude-blocks/featured-link', {
+	title: __( 'Featured Link', 'latitude-blocks' ),
+	description: __( 'Large promo for specific page, post, project, etc.. Has Options for title, super title, image, and description.', 'latitude-blocks' ),
 	apiVersion: 2,
 	icon: 'format-image',
 	category: 'layout',

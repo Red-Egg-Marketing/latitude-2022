@@ -40,7 +40,7 @@ const EditSavingsForm = ( { attributes, setAttributes } ) => {
 							<div className="input-wrap">
 								<RangeControl 
 									initialPosition={ 10 }
-									label={__('How many doctors are in your clinic?', 'yosi-health-blocks')}
+									label={__('How many doctors are in your clinic?', 'latitude-blocks')}
 									value={ doctors }
 									min={ 1 }
 									max={ 100 }
@@ -53,7 +53,7 @@ const EditSavingsForm = ( { attributes, setAttributes } ) => {
 							<div className="input-wrap">
 								<RangeControl 
 									initialPosition={ 10 }
-									label={__('How many patients per provider per day?', 'yosi-health-blocks')}
+									label={__('How many patients per provider per day?', 'latitude-blocks')}
 									value={ patients }
 									min={ 1 }
 									max={ 35 }
