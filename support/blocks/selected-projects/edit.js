@@ -5,6 +5,7 @@ const { useDispatch, useSelect, replaceInnerBlocks } = wp.data;
 const { __ } = wp.i18n;
 import SearchResources from '../../components/SearchResources.js';
 import Header from '../../components/Header.js';
+import Content from '../../components/Content.js';
 import ResourceCard from '../../components/ResourceCard.js';
 import Swiper from 'swiper/bundle';
 import BackgroundColor from '../../components/BackgroundColor.js';
@@ -193,6 +194,13 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected } ) => {
 									setAttributes={ setAttributes }
 									updateProp="mainTitle"
 									placeholder={ "Selected Posts Heading..." }
+								/>
+								<Content
+									tag="p"
+									title={ content }
+									setAttributes={ setAttributes }
+									updateProp="content"
+									placeholder={ "Selected Posts Description..." }
 								/>
 							</header>
 							<div className="resources grid">

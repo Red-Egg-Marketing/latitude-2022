@@ -24,6 +24,9 @@ registerBlockType( 'latitude-blocks/selected-projects', {
 		mainTitle : {
 			type: 'string'
 		},
+		content : {
+			type: 'string'
+		},
 		bgColor: {
 			type: 'string',
 			default: ''
