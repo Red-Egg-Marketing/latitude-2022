@@ -38,22 +38,6 @@ registerBlockType( 'piper-electric-blocks/hero', {
 			selector: '.hero-source',
 			attribute: 'src',
 		},
-		title: {
-			type: 'string',
-			source: 'text',
-			selector: '.header-title',
-			default: ''
-		},
-		description: {
-			type: 'string',
-			source: 'html',
-			selector: '.description',
-			default: ''
-		},
-		withform: {
-			type: 'boolean',
-			default: true
-		},
 		anchor: {
 			type: 'string',
 			default: ''

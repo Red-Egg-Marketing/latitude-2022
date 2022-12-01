@@ -97,7 +97,7 @@
 	}
 }
 
-.hero .header-title {
+.hero h1 {
 	margin-top: 0;
 	color: white;
 	font-size: 38px;
@@ -131,7 +131,7 @@
 	@media screen and (min-width: $small-width) {
 		width: 50%;
 		display: flex;
-		align-items: flex-end;
+		align-items: center;
 	}	
 }
 

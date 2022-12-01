@@ -51,9 +51,6 @@ if ( ! function_exists( 'latitude_setup' ) ) :
 		register_nav_menus(
 			array(
 				'menu-1' => esc_html__( 'Primary', 'latitude' ),
-				'menu-12' => esc_html__( 'Secondary/Footer - Column 1', 'latitude' ),
-				'menu-14' => esc_html__( 'Secondary/Footer - Column 2', 'latitude' ),
-				'menu-15' => esc_html__( 'Tertiary/Footer', 'latitude' )
 			)
 		);
 

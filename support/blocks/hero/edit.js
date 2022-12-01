@@ -5,13 +5,6 @@ const { Button, PanelBody, SelectControl, RangeControl, ToggleControl } = wp.com
 const { __ } = wp.i18n;
 import BackgroundSelector from '../../components/BackgroundSelector.js';
 import Anchor from '../../components/Anchor.js';
-import Header from '../../components/Header.js';
-import Content from '../../components/Content.js';
-
-
-const template = [
-	['gravityforms/form']
-];
 
 const VidImg = [
     {
@@ -26,8 +19,7 @@ const VidImg = [
 
 const EditHero = ( { attributes, setAttributes } ) => {
 
-		const { image, title, anchor, description, withform, vidOrImg, videoID, videoURL } = attributes;
-
+		const { image, anchor, vidOrImg, videoID, videoURL } = attributes;
 
         const blockProps = useBlockProps({
         	className: 'hero'
@@ -66,35 +58,21 @@ const EditHero = ( { attributes, setAttributes } ) => {
 						setAttributes={ setAttributes }
 						image={ image }
 					/>
-					<PanelBody>
-						<ToggleControl 
-							label={__('With Form?')}
-							checked={ !!withform }
-							onChange={ () => {
-									setAttributes({
-										withform: !withform
-									});
-								}
-							}
+					<PanelBody
+						title={ __( 'With Video or Image' ) }
+						initialOpen={ false }
+					>
+						<SelectControl
+							label={ __( 'Video or Image' ) }
+							value={ vidOrImg }
+							options={ VidImg }
+							onChange={ ( selectedVidImg ) => {
+								setAttributes( {
+									vidOrImg: selectedVidImg,
+								} );
+							} }
 						/>
 					</PanelBody>
-					{ vidOrImg == 'image' && (
-						<PanelBody
-							title={ __( 'With Video or Image' ) }
-							initialOpen={ false }
-						>
-							<SelectControl
-								label={ __( 'Video or Image' ) }
-								value={ vidOrImg }
-								options={ VidImg }
-								onChange={ ( selectedVidImg ) => {
-									setAttributes( {
-										vidOrImg: selectedVidImg,
-									} );
-								} }
-							/>
-						</PanelBody>
-					)}
 					<Anchor
 						setAttributes={ setAttributes }
 						anchor={ anchor }
@@ -106,30 +84,11 @@ const EditHero = ( { attributes, setAttributes } ) => {
 							<div className="content-wrap">
 								<div className="hero-block-content">
 									<div className="hero-block-wrap">
-										<Header
-											tag="h1"
-											placeholder="Header Title..."
-											setAttributes={ setAttributes }
-											title={ title }
-										/>
-										<Content
-											tag="div"
-											multiline={ true }
-											setAttributes={ setAttributes }
-											content={ description }
-											updateProp="description"
-											placeholder="Content..."
+										<InnerBlocks
+											allowedBlocks={ ['core/heading'] }
 										/>
 									</div>
 								</div>
-								{ withform && (
-									<div className="hero-block-form">
-										<InnerBlocks 
-											allowedBlocks={ ['gravityforms/form'] }
-											template={ template }
-										/>
-									</div>
-								)}
 							</div>
 							<div className="hero-block-image">
 								{ vidOrImg == 'image' && (

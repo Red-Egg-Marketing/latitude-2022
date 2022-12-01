@@ -35,7 +35,7 @@ $global_button = get_field('global_estimate_button', 'options');
 			<div class="wrapper">
 				<?php 
 					
-					echo '<p><a href="#talk-to-us" data-src="#talk-to-us" data-fancybox="true">Let\'s Talk</a><a href="https://dashboard.yosicare.com/" target="_blank">Login</a></p>'; 
+					echo '<p><a href="https://google.com/" target="_blank">Client Portal</a></p>'; 
 
 				?>
 			</div><!-- .wrapper -->
@@ -64,27 +64,9 @@ $global_button = get_field('global_estimate_button', 'options');
 				wp_nav_menu(
 					array(
 						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
-						'walker' => new latitude_Menu_Walker()
-					)
+						'menu_id'        => 'primary-menu',					)
 				);
-				if ($modal_form != 0) {
-    			    $button_text = get_field('estimate_button_text' ,'options');
-    			    if ($global_button == true && !is_user_logged_in()) { ?>
-    			        <div class="fixed-buttons">
-    			            <div class="fixed-wrapper">
-    			                <a  
-    			                    href="#talk-to-us"
-    			                    data-src="#talk-to-us" 
-    			                    class="wp-block-button__link is-small"
-    			                    data-fancybox="true"
-    			                ><?= $button_text; ?></a>
-    			            </div>
-    			        </div>
-    			    <?php 
-    			    }
-    		
-    			}
+	
 				
 				?>
 			</nav><!-- #site-navigation -->
@@ -92,21 +74,3 @@ $global_button = get_field('global_estimate_button', 'options');
 		</div><!-- .wrapper -->
 		</div>
 	</header><!-- #masthead -->
-	<?php
-			if ($modal_form != 0) {
-    			    $button_text = get_field('estimate_button_text' ,'options');
-    			    if ($global_button == true && !is_user_logged_in()) { ?>
-    			        <div class="fixed-buttons desktop">
-    			            <div class="fixed-wrapper">
-    			                <a  
-    			                    href="#talk-to-us"
-    			                    data-src="#talk-to-us" 
-    			                    class="wp-block-button__link is-small is-style-solid-blue-green"
-    			                    data-fancybox="true"
-    			                ><?= $button_text; ?></a>
-    			            </div>
-    			        </div>
-    			    <?php 
-    			    }
-    			}
-    	?>

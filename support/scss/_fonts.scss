@@ -31,6 +31,18 @@
 }
 
 
+@font-face {
+    font-family: 'gill_sanssemibold';
+    src: url('fonts/gillsans-semibold-05-webfont.woff2') format('woff2'),
+         url('fonts/gillsans-semibold-05-webfont.woff') format('woff'),
+         url('fonts/gillsans-semibold-05-webfont.ttf') format('truetype'),
+         url('fonts/gillsans-semibold-05-webfont.svg#gill_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 .gs-sin-mem-desig,
 .gs_team p, .gs_team li,
 .edit-post-visual-editor__content-area p, .entry-content p,
@@ -128,14 +140,14 @@
 	color: $head-color;
 	margin-top: 2rem;
 	font-family: $font-head;
-	letter-spacing: 2.2px;
+	letter-spacing: 1.1px;
 	text-transform: none;
-	font-weight: bold;
+	font-weight: normal;
 	@media screen and (min-width: $small-width) {
 		font-size: 37px;
 		line-height: 43px;
 		margin-top: 3rem;
-		letter-spacing: 2.5px;
+		letter-spacing: 1.5px;
 	}
 }
 

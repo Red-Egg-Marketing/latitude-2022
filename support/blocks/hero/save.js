@@ -2,11 +2,9 @@ const { registerBlockType } = wp.blocks;
 const { RichText, InnerBlocks, useBlockProps } = wp.blockEditor;
 const { Button } = wp.components;
 const { __ } = wp.i18n;
-import Header from '../../components/Header.js';
-import Content from '../../components/Content.js';
 
 const SaveHero = ( { attributes } ) => {
-		const { image, title, description, anchor, withform, vidOrImg, videoID, videoURL } = attributes;
+		const { image, anchor, vidOrImg, videoID, videoURL } = attributes;
 
 		const blockProps = useBlockProps.save({
 			className: 'hero'
@@ -29,21 +27,9 @@ const SaveHero = ( { attributes } ) => {
 						<div className="content-wrap">
 							<div className="hero-block-content">
 								<div className="hero-block-wrap">
-									<Header.View
-										tag="h1"
-										title={ title }
-									/>
-									<Content.View
-										tag="div"
-										content={ description }
-									/>
-								</div>
-							</div>
-							{ withform && (
-								<div className="hero-block-form">
 									<InnerBlocks.Content />
 								</div>
-							)}
+							</div>
 						</div>
 						<div className="hero-block-image">
 							{ (image && vidOrImg == 'image' ) && (

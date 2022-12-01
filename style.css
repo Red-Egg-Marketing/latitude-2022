@@ -8483,6 +8483,13 @@ textarea {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'gill_sanssemibold';
+  src: url("fonts/gillsans-semibold-05-webfont.woff2") format("woff2"), url("fonts/gillsans-semibold-05-webfont.woff") format("woff"), url("fonts/gillsans-semibold-05-webfont.ttf") format("truetype"), url("fonts/gillsans-semibold-05-webfont.svg#gill_sanssemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .gs-sin-mem-desig,
 .gs_team p, .gs_team li,
 .edit-post-visual-editor__content-area p, .entry-content p,
@@ -8602,10 +8609,10 @@ textarea {
   line-height: 39px;
   color: #1B2C58;
   margin-top: 2rem;
-  font-family: "gill_sansbold", sans-serif;
-  letter-spacing: 2.2px;
+  font-family: "gill_sanssemibold", sans-serif;
+  letter-spacing: 1.1px;
   text-transform: none;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 @media screen and (min-width: 768px) {
@@ -8615,7 +8622,7 @@ textarea {
     font-size: 37px;
     line-height: 43px;
     margin-top: 3rem;
-    letter-spacing: 2.5px;
+    letter-spacing: 1.5px;
   }
 }
 
@@ -8625,7 +8632,7 @@ textarea {
   font-size: 16px;
   line-height: 25px;
   text-transform: uppercase;
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
   letter-spacing: 1.9px;
 }
 
@@ -8644,7 +8651,7 @@ textarea {
   line-height: 22px;
   font-size: 15px;
   text-transform: uppercase;
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -8699,11 +8706,11 @@ textarea {
 }
 
 .rigid {
-  font-family: "gill_sansbold", sans-serif !important;
+  font-family: "gill_sanssemibold", sans-serif !important;
 }
 
 .industry {
-  font-family: "gill_sansbold", sans-serif !important;
+  font-family: "gill_sanssemibold", sans-serif !important;
 }
 
 .has-blue-green-color p,
@@ -8852,7 +8859,7 @@ input[type="submit"],
 button.wp-button {
   background: #F79A6C;
   color: #1B2C58;
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
   font-size: 15px;
   line-height: 18px;
   padding: 17px 25px 13px;
@@ -9011,7 +9018,7 @@ button.wp-button[disabled] {
 body.buddypress .buddypress-wrap input[type=submit].auto {
   background: #0D1F40;
   color: white;
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
   text-transform: uppercase;
   border: none;
   padding: 15px 15px 10px;
@@ -9649,7 +9656,7 @@ li.menu-item.nav-button a:hover {
 .main-navigation .menu-item a,
 .main-navigation .menu-item {
   color: #1B2C58;
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
   font-size: 16px;
   text-align: left;
   font-weight: 400;
@@ -9824,7 +9831,7 @@ li.menu-item.nav-button a:hover {
   margin: 0;
   color: white;
   font-size: 13px;
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
   line-height: 18px;
   margin-left: 0;
   letter-spacing: 0.5px;
@@ -10701,11 +10708,16 @@ button.swiper-pagination-bullet {
   padding-right: 1.25rem;
 }
 
+div.components-select-control {
+  display: block;
+  height: auto;
+}
+
 h1 {
   font-size: 42px;
   line-height: 49px;
   color: #1B2C58;
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.75px;
@@ -10724,7 +10736,7 @@ h1 {
 h3 {
   text-transform: uppercase;
   color: #1B2C58;
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
   font-size: 35px;
   line-height: 40px;
   margin-top: 1.15rem;
@@ -10760,7 +10772,7 @@ h4 {
 }
 
 .content p {
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
   color: #000000;
 }
 
@@ -11102,7 +11114,7 @@ h4 {
 
 .entry-content .resource-card .tax-item {
   text-transform: uppercase;
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
   color: #00304A;
   font-size: 15px;
   letter-spacing: 0.65px;
@@ -11144,7 +11156,7 @@ h3.resource-title,
   font-size: 18px;
   line-height: 25px;
   font-weight: 700;
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
   text-transform: none;
   margin-bottom: 0.75rem;
   margin-top: 0;
@@ -11254,7 +11266,7 @@ ul.gs-team-filter-cats li.filter.active > a {
 }
 
 div.gs_team_area .gs-team-filter-cats li a {
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
   border-radius: 15px !important;
   color: #1B2C58 !important;
   padding-left: 15px !important;
@@ -11733,7 +11745,7 @@ div.gform_wrapper h2.gform_title {
   line-height: 35px;
   margin-top: 0;
   text-transform: uppercase;
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
   font-weight: 500;
   text-align: center;
   margin-bottom: 0;
@@ -12336,7 +12348,7 @@ div.gform_wrapper .gform_drop_area button.gform_button_select_files {
   text-transform: capitalize;
   font-size: 26px;
   line-height: 32px;
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
 }
 
 .site-footer {
@@ -12648,7 +12660,7 @@ a.footer-home {
 .footer-links a {
   text-decoration: none;
   color: white;
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
 }
 
 .site-footer .grid {
@@ -12850,7 +12862,7 @@ a.footer-home {
 .entry-header .entry-meta {
   color: #00304A;
   text-transform: uppercase;
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
   display: inline-block;
   font-size: 16px;
   line-height: 18px;
@@ -13354,7 +13366,7 @@ body.archive .entry-header .wrapper {
 
 body.blog .entry-header h1,
 body.archive .entry-header h1 {
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
   text-transform: uppercase;
   color: white;
   margin-top: 0;
@@ -13519,7 +13531,7 @@ div.gs_tm_theme23 .single-member-div {
 }
 
 .wp-block-table table th {
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
   font-size: 18px;
   font-weight: 700;
   padding: 0.5rem;
@@ -14781,7 +14793,7 @@ body.groups.bp-user .buddypress-wrap {
   }
 }
 
-.hero .header-title {
+.hero h1 {
   margin-top: 0;
   color: white;
   font-size: 38px;
@@ -14791,7 +14803,7 @@ body.groups.bp-user .buddypress-wrap {
 }
 
 @media screen and (min-width: 768px) {
-  .hero .header-title {
+  .hero h1 {
     font-size: 48px;
     line-height: 60px;
     letter-spacing: 3.5px;
@@ -14825,8 +14837,8 @@ body.groups.bp-user .buddypress-wrap {
     width: 50%;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: end;
-        align-items: flex-end;
+    -ms-flex-align: center;
+        align-items: center;
   }
 }
 
@@ -15288,7 +15300,7 @@ body.groups.bp-user .buddypress-wrap {
   margin-top: 10px;
   margin-bottom: 0;
   text-transform: none;
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
   color: #00304A;
   font-weight: 700;
 }
@@ -15685,7 +15697,7 @@ body.groups.bp-user .buddypress-wrap {
   line-height: 35px;
   margin-top: 20px;
   margin-bottom: 10px;
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
   text-transform: none;
 }
 
@@ -16161,7 +16173,7 @@ body.groups.bp-user .buddypress-wrap {
 .image-columns p {
   font-size: 22px;
   line-height: 31px;
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
 }
 
 @media screen and (min-width: 768px) and (max-width: 875px) {
@@ -16433,7 +16445,7 @@ body.groups.bp-user .buddypress-wrap {
   color: white;
   font-size: 16px;
   line-height: 25px;
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
   font-weight: bold;
 }
 
@@ -16473,7 +16485,7 @@ p.contact-item a {
 
 p.contact-item a,
 p.contact-item {
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
   color: white;
   font-weight: 700;
   font-size: 16px;
@@ -17434,7 +17446,7 @@ html :where(.wp-block) {
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
   display: block;
   border-left: 2px solid #F0F0F0;
   border-right: 2px solid #F0F0F0;
@@ -18660,7 +18672,7 @@ p.quote-title {
 
 .cta .header-title {
   text-transform: none;
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
   font-size: 23px;
   line-height: 32px;
   margin-bottom: 0;
@@ -18794,7 +18806,7 @@ p.quote-title {
   display: block;
   font-size: 18px;
   line-height: 28px;
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
   font-weight: 600;
 }
 
@@ -19251,7 +19263,7 @@ h2.no-success-header {
 
 .pagination span,
 .pagination a {
-  font-family: "gill_sansbold", sans-serif;
+  font-family: "gill_sanssemibold", sans-serif;
   color: #1B2C58;
   font-size: 19px;
   text-decoration: none;
