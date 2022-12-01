@@ -15,11 +15,16 @@ import "./hero";
 import "./header-intro";
 import "./columns-group";
 import "./image-text-columns";
+import "./text-card";
 import "./text-cards-grid";
 import "./shortcode-section";
 import "./contact";
 import "./contact-content";
 import "./contact-forms";
-import "./progress-block";
 import "./selected-projects";
+import "./selected-projects";
+import "./tab-content";
+import "./tab";
+import "./tabs";
+import "./tab-group";
 

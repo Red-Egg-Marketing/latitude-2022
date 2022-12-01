@@ -33,11 +33,13 @@
 	}
 }
 
+.tab-group .tabs-wrap > .block-editor-inner-blocks >.block-editor-block-list__layout,
 .tab-group .tabs-wrap {
 	position: relative;
 	width: 100%;
-	min-height: 300px;
-	height: inherit;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;	
 }
 
 .tab-group:after {
@@ -48,23 +50,18 @@
 
 .tab-group .tab {
 	position: relative;
-	width: 100%;
+	width: auto;
+	order: 1;
 	@media screen and (min-width: $small-width) {
-		width: 22%;
+		width: auto;
 		position: static;
 		float: left;
-		clear: both;
 	}
 }
 
 .tab-group .tab-content {	
 	width: 100%;
-	@media screen and (min-width: $small-width) {
-		top: 0;
-		position: absolute;
-		width: 78%;
-		left: 22%;
-	}
+	order: 2;
 }
 
 .tab-group .tab.loaded:first-of-type .header-title.active ~ .tab-content,

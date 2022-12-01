@@ -5,12 +5,13 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'latitude-blocks/columns-group', {
-	title: __( 'Columns Group', 'latitude-blocks' ),
-	description: __( 'Group of columns with optional header intro', 'latitude-blocks' ),
+registerBlockType( 'latitude-blocks/tab-content', {
+	title: __( 'Tab', 'latitude-blocks' ),
+	description: __( 'Tab', 'latitude-blocks' ),
 	apiVersion: 2,
-	icon: 'grid-view',
+	icon: 'button',
 	category: 'layout',
+	parent: ['latitude-blocks/tab'],
 	edit: edit,
 	save: save,
 } );

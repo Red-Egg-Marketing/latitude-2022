@@ -23,28 +23,6 @@ registerBlockType( 'latitude-blocks/tab', {
 			type: 'string',
 			default: ''
 		},
-		icons : {
-			type: 'array',
-			source: 'query',
-			default: [],
-			selector: '.icon-row',
-			query: {
-				icon: {
-					type: 'string',
-      				source: 'attribute',
-      				default: 'address-book',
-      				selector: '.icon-icon',
-      				attribute: 'data-icon'
-      			},
-      			prefix: {
-      				type: 'string',
-      				source: 'attribute',
-      				selector: '.icon-wrap',
-      				attribute: 'data-prefix',
-      				default: 'far'
-      			}
-			}
-		}
 	},
 	edit: edit,
 	save: save,

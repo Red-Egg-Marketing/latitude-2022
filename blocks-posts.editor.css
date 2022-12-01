@@ -76,7 +76,7 @@
 .edit-post-visual-editor__content-area p.has-large-font-size, .entry-content p.has-large-font-size {
   font-size: 24px !important;
   line-height: 34px;
-  color: #19303F;
+  color: #00304A;
 }
 
 @media screen and (min-width: 768px) {
@@ -245,7 +245,7 @@
 .has-blue-green-color p,
 .has-blue-green-color,
 .entry-content .has-blue-green-color {
-  color: #19303F;
+  color: #00304A;
 }
 
 .has-lime-green-color p,
@@ -261,7 +261,7 @@
 }
 
 background {
-  background: linear-gradient(to bottom, #EDF5FF 25%, transparent 25%);
+  background: linear-gradient(to bottom, #E7F2F7 25%, transparent 25%);
   background-size: 200% 200%;
   background-position: 0 100%;
   padding-left: 10px;
@@ -473,7 +473,7 @@ h4 {
 }
 
 .blue-green {
-  background: #19303F;
+  background: #00304A;
 }
 
 .yellow {
@@ -497,7 +497,7 @@ h4 {
 }
 
 .light-blue {
-  background: #EDF5FF;
+  background: #E7F2F7;
 }
 
 .teal-gradient {
@@ -711,7 +711,7 @@ h4 {
 .resource-card p.resource-excerpt {
   overflow-wrap: anywhere;
   font-family: "gill_sansregular", sans-serif;
-  color: #19303F;
+  color: #00304A;
 }
 
 .resource-card.whitepaper .image-cont img {
@@ -799,7 +799,7 @@ h4 {
 .entry-content .resource-card .tax-item {
   text-transform: uppercase;
   font-family: "gill_sansbold", sans-serif;
-  color: #19303F;
+  color: #00304A;
   font-size: 15px;
   letter-spacing: 0.65px;
   margin-bottom: 0;
@@ -1301,7 +1301,7 @@ div.gform_wrapper .wp-block-button.is-style-solid-navy input[type="submit"]:not(
 .wp-block-button.is-style-solid-navy div.gform_wrapper input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-navy input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   color: white;
-  background: #19303F;
+  background: #00304A;
 }
 
 .wp-block-button__link.is-style-text-yellow-arrow, a.is-style-text-yellow-arrow[download], div.gform_wrapper input.is-style-text-yellow-arrow[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),

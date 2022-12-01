@@ -31,11 +31,30 @@
 	width: 100%;
 	margin-top: 2.5rem;
 	@media screen and (min-width: $small-width) {
-		flex: 0 calc(33.333% - 2.5rem);
+		flex: 0 calc(25% - 2.5rem);
 		margin-top: 0;
 		padding-right: 1.25rem;
 		padding-left: 1.25rem;
 	}
+}
+
+.site-footer .wrapper .col-locations {
+	width: 100%;
+	margin-top: 2.5rem;
+	@media screen and (min-width: $small-width) {
+		flex: 0 calc(75% - 2.5rem);
+		margin-top: 0;
+		padding-right: 1.25rem;
+		padding-left: 1.25rem;
+	}
+}
+
+.col-locations {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	list-style-type: none;
 }
 
 .site-footer .contact-col {
@@ -94,15 +113,15 @@ ul.social li {
 }
 
 a.footer-home {
-	width: 166px;
-	height: 55px;
+	width: 213px;
+	height: 106px;
 	display: block;
 	text-indent: -10000px;
 	margin: 0 auto;
-	background: url(img/yosi-footer-logo.svg) no-repeat center center / 100%;
+	background: url(img/latitude-full-logo.svg) no-repeat center center / 100%;
 	@media screen and (min-width: $small-width) {
-		width: 165px;
-		height: 55px;
+		width: 213px;
+		height: 106px;
 	}
 }
 
