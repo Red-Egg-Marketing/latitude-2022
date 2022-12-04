@@ -26,7 +26,7 @@ registerBlockType( 'latitude-blocks/image-text', {
 		},
 		contentAlign: {
 			type: 'string',
-			default: 'img-left',
+			default: 'img-right',
 			selector: '.block-content'
 		},
 		withDrop: {

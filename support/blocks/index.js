@@ -3,7 +3,6 @@ import "../scss/editor.scss";
 import "../core/styles.js";
 
 // Format Types
-// import "../format-types/rotate-words";
 import "../format-types/background-gradient";
 
 // Core Blocks

@@ -131,6 +131,10 @@ h4 {
 	background: $peach;
 }
 
+.tan {
+	background: $tan;
+}
+
 // Resource Cards
 
 .resources-grid:not(.swiper-wrapper) .block-wrapper {
@@ -233,7 +237,7 @@ h4 {
 		@media screen and (min-width: $med-width + 1px) {
 			grid-template-columns: 1fr 1fr 1fr;
 			grid-row-gap: 25px;
-			grid-column-gap: 60px;
+			grid-column-gap: 55px;
 		}
 		@media screen and (min-width: $small-width) and (max-width: $med-width) {
 			grid-template-columns: 1fr 1fr;
@@ -251,7 +255,7 @@ h4 {
 		@media screen and (min-width: $med-width + 1px) {
 			grid-template-columns: 1fr 1fr 1fr;
 			grid-row-gap: 25px;
-			grid-column-gap: 60px;
+			grid-column-gap: 55px;
 		}
 		@media screen and (min-width: $small-width) and (max-width: $med-width) {
 			grid-template-columns: 1fr 1fr;

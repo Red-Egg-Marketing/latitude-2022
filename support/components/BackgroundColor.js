@@ -5,7 +5,7 @@ const { Button, PanelBody, ColorPalette } = wp.components;
 const { __ } = wp.i18n;
 
 const defcolors = [
-    { name: 'Light Blue', color: 'rgba(237, 245, 255)', slug: 'light-blue' },
+    { name: 'Tan', color: 'rgba(242, 235, 220)', slug: 'tan' },
     { name: 'White', color: 'rgba(255, 255, 255)', slug: 'white' },
 ];
 

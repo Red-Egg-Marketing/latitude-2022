@@ -36,7 +36,7 @@
 .image-columns > .block-wrapper > .block-content {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .image-columns .faq:last-of-type {
@@ -64,7 +64,6 @@
 	position: relative;
 	width: 100%;
 	box-sizing: border-box;
-	border-radius: 10px;
 	@media screen and (min-width: $small-width) and (max-width: $med-small-width) {
 		width: calc(37.5% - 15px);
 		max-width: calc(37.5% - 15px);
@@ -82,11 +81,6 @@
 .img-container img {
 	display: block;
 	margin: 0 auto;
-}
-
-.image-columns .img-container img {
-	border-radius: 8px;
-	max-height: 70vh;
 }
 
 .image-columns.img-right .content-columns {
@@ -145,7 +139,6 @@
 }
 
 .image-columns .image-comp {
-	border-radius: 8px;
 	margin-bottom: 1.25rem;
 	@media screen and (min-width: $small-width) {
 		margin-bottom: 0;
@@ -174,72 +167,13 @@
 	}
 }
 
-.image-columns.with-ds li,
-.image-columns.with-ds p {
-	font-size: 18px;
-	line-height: 29px;
-	@media screen and (min-width: $xs-width) and (max-width: $small-med-width) {
-		font-size: 18px;
-		line-height: 29px;
-	}
-	// @media screen and (min-width: $small-width) and (max-width: $small-med-width) {
-	// 	font-size: 17px;
-	// 	line-height: 28px;
-	// }
-	@media screen and (min-width: $small-med-width) and (max-width: $med-small-width) {
-		font-size: 21px;
-		line-height: 33px;
-	}
-	@media screen and (min-width: $med-small-width) and (max-width: $med-width) {
-		font-size: 23px;
-		line-height: 35px;
-	}
-	@media screen and (min-width: $med-width) and (max-width: $max-cont-w) { 
-		font-size: 20px;
-		line-height: 34px;
-	}
-	@media screen and (min-width: $max-cont-w) {
-		font-size: 27px;
-		line-height: 40px;
-	}
-}
-
 .image-columns li,
 .image-columns p {
 	font-size: 22px;
 	line-height: 31px;
-	font-family: $font-head;
-	@media screen and (min-width: $small-width) and (max-width: $small-med-width) {
-		font-size: 17px;
-		line-height: 28px;
-	}
-	@media screen and (min-width: $small-med-width) and (max-width: $med-small-width) {
-		font-size: 19px;
-		line-height: 30px;
-	}
-	@media screen and (min-width: $med-small-width) and (max-width: $med-width) {
-		font-size: 21px;
-		line-height: 33px;
-	}
-	@media screen and (min-width: $med-width) and (max-width: $max-cont-w) { 
-		font-size: 23px;
-		line-height: 36px;
-	}
-	@media screen and (min-width: $max-cont-w) {
-		font-size: 27px;
-		line-height: 40px;
-	}
-}
-
-.image-columns.no-ds p,
-.image-columns.no-ds li {
-	font-family: $font-body;
-	font-weight: 300;
-	font-size: 16px;
-	line-height: 25px;
-	@media screen and (min-width: $small-width){
-		font-size: 18px;
-		line-height: 28px;
+	@media screen and (min-width: $small-width) {
+		font-size: 24px;
+		line-height: 32px;
 	}
 }
 

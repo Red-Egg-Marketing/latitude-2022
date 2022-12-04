@@ -28,13 +28,7 @@ const colors = [
 
 
 const template = [
-	['core/heading', {'level' : 1, 'className' : 'header-title', 'placeholder' : 'Section Header...'}],
 	['core/paragraph', {'placeholder' : 'Section paragraph...'}],
-	['core/buttons', {},
-		[
-			['core/button', {'placeholder' : 'CTA...'}]
-		]
-	]
 ];
 
 const VidImg = [

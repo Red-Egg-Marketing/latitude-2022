@@ -168,7 +168,7 @@ function latitude_dynamic_case_studies_grid_block() {
         wp_enqueue_script(
             'wp-main-js',
             get_template_directory_uri() . $front_path,
-            ['wp-api', 'scroll-magic', 'tweenmax', 'tweenmax-animation', 'scrolltrigger', 'lottie-script'],
+            ['wp-api', 'scroll-magic', 'tweenmax', 'tweenmax-animation', 'scrolltrigger'],
             'v1.0.1',
             true
        );
@@ -270,7 +270,7 @@ function latitude_gutenberg_disable_custom_styles() {
 add_action( 'after_setup_theme', 'latitude_gutenberg_disable_custom_styles' );
 
 
-function yosi_progress_block_assets() {
+function latitude_progress_block_assets() {
    
     wp_enqueue_script(
       'scroll-magic',
@@ -278,14 +278,6 @@ function yosi_progress_block_assets() {
       ['jquery', 'tweenmax'],
       '1.0.0',
       true
-    );
-
-    wp_enqueue_script(
-        'lottie-script',
-        'https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js',
-        ['jquery'],
-        '1.0.0',
-        true
     );
 
     wp_enqueue_script(
@@ -312,6 +304,6 @@ function yosi_progress_block_assets() {
       true
     );
 }
-add_action( 'enqueue_block_assets', 'yosi_progress_block_assets' );
+add_action( 'enqueue_block_assets', 'latitude_progress_block_assets' );
 
 ?>

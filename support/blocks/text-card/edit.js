@@ -10,11 +10,6 @@ import BackgroundColor from '../../components/BackgroundColor.js';
 const template = [
 	['core/heading', {'level' : 3, 'placeholder' : 'Card Title...'}],
 	['core/paragraph', {'placeholder' : 'Card Description...'}],
-	['core/buttons', {},
-		[
-			['core/button', {'placeholder' : 'Learn More...', 'className' : 'is-style-text-yellow-arrow' }]
-		]
-	],
 ];
 
 const widthOptions = [
@@ -27,6 +22,12 @@ const widthOptions = [
         value: '100',
     },
 ];
+
+const colors = [
+    { name: 'Tan', color: 'rgba(242, 235, 220)', slug: 'tan' },
+    { name: 'Navy', color: 'rgba(0, 48, 74)', slug: 'navy' },
+];
+
 
 const EditCTA = ( { attributes, setAttributes } ) => {
 		const {
@@ -165,6 +166,7 @@ const EditCTA = ( { attributes, setAttributes } ) => {
 					<BackgroundColor
 						bgColor={ bgColor }
 						bgSlug={ bgSlug }
+						colors={ colors }
 						setAttributes={ setAttributes }
 						title="Icon Background Color"
 					/>

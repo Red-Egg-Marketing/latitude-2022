@@ -17,7 +17,7 @@ div.gform_wrapper textarea {
 	background: #FCF7EC;
 	border: none;
 	border-radius: 0;
-	font-family: $font-body;
+	font-family: $font-body-light;
   color: $body-color;
   font-size: 18px;
   line-height: 30px;
@@ -49,7 +49,7 @@ div.gform_wrapper.gravity-theme .chosen-container-multi .chosen-choices li.searc
 div.gform_wrapper.gravity-theme .chosen-container-multi input.chosen-search-input {
 	width: 100% !important;
 	box-shadow: none !important;
-	font-family: $font-body;
+	font-family: $font-body-light;
   color: $body-color;
   font-size: 18px;
   line-height: 30px;
@@ -65,7 +65,6 @@ div.gform_wrapper.gravity-theme .chosen-container-multi input.chosen-search-inpu
 div.gform_wrapper.gravity-theme .chosen-container-multi .chosen-choices li.search-choice {
 	background-image: none;
 	border: none;
-	border-radius: 25px;
 	background: $orange;
   font-size: 15px;
   border: none;
@@ -97,19 +96,18 @@ div.gform_wrapper select,
 div.gform_wrapper textarea,
 div.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]):not([class=chosen-search-input])
  {
-	background: white;
-	border-radius: 5px;
-	border: none;
-	box-shadow: 0 0 8px rgba(0, 0, 0, .16);
+	background: transparent;
+	border-radius: 0;
+	border-bottom: 2px solid $burnt-orange;
 	-webkit-appearance: none;
-	padding-left: 15px;
+	padding-left: 0;
 	padding-right: 15px;
-	padding-top: 12px;
-	padding-bottom: 12px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	font-size: 18px;
 	line-height: 27px;
 	color: $body-color;
-	font-family: $font-body;
+	font-family: $font-body-light;
 	font-weight: 300;
 	width: 100%;
 	@media screen and (min-width: $form-width) {
@@ -123,7 +121,7 @@ div.gform_wrapper.gravity-theme .chosen-container-multi .chosen-choices li.searc
 }
 
 div.gform_wrapper.gravity-theme .chosen-container-multi .chosen-choices {
-	background: white url(img/down-chevron.svg) no-repeat calc(100% - 15px) center / 15px;
+	background: transparent url(img/down-chevron.svg) no-repeat calc(100%) center / 10px;
 }
 
 
@@ -135,7 +133,7 @@ div.gform_wrapper.gravity-theme .chosen-container .chosen-results li.highlighted
 
 div.gform_wrapper.gravity-theme .chosen-container .chosen-results li {
 	color: $body-color;
-	font-family: $font-body;
+	font-family: $font-body-light;
 	font-weight: 300;
 	width: 100%;
 	@media screen and (min-width: $form-width) {
@@ -159,17 +157,16 @@ body div.gform_wrapper .ginput_complex {
 
 div.gform_wrapper .ginput_container_select select {
  	appearance: none;
- 	background: white url(img/down-chevron.svg) no-repeat calc(100% - 15px) center / 15px;
- 	box-shadow: 0 0 8px rgba(0, 0, 0, .16);
- 	border-radius: 5px;
- 	padding-left: 15px;
+ 	background: transparent url(img/down-chevron.svg) no-repeat calc(100%) center / 10px;
+ 	border-radius: 0;
+ 	padding-left: 0;
  	padding-right: 15px;
- 	padding-top: 12px;
-	padding-bottom: 12px;
+ 	padding-top: 5px;
+	padding-bottom: 5px;
  	font-size: 18px;
 	line-height: 27px;
 	color: $body-color;
-	font-family: $font-body;
+	font-family: $font-body-light;
 	font-weight: 300;
 	margin-bottom: 0;
  	@media screen and (min-width: $form-width) {
@@ -222,7 +219,7 @@ div.gform_wrapper .field_sublabel_hidden_label .ginput_complex.ginput_container 
 	margin-top: 0;
 	margin-bottom: 6px;
 	@media screen and (min-width: $form-width) {
-		margin-bottom: 8px;
+		margin-bottom: 0px;
 	}
 }
 
@@ -284,7 +281,7 @@ body div.gform_wrapper ul li.gfield {
 div.gform_wrapper label.gfield_label {
 	font-size: 18px;
 	line-height: 27px;
-	font-family: $font-body;
+	font-family: $font-body-light;
 	font-weight: 400;
 	@media screen and (min-width: $form-width) {
 		font-size: 20px;
@@ -370,14 +367,14 @@ body div.gform_wrapper .top_label div.ginput_container.ginput_container_checkbox
 	margin-bottom: 6px;
 	@media screen and (min-width: $form-width) {
 		margin-top: 0;
-		margin-bottom: 8px;
+		margin-bottom: 0px;
 	}
 }
 
 div.gform_wrapper.gravity-theme .gfield_checkbox label,
 div.gform_wrapper.gravity-theme .gfield-choice-input+label {
 	color: white;
-	font-family: $font-body;
+	font-family: $font-body-light;
 	font-size: 16px;
 	font-weight: 600;
 	margin-left: 0;
@@ -391,7 +388,7 @@ div.gform_wrapper.gravity-theme .gfield-choice-input+label {
 	position: relative;
 	margin-bottom: 5px;
 	@media screen and (min-width: $form-width) {
-		margin-bottom: 8px;
+		margin-bottom: 0px;
 	}
 }
 
@@ -505,7 +502,7 @@ div.gform_wrapper .ginput_complex span {
 }
 
 .gform_wrapper ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  font-family: $font-body;
+  font-family: $font-body-light;
   line-height: 30px;
   color: $body-color;
   font-size: 18px;
@@ -516,7 +513,7 @@ div.gform_wrapper .ginput_complex span {
 }
 
 .gform_wrapper ::-moz-placeholder { /* Firefox 19+ */
-  font-family: $font-body;
+  font-family: $font-body-light;
   line-height: 30px;
   color: $body-color;
   font-size: 18px;
@@ -527,7 +524,7 @@ div.gform_wrapper .ginput_complex span {
 }
 
 .gform_wrapper :-ms-input-placeholder { /* IE 10+ */
-  font-family: $font-body;
+  font-family: $font-body-light;
   line-height: 30px;
   color: $body-color;
   font-size: 18px;
@@ -538,7 +535,7 @@ div.gform_wrapper .ginput_complex span {
 }
 
 .gform_wrapper :-moz-placeholder { /* Firefox 18- */
-  font-family: $font-body;
+  font-family: $font-body-light;
   line-height: 30px;
   color: $body-color;
   font-size: 18px;
@@ -589,7 +586,6 @@ div.gform_wrapper .gform_page_footer {
 .fancybox__container div.gform_wrapper .gform_title,
 .contact-section div.gform_wrapper .gform_title {
 	text-transform: none;
-	color: white;
 	font-size: 26px;
 	line-height: 36px;
 	margin-bottom: 0.5rem;
@@ -607,7 +603,7 @@ div.gform_wrapper .gform_page_footer {
 	width: 100%;
 	font-size: 18px;
 	line-height: 30px;
-	font-family: $font-body;
+	font-family: $font-body-light;
 	@media screen and (min-width: $small-width) {
 		font-size: 18px;
 		line-height: 32px;
@@ -621,13 +617,13 @@ div.gform_wrapper .gform_page_footer {
 .contact-section div.gform_wrapper div.charleft.warningTextareaInfo, 
 .contact-section div.gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label,
 .contact-section div.gform_wrapper .top_label .gfield_label {
-	color: white;
-	font-family: $font-body;
+	color: $body-color;
+	font-family: $font-body-light;
 	font-size: 18px;
 	line-height: 29px;
 	@media screen and (min-width: $small-width) {
-		font-size: 20px;
-		line-height: 30px;
+		font-size: 18px;
+		line-height: 32px;
 	}
 }
 

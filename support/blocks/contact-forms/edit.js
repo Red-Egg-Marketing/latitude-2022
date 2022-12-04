@@ -9,6 +9,8 @@ import Icons from '../../components/Icons.js';
 import BackgroundColor from '../../components/BackgroundColor.js';
 
 const template = [
+	['core/heading', {'placeholder' : 'Contact Title...'}],
+	['core/paragraph', {'placeholder' : 'Contact Description...'}],
 	['gravityforms/form']
 ];
 
@@ -23,7 +25,7 @@ const EditContactForms = ( { attributes, setAttributes } ) => {
 			<Fragment>
 				<div {...blockProps}>
 					<InnerBlocks 
-						allowedBlocks={ ['gravityforms/form'] }
+						allowedBlocks={ ['core/heading', 'core/paragraph', 'gravityforms/form'] }
 						template={ template }
 					/>
 				</div>

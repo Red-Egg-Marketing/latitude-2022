@@ -88,8 +88,8 @@
 	grid-column-gap: 15px;
 	@media screen and (min-width: $med-width + 1px) {
 		grid-template-columns: 1fr 1fr;
-		grid-row-gap: 60px;
-		grid-column-gap: 60px;
+		grid-row-gap: 55px;
+		grid-column-gap: 55px;
 	}
 	@media screen and (min-width: $small-width) and (max-width: $med-width) {
 		grid-template-columns: 1fr 1fr;
@@ -108,8 +108,8 @@
 	grid-column-gap: 15px;
 	@media screen and (min-width: $med-width + 1px) {
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-row-gap: 60px;
-		grid-column-gap: 60px;
+		grid-row-gap: 55px;
+		grid-column-gap: 55px;
 	}
 	@media screen and (min-width: $small-width) and (max-width: $med-width) {
 		grid-template-columns: 1fr 1fr;

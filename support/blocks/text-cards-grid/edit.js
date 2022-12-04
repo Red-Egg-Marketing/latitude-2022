@@ -9,7 +9,6 @@ import Columns from '../../components/Columns.js';
 
 const template = [
 	['latitude-blocks/header-intro', {}],
-	['latitude-blocks/section-header'],
 	['latitude-blocks/text-card', {}],
 	['latitude-blocks/text-card', {}],
 	['latitude-blocks/text-card', {}],
@@ -49,7 +48,7 @@ const EditCTAGrid = ( { attributes, setAttributes } ) => {
 						<div className="block-content">							
 							<InnerBlocks
 								template={ template }
-								allowedBlocks={ ['latitude-blocks/text-card', 'latitude-blocks/section-header', 'latitude-blocks/header-intro'] }
+								allowedBlocks={ ['latitude-blocks/text-card', 'latitude-blocks/header-intro'] }
 							/>
 						</div>
 					</div>

@@ -9,7 +9,7 @@
 				let firstHead = tabs[x].querySelector('.tab:first-of-type .header-title');
 				let wrap = tabs[x].querySelector('.tabs-wrap');
 				let tab = tabs[x].querySelector('.tab');
-				let first = tabs[x].querySelector('.tab:first-of-type .tab-content');
+				let first = tabs[x].querySelector('.tab:first-of-type + .tab-content');
 				let style = getComputedStyle(first);
 				let position = style.position;
 				let firstHeight = first.offsetHeight;

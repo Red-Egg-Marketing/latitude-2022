@@ -15,11 +15,11 @@ registerBlockType( 'latitude-blocks/text-card', {
 	attributes: {
 		bgColor: {
 			type: 'string',
-			default: ''
+			default: '#ffffff'
 		},
 		bgSlug: {
 			type: 'string',
-			default: ''
+			default: 'white'
 		},
 		iconColor: {
 			type: 'string',

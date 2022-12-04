@@ -192,7 +192,7 @@ function latitudelogin_logo() { ?>
     <style type="text/css">
 
         #login h1 a, .login h1 a {
-            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/piper-footer-logo.svg);
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/latitude-full-logo.svg);
 			height:195px;
 			width:300px;
 			background-size: 300px 195px;

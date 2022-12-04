@@ -29,14 +29,10 @@
 }
 
 .header-intro-block h2 {
-	font-size: 29px;
-	line-height: 40px;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 	margin-top: 0;
 	@media screen and (min-width: $small-width) {
-		font-size: 34px;
-		line-height: 50px;
-		margin-bottom: 15px;
+		margin-bottom: 45px;
 	}
 }
 
@@ -54,10 +50,6 @@
 	}
 }
 
-.header-intro-block .block-content p {
-	font-weight: 300;
-	font-family: $font-body;
-}
 
 .header-intro-block .block-content .wp-block-buttons + p {
 	margin-top: 35px;

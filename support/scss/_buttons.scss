@@ -5,20 +5,22 @@
 a.wp-block-button__link,
 input[type="submit"],
 button.wp-button {
-	background: $bg-color-5;
+	background: transparent;
+	border-top: 2px solid $burnt-orange;
+	border-left: 2px solid $burnt-orange;
+	border-right: 2px solid $burnt-orange;
+	border-bottom: 4px solid $burnt-orange;
 	color: $head-color;
 	font-family: $font-head;
 	font-size: 15px;
 	line-height: 18px;
 	padding: 17px 25px 13px;
-	border: none;
 	cursor: pointer;
-	border: none;
 	transition-property: background, color;
 	transition-duration: .25s;
 	letter-spacing: 0.4px;
 	text-decoration: none;
-	border-radius: 30px;
+	border-radius: 0;
 	font-weight: 500;
 	&.is-small {
 		@media screen and (min-width: $small-width) {

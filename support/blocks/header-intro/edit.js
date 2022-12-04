@@ -9,7 +9,6 @@ import BackgroundSelector from '../../components/BackgroundSelector.js';
 
 const template = [
 			['core/heading', {'level': 2, 'className' : 'header-title'}],
-			['core/paragraph', {'placeholder' : 'Intro paragraph...'}],
 ];
 
 const colors = [

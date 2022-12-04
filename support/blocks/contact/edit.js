@@ -9,8 +9,8 @@ import Icons from '../../components/Icons.js';
 import BackgroundColor from '../../components/BackgroundColor.js';
 
 const template = [
-	['latitude-blocks/contact-content'],
-	['latitude-blocks/contact-forms']
+	['latitude-blocks/contact-forms'],
+	['latitude-blocks/contact-content'],	
 ];
 
 const EditContact = ( { attributes, setAttributes } ) => {
