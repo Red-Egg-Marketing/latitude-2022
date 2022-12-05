@@ -6,7 +6,7 @@ const { __ } = wp.i18n;
 import Header from '../../components/Header.js';
 import ResourceCard from '../../components/ResourceCard.js';
 import ResourceFilters from '../../components/ResourceLoader.js';
-const apiUrl  = '/wp-json/yosi-health/v2/resources';
+const apiUrl  = '/wp-json/latitude/v2/resources';
 
 const EditResources = ( { attributes, setAttributes } ) => {
 	  	
@@ -149,7 +149,7 @@ const EditResources = ( { attributes, setAttributes } ) => {
 										tag="h2"
 										title={ mainTitle }
 										updateProp="mainTitle"
-										placeholder={ __('Title...', 'yosi-health')}
+										placeholder={ __('Title...', 'latitude')}
 										setAttributes={ setAttributes }
 									/>
 								</header>

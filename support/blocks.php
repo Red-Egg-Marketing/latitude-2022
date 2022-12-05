@@ -89,7 +89,7 @@ function latitude_render_filtered_projects_callback($block_attributes, $content)
     $cat = !empty($block_attributes['category']) ? $block_attributes['category'] : '';
     $anchor = !empty($block_attributes['anchor']) ? $block_attributes['anchor'] : '';
     $title = !empty($block_attributes['mainTitle']) ? $block_attributes['mainTitle'] : '';
-    $content = !empty($block_attributes['content']) ? $block_attributes['content'] : '';
+    $b_content = !empty($block_attributes['content']) ? $block_attributes['content'] : '';
     $bg = !empty($block_attributes['bgSlug']) ? ' ' . $block_attributes['bgSlug'] : '';
     
     $block_content .= '<section class="selected-resources' . $bg . '">';
@@ -99,7 +99,7 @@ function latitude_render_filtered_projects_callback($block_attributes, $content)
                     if ($title != 'undefined') {
                         $block_content .= '<header class="header">';
                              $block_content .= $title != '' ? '<h2 class="header-title">' . $title . '</h2>' : '';
-                             $block_content .= $content != '' ? '<p class="header-description">' . $content . '</p>' : '';
+                             $block_content .= $b_content != '' ? '<p class="header-description">' . $b_content . '</p>' : '';
                         $block_content .= '</header>';
                     }
                     $block_content .= '<div class="resources grid" data-append data-category="' . $cat . '">';

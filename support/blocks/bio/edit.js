@@ -53,20 +53,20 @@ const EditBio = ( { attributes, setAttributes } ) => {
 									title={ name }
 									updateProp={ "name" }
 									setAttributes={ setAttributes }
-									placeholder={__('Name...', 'yosi-health')}
+									placeholder={__('Name...', 'latitude')}
 								/>
 								<Header
 									tag="h4"
 									title={ title }
 									classProp="header-subtitle"
 									setAttributes={ setAttributes }
-									placeholder={__('Title...', 'yosi-health')}
+									placeholder={__('Title...', 'latitude')}
 								/>
 								<Content 
 									tag="div"
 									content={ content }
 									multiline="p"
-									placeholder={ __('Person Bio...', 'yosi-health')}
+									placeholder={ __('Person Bio...', 'latitude')}
 									classProp="content"
 									setAttributes={ setAttributes }
 								/>

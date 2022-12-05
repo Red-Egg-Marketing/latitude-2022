@@ -21,7 +21,6 @@ import "./contact";
 import "./contact-content";
 import "./contact-forms";
 import "./selected-projects";
-import "./selected-projects";
 import "./tab-content";
 import "./tab";
 import "./tabs";

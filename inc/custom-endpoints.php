@@ -167,9 +167,9 @@ function latitude_return_case_studies($data) {
 				$postObj->featured_image = $thumbnail;
 				$posts[] = $postObj;
 			} elseif($html == true && $html != 'cards') {
-				$posts .= yosi_heatlh_case_study_stat_block($id);
+				$posts .= latitude_case_study_stat_block($id);
 			} elseif($html == 'cards') {
-				$posts .= yosi_heatlh_resource_card($id, false);
+				$posts .= latitude_resource_card($id, false);
 			}
 		}
 
@@ -189,7 +189,7 @@ add_action( 'rest_api_init', function () {
   );
  });
 
-function yosi_heatlh_case_study_stat_block($id) {
+function latitude_case_study_stat_block($id) {
 	if ($id != null) {
 		$content = get_the_content($id);
 		$blocks = parse_blocks($content);
@@ -221,7 +221,7 @@ function latitude_return_posts($data) {
 	$offset = isset($get['offset']) ? $get['offset'] : 0;
 	$custom_tax = isset($get['custom_tax']) ? explode(',', $get['custom_tax']) : false;
 	$tax_type = isset($get['tax_name']) ? $get['tax_name'] : false;
-	$posts_per_page = isset($get['ppp']) ? $get['ppp'] : 21;
+	$posts_per_page = isset($get['ppp']) ? $get['ppp'] : 2;
 	if ($cats != false || $tags != false || $author != false) {
 		$post_types[] = 'post';
 	}
@@ -274,7 +274,7 @@ function latitude_return_posts($data) {
 				$postObj->featured_image = $thumbnail;
 				$posts[] = $postObj;
 			} elseif($html == true) {
-				$posts .= yosi_heatlh_resource_card($id);
+				$posts .= latitude_resource_card($id);
 			}
 		}
 
@@ -296,12 +296,12 @@ add_action( 'rest_api_init', function () {
   );
  });
 
-function yosi_heatlh_resource_card($id, $cats = true) {
+function latitude_resource_card($id, $cats = false) {
 	if ($id != null) {
 		$permalink = get_the_permalink($id);
 		$title = get_the_title($id);
 		$excerpt = get_the_excerpt($id);
-		$terms = $cats == true ? latitude_posts_topics_list($id, 'category') : yosi_heatlh_posts_post_type($id);
+		// $terms = $cats == true ? latitude_posts_topics_list($id, 'category') : latitude_posts_post_type($id);
 		$thumbnail = get_the_post_thumbnail_url($id, 'post-landscape') != false ? get_the_post_thumbnail_url($id, 'post-landscape') : get_the_post_thumbnail_url($id, 'thumbnail');
 
 		$html = '<div class="resource-card">';
@@ -311,16 +311,17 @@ function yosi_heatlh_resource_card($id, $cats = true) {
 				if ($thumbnail != '') {
 					$html .= '<div class="image-cont">';
 						$html .= '<picture>';
-							$html .= '<source type="image/webp" srcset="' . $thumbnail . '.webp">';
+							// $html .= '<source type="image/webp" srcset="' . $thumbnail . '.webp">';
 							$html .= '<img class="resource-img" src="' . $thumbnail . '" />';
 						$html .= '</picture>';
 					$html .= '</div>';
 				}
-				$html .= $terms;
-				$html .= '<h3 class="resource-title">' . $title . '</h3>';
+				// $html .= '<h3 class="resource-title">' . $title . '</h3>';
 				$html .= '<p class="resource-excerpt">' . $excerpt . '</p>';
 				$html .= '</div>';
-				$html .= '<button class="wp-button">Read More</button>'; 
+				$html .= '<div class="wp-buttons">';
+					$html .= '<button class="wp-button is-style-text-yellow-arrow">Read More</button>';
+					$html .= '</div>';
 				$html .= '</a>';
 			$html .= '</div>';
 		$html .= '</div>';

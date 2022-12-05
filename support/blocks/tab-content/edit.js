@@ -6,14 +6,14 @@ const { Button, PanelBody, SelectControl, ColorPalette, ToggleControl, RangeCont
 const { __ } = wp.i18n;
 
 const template = [
-	['core/heading', {'placeholder' : 'Tab Heading...'}],
+	['core/heading', {'placeholder' : 'Tab Heading...', 'level' : 3}],
 	['core/paragraph', {'placeholder' : 'Tab Content...'}],
 ];
 
 const EditTabContent = ( { attributes, setAttributes, clientId, isSelected } ) => {
 
 		const blockProps = useBlockProps({
-			className: 'content-cols tab-content'
+			className: 'tab-content'
 		});
 		
 		return (

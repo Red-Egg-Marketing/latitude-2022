@@ -164,6 +164,15 @@ h4 {
 	align-self: end;
 }
 
+.resource-card .wp-buttons {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	@media screen and (min-width: $small-width) {
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+	}
+}
+
 .resource-card .content {
 	margin-top: 20px;
 }
@@ -268,34 +277,13 @@ h4 {
 }
 
 
-
-
-
-// body.ie .resources-grid:not(.swiper-wrapper) .block-wrapper,
-// body.windows .resources-grid:not(.swiper-wrapper) .block-wrapper {
-// 	display: flex;
-// 	flex-wrap: wrap;
-// }
-
-// body.windows .resource-card,
-// body.ie .resource-card {
-// 	width: 100%;
-// 	@media screen and (min-width: $small-width) and (max-width: $med-width) {
-// 		width: calc(50% - 2.5rem);
-// 		margin: 0 1.25rem 2.5rem;
-// 	}
-// 	@media screen and (min-width: $med-width + 1px) {
-// 		width: calc(33.33333% - 2.5rem);
-// 		margin: 0 1.25rem 2.5rem;
-// 	}
-// }
-
 .light-yellow .resource-card {
 	background: white;
 }
 
 .resource-card {
 	padding-bottom: 1.25rem;
+	background: $tan-2;
 	@media screen and (min-width: $small-width) {
 		padding-bottom: 2.1875rem;
 	}
@@ -319,15 +307,20 @@ h4 {
 .resource-card .image-cont {
     width: 100%;
     position: relative;
-    padding-bottom: 66.4%;
+    padding-bottom: 50%;
     overflow: hidden;
-    border-radius: 10px;
 }
 
 .resource-card p.resource-excerpt {
 	overflow-wrap: anywhere;
-	font-family: $font-body;
-	color: $bg-color-7;
+	font-family: $font-body-light;
+	color: $body-color;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	@media screen and (min-width: $small-width) {
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+	}
 }
 
 .resource-card.whitepaper .image-cont img {

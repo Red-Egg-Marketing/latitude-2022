@@ -93,7 +93,7 @@ const EditHeaderIntroCol = ( { attributes, setAttributes } ) => {
 									multiline="p"
 									classProp="content"
 									setAttributes={ setAttributes }
-									placeholder={__('Content...', 'yosi-health')}
+									placeholder={__('Content...', 'latitude')}
 								/>
 							</div>
 						</div>

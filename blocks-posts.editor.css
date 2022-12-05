@@ -33,7 +33,7 @@
 .edit-post-visual-editor__content-area dl, .entry-content dl,
 .edit-post-visual-editor__content-area dd, .entry-content dd {
   font-family: "gill_sanslight", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 25px;
   color: #1B2C58;
   font-weight: 300;
@@ -46,7 +46,7 @@
   .edit-post-visual-editor__content-area li, .entry-content li,
   .edit-post-visual-editor__content-area dl, .entry-content dl,
   .edit-post-visual-editor__content-area dd, .entry-content dd {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 28px;
   }
 }
@@ -166,43 +166,40 @@
 
 .gs_team h3,
 .edit-post-visual-editor__content-area h3, .entry-content h3 {
-  color: #1B2C58;
-  font-size: 16px;
-  line-height: 25px;
-  text-transform: uppercase;
+  color: #00304A;
+  font-size: 26px;
+  line-height: 31px;
+  text-transform: none;
   font-family: "gill_sanssemibold", sans-serif;
-  letter-spacing: 1.9px;
 }
 
 @media screen and (min-width: 768px) {
   .gs_team h3,
   .edit-post-visual-editor__content-area h3, .entry-content h3 {
-    font-size: 20px;
-    line-height: 29px;
-    letter-spacing: 2px;
+    font-size: 36px;
+    line-height: 43px;
   }
 }
 
 .gs_team h4,
 .edit-post-visual-editor__content-area h4, .entry-content h4 {
-  color: #3bc24a;
+  color: #BF5B32;
   line-height: 22px;
   font-size: 15px;
-  text-transform: uppercase;
   font-family: "gill_sanssemibold", sans-serif;
 }
 
 @media screen and (min-width: 768px) {
   .gs_team h4,
   .edit-post-visual-editor__content-area h4, .entry-content h4 {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 20px;
+    line-height: 28px;
   }
 }
 
 .gs_team h5,
 .edit-post-visual-editor__content-area h5, .entry-content h5 {
-  color: #1B2C58;
+  color: #BF5B32;
   line-height: 19px;
   font-size: 14px;
   font-family: "gill_sansregular", sans-serif;
@@ -218,7 +215,7 @@
 
 .gs_team h6,
 .edit-post-visual-editor__content-area h6, .entry-content h6 {
-  color: #1B2C58;
+  color: #BF5B32;
   line-height: 18px;
   font-size: 14px;
   font-weight: 700;
@@ -552,6 +549,18 @@ h4 {
       align-self: end;
 }
 
+.resource-card .wp-buttons {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .resource-card .wp-buttons {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
 .resource-card .content {
   margin-top: 20px;
 }
@@ -594,7 +603,7 @@ h4 {
         grid-template-columns: 1fr;
     grid-column-gap: 1.25rem;
     grid-row-gap: 1.25rem;
-    max-width: 1480px;
+    max-width: 1680px;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     width: 100%;
@@ -689,6 +698,7 @@ h4 {
 
 .resource-card {
   padding-bottom: 1.25rem;
+  background: #F2EBDB;
 }
 
 @media screen and (min-width: 768px) {
@@ -716,15 +726,23 @@ h4 {
 .resource-card .image-cont {
   width: 100%;
   position: relative;
-  padding-bottom: 66.4%;
+  padding-bottom: 50%;
   overflow: hidden;
-  border-radius: 10px;
 }
 
 .resource-card p.resource-excerpt {
   overflow-wrap: anywhere;
-  font-family: "gill_sansregular", sans-serif;
-  color: #00304A;
+  font-family: "gill_sanslight", sans-serif;
+  color: #000000;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .resource-card p.resource-excerpt {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 .resource-card.whitepaper .image-cont img {
@@ -874,7 +892,7 @@ h3.resource-title,
 }
 
 div.wprs_unslider {
-  max-width: 1380px;
+  max-width: 1580px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 2rem;
@@ -936,7 +954,7 @@ div.wprs_unslider {
 }
 
 .wp-block-columns {
-  max-width: 1480px;
+  max-width: 1680px;
   margin: 0 auto;
 }
 
@@ -1029,7 +1047,7 @@ button.wp-button {
   border-left: 2px solid #BF5B32;
   border-right: 2px solid #BF5B32;
   border-bottom: 4px solid #BF5B32;
-  color: #1B2C58;
+  color: #BF5B32;
   font-family: "gill_sanssemibold", sans-serif;
   font-size: 15px;
   line-height: 18px;
@@ -1037,7 +1055,6 @@ button.wp-button {
   cursor: pointer;
   transition-property: background, color;
   transition-duration: .25s;
-  letter-spacing: 0.4px;
   text-decoration: none;
   border-radius: 0;
   font-weight: 500;
@@ -1102,7 +1119,7 @@ input[type="submit"].wp-cancel-pw:hover,
 button.wp-button.bp-secondary-action:hover,
 button.wp-button.wp-cancel-pw:hover {
   background: none;
-  color: #0D1F40;
+  color: #BF5B32;
 }
 
 @media screen and (min-width: 768px) {
@@ -1118,8 +1135,7 @@ button.wp-button.wp-cancel-pw:hover {
   button.wp-button {
     font-size: 17px;
     line-height: 22px;
-    padding: 15px 35px 15px;
-    letter-spacing: 0.5px;
+    padding: 10px 25px 10px;
   }
 }
 
@@ -1135,7 +1151,7 @@ input[type="submit"]:hover,
 button.wp-button:hover {
   background: transparent;
   box-shadow: inset 0 0 0 2px #F79A6C;
-  color: #F79A6C;
+  color: #BF5B32;
 }
 
 #CybotCookiebotDialogBodyButtonAccept:visited,
@@ -1148,8 +1164,7 @@ a.wp-block-button__link:visited,
 a:visited[download],
 input[type="submit"]:visited,
 button.wp-button:visited {
-  background: #F79A6C;
-  color: #1B2C58;
+  color: #BF5B32;
 }
 
 #CybotCookiebotDialogBodyButtonAccept[disabled],
@@ -1198,7 +1213,7 @@ body.buddypress .buddypress-wrap input[type=submit].auto {
 }
 
 .fixed-buttons .fixed-wrapper {
-  max-width: 1480px;
+  max-width: 1680px;
   width: 100%;
   margin: 0 auto;
   display: -ms-flexbox;
@@ -1326,9 +1341,12 @@ div.gform_wrapper .wp-block-button.is-style-solid-navy input:hover[type="submit"
 .wp-block-button.is-style-text-yellow-arrow div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-text-yellow-arrow input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   background: none;
-  color: #F79A6C;
+  color: #BF5B32;
   padding: 0;
   border-radius: 0;
+  border: none;
+  padding-right: 12px;
+  background: url(img/right-arrow.svg) no-repeat center right/7px;
 }
 
 .wp-block-button__link.is-style-text-yellow-arrow:hover, a.is-style-text-yellow-arrow:hover[download], div.gform_wrapper input.is-style-text-yellow-arrow:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
@@ -1339,17 +1357,6 @@ div.gform_wrapper .wp-block-button.is-style-text-yellow-arrow input[type="submit
 div.gform_wrapper .wp-block-button.is-style-text-yellow-arrow input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   color: #F79A6C;
   box-shadow: none;
-}
-
-.wp-block-button.is-style-text-yellow-arrow .wp-block-button__link:after, .wp-block-button.is-style-text-yellow-arrow a[download]:after, .wp-block-button.is-style-text-yellow-arrow div.gform_wrapper input:not([type=file]):not([type=image]):not([type=checkbox])[type="submit"]:after, div.gform_wrapper .wp-block-button.is-style-text-yellow-arrow input:not([type=file]):not([type=image]):not([type=checkbox])[type="submit"]:after {
-  content: "";
-  display: inline-block;
-  background: url(img/right-chevron-yellow.svg) no-repeat center center/100%;
-  width: 9px;
-  height: 14px;
-  margin-left: 8px;
-  transition-property: transform;
-  transition-duration: .3s;
 }
 
 .wp-button.is-style-text-yellow-arrow:hover:after,
@@ -1496,8 +1503,9 @@ div.gform_wrapper.gravity-theme .chosen-container-multi input.chosen-search-inpu
 div.gform_wrapper.gravity-theme .chosen-container-multi .chosen-choices li.search-choice {
   background-image: none;
   border: none;
-  background: #EBA23A;
+  background: #BF5B32;
   font-size: 15px;
+  color: white;
   border: none;
   padding: 5px 25px 5px 10px;
 }

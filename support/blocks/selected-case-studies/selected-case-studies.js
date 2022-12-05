@@ -3,7 +3,7 @@ require('es6-promise/auto');
 (function() {
 
 	function FeatureCaseStudiesLoader() {
-		const apiUrl = '/wp-json/yosi-health/v2/case-studies';
+		const apiUrl = '/wp-json/latitude/v2/case-studies';
 		const grids = document.querySelectorAll('.selected-case-studies-grid');
 
   		if (grids && grids != null) {

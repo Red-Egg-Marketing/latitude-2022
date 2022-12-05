@@ -53,7 +53,7 @@ const EditTab = ( { attributes, setAttributes, clientId, isSelected } ) => {
 					/>
 				</div>
 				{(isSelected || isParentOfSelectedBlock) && (
-					<div className="tab-content" data-toggled>
+					<div className="tab-container" data-toggled>
 						<div className="content-cols">
 							<InnerBlocks
 								template={ template }

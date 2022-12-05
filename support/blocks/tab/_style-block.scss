@@ -1,110 +1,110 @@
 .tab .header-title {
 	text-align: center;
 	border: none;
-	padding-top: 23px;
-	padding-bottom: 21px;
-	padding-left: 1.25rem;
-	padding-right: 1.25rem;
-	font-size: 16px;
-	line-height: 16px;
-	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
 	font-family: $font-head;
 	display: block;
-	border-left: 2px solid $bg-color-2;
-	border-right: 2px solid $bg-color-2;
-	border-top: 1px solid $bg-color-2;
-	border-bottom: 1px solid $bg-color-2;
 	cursor: pointer;
+	color: $burnt-orange;
+	margin-bottom: 0;
 	@media screen and (min-width: $small-width) {
-		font-size: 18px;
-		line-height: 18px;
+		font-size: 22px;
+		padding-bottom: 5px;
+		line-height: 27px;
 	}
 }
 
-.tab [type=radio]:checked ~ .header-title {
-	background: $bg-color-2;
-	color: $bg-color-7;
+.tab.active .header-title {
+	border-bottom: 3px solid $burnt-orange;
 }
 
-.tab .tab-content {
+.tab {
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;
-	padding-bottom: 1.25rem;
-	box-sizing: border-box;
+	margin-bottom: 30px;
 	@media screen and (min-width: $small-width) {
-		padding-bottom: 3.75rem;
-		padding-left: 3.75rem;
-		padding-right: 3.75rem;
+		margin-bottom: 55px;
 	}
 }
 
-.tab .tab-content h2 { 
-	text-transform: uppercase;
+.tabs .header-intro-block {
+	padding-bottom: 0;
 }
 
-.tab .tab-content p {
-	font-size: 16px;
+.tabs .content-cols *:first-of-type {
+	margin-bottom: 0;
+}
+
+.tabs .tab-container {
+	padding-bottom: 1.25rem;
+	box-sizing: border-box;
+	order: 1;
+	@media screen and (min-width: $small-width) {
+		padding-bottom: 3.75rem;
+	}
+}
+
+.tab + .tab-container {
+	display: none;
+}
+
+.tab-container > .content-cols > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.tab.is-selected + .tab-container,
+.tab.active + .tab-container {
+	display: block;
+}
+
+.tabs .tab-container p {
+	font-size: 18px;
 	line-height: 24px;
 	@media screen and (min-width: $small-width) {
-		font-size: 20px;
+		font-size: 24px;
 		line-height: 32px;
 	}
 }
 
-.tab .tab-content h2 {
-	font-size: 20px;
-	line-height: 30px;
-	@media screen and (min-width: $small-width) {
-		font-size: 26px;
-		line-height: 34px;
-	}
-}
-
-.tab .icon-row {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
+.tabs .wp-block-image img {
 	width: 100%;
-	@media screen and (min-width: $small-width) {
-		justify-content: flex-end;
+}
+
+.tabs .wp-block-image {
+	padding-right: 0;
+	box-shadow: -18px 18px 0 0 $light-blue;
+	@media screen and (min-width: $small-width) and (max-width: $med-small-width) {
+		box-shadow: -15px 15px 0 0 $light-blue;
+		margin-left: 15px;
+		width: calc(50% - 15px);
+	}
+	@media screen and (min-width: $med-small-width) and (max-width: $med-width) {
+		box-shadow: -20px 20px 0 0 $light-blue;
+		margin-left: 20px;
+		width: calc(50% - 20px);
+	}
+	@media screen and (min-width: $med-width) {
+		box-shadow: -36px 36px 0 0 $light-blue;
+		margin-left: 36px;
+		width: calc(50% - 36px);
 	}
 }
 
-.tab .icon-wrap {
+.tabs .tab-content {
+	padding-left: 0;
+	margin-top: 0;
+	@media screen and (min-width: $small-width) {
+		padding-left: 54px;
+	}
+}
+
+.tabs .tab-content {
 	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center
-}
-
-.tab .icon-icon {
-	width: 100%;	
-	height: 90px;
-	border:none;
-	max-width: 90px;
-	line-height: 125px;
-	border-radius: 220px;
-	background: white;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+	box-sizing: border-box;
 	@media screen and (min-width: $small-width) {
-		height: 220px;
-		max-width: 220px;
-	}
-}
-
-.tab .icon-icon svg {
-	max-width: 56px;
-    max-height: 50px;
-    width: 100%;
-    height: auto;
-	@media screen and (min-width: $small-width) {
-		max-width: 106px;
-		max-height: 100px;
-		height: auto;
+		width: 50%;
 	}
 }

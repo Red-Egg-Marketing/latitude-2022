@@ -44,7 +44,7 @@ $id = get_the_id();
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'yosi-health' ),
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'latitude' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -57,7 +57,7 @@ $id = get_the_id();
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'yosi-health' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'latitude' ),
 				'after'  => '</div>',
 			)
 		);

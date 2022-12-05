@@ -79,7 +79,7 @@ function latitude_post_whitepaper_thumbnail(int $id) {
 	}
 }
 
-function yosi_heatlh_posts_post_type(int $id) {
+function latitude_posts_post_type(int $id) {
 	$post_type = get_post_type($id);
 	$post_type = get_post_type_object($post_type);
 

@@ -50,12 +50,12 @@
 .edit-post-visual-editor__content-area dl, .entry-content dl,
 .edit-post-visual-editor__content-area dd, .entry-content dd {
 	font-family: $font-body-light;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 25px;
 	color: $head-color;
 	font-weight: 300;
 	@media screen and (min-width: $small-width) {
-		font-size: 18px;
+		font-size: 20px;
 		line-height: 28px;
 	}
 }
@@ -155,35 +155,32 @@
 
 .gs_team h3,
 .edit-post-visual-editor__content-area h3, .entry-content h3 {
-	color: $head-color;
-	font-size: 16px;
-	line-height: 25px;
-	text-transform: uppercase;
+	color: $bg-color-7;
+	font-size: 26px;
+	line-height: 31px;
+	text-transform: none;
 	font-family: $font-head;
-	letter-spacing: 1.9px;
 	@media screen and (min-width: $small-width) {
-		font-size: 20px;
-		line-height: 29px;
-		letter-spacing: 2px;
+		font-size: 36px;
+		line-height: 43px;
 	}
 }
 
 .gs_team h4,
 .edit-post-visual-editor__content-area h4, .entry-content h4 {
-	color: $head-color-2;
+	color: $burnt-orange;
 	line-height: 22px;
 	font-size: 15px;
-	text-transform: uppercase;
 	font-family: $font-head;
 	@media screen and (min-width: $small-width) {
-		font-size: 18px;
-		line-height: 27px;
+		font-size: 20px;
+		line-height: 28px;
 	}
 }
 
 .gs_team h5, 
 .edit-post-visual-editor__content-area h5, .entry-content h5 {
-	color: $head-color;
+	color: $burnt-orange;
 	line-height: 19px;
 	font-size: 14px;
 	font-family: $font-body;
@@ -195,7 +192,7 @@
 
 .gs_team h6,
 .edit-post-visual-editor__content-area h6, .entry-content h6 {
-	color: $head-color;
+	color: $burnt-orange;
 	line-height: 18px;
 	font-size: 14px;
 	font-weight: 700;

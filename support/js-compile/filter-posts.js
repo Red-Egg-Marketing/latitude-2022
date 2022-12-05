@@ -3,7 +3,7 @@ require('es6-promise/auto');
 (function() {
 
 	function PostsLoader() {
-		var apiOrigin = '/wp-json/yosi-health/v2/posts/';
+		var apiOrigin = '/wp-json/latitude/v2/posts/';
 		var apiUrl = apiOrigin;
 		var grid = document.getElementById('PostsGrid');
   		var resources = false;

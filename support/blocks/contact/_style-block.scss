@@ -32,8 +32,17 @@
 	pointer-events: none;
 }
 
-.contact-section.active {
-	animation: backgroundShift 6s ease forwards;
+.contact-section .form-column p {
+	font-size: 18px;
+	line-height: 24px;
+	@media screen and (min-width: $small-width) {
+		font-size: 24px;
+		line-height: 32px;
+	}
+}
+
+.contact-section .form-column p:last-of-type {
+	margin-bottom: 0;
 }
 
 .contact-section .block-wrapper {
@@ -94,6 +103,7 @@
 	@media screen and (min-width: $small-width) {
 		width: 72%;
 		max-width: 72%;
+		padding-right: 5%;
 	}
 }
 
@@ -220,7 +230,7 @@ p.contact-item {
 
 .contact-section .block-wrapper {
 	width: 100%;
-	max-width: $med-width - 80px;
+	max-width: 1680px;
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;
 	margin: 0 auto;
@@ -249,13 +259,17 @@ p.contact-item {
 	}
 }
 
+.contact-section .content-column h4 {
+	margin-bottom: 0;
+}
 
-.contact-icon.fa {
-	color: $button-color-1;
-	font-size: 32px;
-	line-height: 44px;
-	margin-right: 1rem;
-} 
+.contact-section .content-column a {
+	text-decoration: none;
+}
+
+.contact-section .content-column h4 + p {
+	margin-top: 0;
+}
 
 .contact-row {
 	display: flex;
@@ -268,10 +282,6 @@ p.contact-item {
 	margin-bottom: 1.85rem;
 }
 
-.contact-controls .remove-icon {
-	padding-left: 0;
-}
-
 .contact-section .header-title {
 	margin-top: 0;
 }
@@ -280,28 +290,3 @@ p.contact-item {
 	background: $bg-color-1;
 }
 
-.contact-section .icon-icon {
-	width: 25px;
-	margin-right: 20px;
-	@media screen and (min-width: $small-width) {
-		width: 30px;
-		margin-right: 25px;
-	}
-}
-
-p.contact-item {
-	width: calc(100% - 45px);
-	@media screen and (min-width: $small-width) {
-		width: calc(100% - 55px)
-	}
-}
-
-.contact-section .icon-icon svg {
-	max-width: 25px;
-	display: block;
-	height: auto;
-	margin-top: 8px;
-	@media screen and (min-width: $small-width) {
-		max-width: 30px;
-	}
-}

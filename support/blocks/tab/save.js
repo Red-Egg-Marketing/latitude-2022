@@ -26,7 +26,7 @@ const SaveTab = ( { attributes } ) => {
 						{ title }
 					</label>
 				</div>
-				<div className="tab-content" data-toggled>
+				<div className="tab-container" data-toggled>
 					<div className="content-cols">
 						<InnerBlocks.Content />
 					</div>

@@ -11,7 +11,7 @@ import Swiper from 'swiper/bundle';
 import BackgroundColor from '../../components/BackgroundColor.js';
 // import a component
 
-const apiUrl  = '/wp-json/yosi-health/v2/posts';
+const apiUrl  = '/wp-json/latitude/v2/posts';
 const catUrl  = '/wp-json/wp/v2/categories';
 
 const template = [
@@ -41,7 +41,7 @@ const warningStyle = {
 
 const EditSelectedResources = ( { setAttributes, attributes, isSelected } ) => {
 
-		const { resources, anchor, mainTitle, category, bgColor, bgSlug } = attributes;
+		const { resources, content, anchor, mainTitle, category, bgColor, bgSlug } = attributes;
 
 		const blockProps = useBlockProps({
 			className: 'selected-resources' +  ' ' + bgSlug
@@ -115,11 +115,17 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected } ) => {
 				url: catUrl
 			}).then(categories => {
 				let cats = [];
+
 				categories.forEach((category, index) => {
 					cats[index] = {	
 								label: category.name,
 								value: category.id,
 							 };
+				});
+
+				cats.unshift({
+					label: 'All',
+					value: 'all'
 				});
 				activateCategories(cats);
 			});
@@ -155,7 +161,7 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected } ) => {
 						initialOpen={ true }
 					>
 						<SelectControl
-							 label={ __('Cateogry')}
+							 label={ __('Category')}
 							 value={ category }
 							 options={
 							 	currentCats

@@ -9,7 +9,7 @@ import ResourceCard from '../../components/ResourceCard.js';
 import Swiper from 'swiper/bundle';
 // import a component
 
-const apiUrl  = '/wp-json/yosi-health/v2/case-studies';
+const apiUrl  = '/wp-json/latitude/v2/case-studies';
 const catUrl  = '/wp-json/wp/v2/categories';
 
 const template = [

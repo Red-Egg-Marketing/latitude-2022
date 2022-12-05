@@ -3,7 +3,7 @@ require('es6-promise/auto');
 (function() {
 
 	function FeatureResourceLoader() {
-		const apiUrl = '/wp-json/yosi-health/v2/posts';
+		const apiUrl = '/wp-json/latitude/v2/posts';
 		const grids = document.querySelectorAll('.selected-resources');
 
   		if (grids && grids != null) {
@@ -17,7 +17,7 @@ require('es6-promise/auto');
   		// need to fix then for ie
   		function loadResources(append, cat) {
   			wp.apiRequest({ 
-  				url: apiUrl + '?ppp=3&category=' + cat + '&html=true'
+  				url: apiUrl + '?ppp=2&category=' + cat + '&html=true'
   			}).then(function(resourcelist){
           		if (resourcelist != false ) {	
           			append.innerHTML = resourcelist;

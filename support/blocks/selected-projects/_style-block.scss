@@ -14,13 +14,22 @@
 	}
 }
 
+@supports (display: grid) {
+
+	.selected-resources .grid {
+		@media screen and (min-width: $med-width + 1px) {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+}
+
 .resources-block .header {
 	text-align: center;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 	@media screen and (min-width: $small-width) {
-		padding-top: 3.675rem;
-		padding-bottom: 3.675rem;
+		padding-top: 3rem;
+		padding-bottom: 2rem;
 	}
 }
 
