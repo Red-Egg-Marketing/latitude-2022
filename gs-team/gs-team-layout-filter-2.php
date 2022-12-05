@@ -12,6 +12,7 @@
 global $gs_team_loop;
 
 ?>
+
 <!-- Container for Team members -->
 <div class="gs-containeer cbp-so-scroller">
 
@@ -25,8 +26,6 @@ global $gs_team_loop;
 		<div class="gs-all-items-filter-wrapper gs-roow">
 
 			<?php while ( $gs_team_loop->have_posts() ): $gs_team_loop->the_post();
-			
-				$ribon = get_post_meta( get_the_id(), '_gs_ribon', true );
 				
 				$designation = get_post_meta( get_the_id(), '_gs_des', true );
 				if ( empty($designation) ) $designation = '';
@@ -49,11 +48,11 @@ global $gs_team_loop;
 
 			?>
 
-			<div class="<?php echo implode( ' ', $classes ); ?>" data-category="<?php echo gs_team_get_member_terms_slugs( 'team_group' ); ?>">
+			<div class="<?php echo esc_attr( implode( ' ', $classes ) ); ?>" data-category="<?php echo gs_team_get_member_terms_slugs( 'team_group' ); ?>">
 				
 				<!-- Sehema & Single member wrapper -->
-				<div class="single-member--wraper" itemscope itemtype="http://schema.org/Organization">
-					<div class="single-member-alt ccbp-so-side ccbp-so-side-left">
+				<div class="single-member--wrapper" itemscope itemtype="http://schema.org/Organization">
+					<div class="single-member ccbp-so-side ccbp-so-side-left">
 
 						<!-- Content -->
 						<?php
@@ -62,17 +61,14 @@ global $gs_team_loop;
 							if ( $gs_member_link_type == 'single_page' ) {
 								printf( '<a href="%s">', get_the_permalink() );
 							} else if ( $gs_member_link_type == 'popup' ) {
-								printf( '<a class="gs_team_pop open-popup-link" data-mfp-src="#gs_team_popup_%s" href="javascript:void(0)">', get_the_ID() );
+								printf( '<a class="gs_team_pop open-popup-link" data-mfp-src="#gs_team_popup_%s_%s" href="javascript:void(0)">', get_the_ID(), $id );
 							}
 						}
 
-							do_action( 'gs_team_before_member_content' ); ?>
+							do_action( 'gs_team_before_member_content', $gs_team_theme ); ?>
 
 							<!-- Ribbon -->
-							<?php if ( !empty($ribon) ): ?>
-								<span class="gs_team_ribbon"><?php echo esc_html( $ribon ); ?></span>
-								<?php do_action( 'gs_team_after_member_ribbon' ); ?>
-							<?php endif; ?>
+							<?php include GS_Team_Template_Loader::locate_template( 'partials/gs-team-layout-ribon.php' ); ?>
 							
 							<!-- Team Image -->
 							<div class="gs_team_image__wrapper">
@@ -85,19 +81,15 @@ global $gs_team_loop;
 								<div class="gs_team_overlay"><i class="fa fa-external-link"></i></div>
 							<?php endif; ?>
 
-							<div class="single-member-name-alt">
+							<div class="single-member-name-desig cbp-so-side cbp-so-side-right">
 
 								<!-- Single member name -->
 								<?php if ( 'on' ==  $gs_member_name ): ?>
-									<?php gs_team_member_name( true, false, 'popup', 'h3' ); ?>
+									<?php gs_team_member_name( $id, true, false ); ?>
 									<?php do_action( 'gs_team_after_member_name' ); ?>
 								<?php endif; ?>
 								
-								<!-- Single member designation -->
-								<?php if ( !empty( $designation ) && 'on' == $gs_member_role ): ?>
-									<h4 class="gs-member-desig-alt" itemprop="jobtitle"><?php echo wp_kses_post($designation); ?></h4>
-									<?php do_action( 'gs_team_after_member_designation' ); ?>
-								<?php endif; ?>
+						
 
 							</div>
 
@@ -106,7 +98,8 @@ global $gs_team_loop;
 						<?php if ( $gs_member_name_is_linked == 'on' ) echo '</a>'; ?>
 						
 						<!-- Popup -->
-						<?php if ( $gs_member_link_type == 'popup' ) include GS_Team_Template_Loader::locate_template( 'partials/gs-team-layout-popup.php' ); ?>
+						<?php $_popup_enabled = true; ?>
+						<?php include GS_Team_Template_Loader::locate_template( 'popups/gs-team-layout-popup.php' ); ?>
 					
 					</div>
 				</div>

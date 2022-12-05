@@ -8843,10 +8843,12 @@ block a:after {
 .buddypress .buddypress-wrap input[type=button],
 .buddypress .buddypress-wrap .button,
 .wp-block-button__link,
+div.gs_team_area .gs-team-filter-cats li a,
 a[download],
 li.menu-item.nav-button a,
 div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 a.wp-block-button__link,
+div.gs_team_area .gs-team-filter-cats li a,
 a[download],
 li.menu-item.nav-button a,
 input[type="submit"],
@@ -8866,7 +8868,6 @@ button.wp-button {
   transition-duration: .25s;
   text-decoration: none;
   border-radius: 0;
-  font-weight: 500;
 }
 
 @media screen and (min-width: 768px) {
@@ -8874,10 +8875,12 @@ button.wp-button {
   .buddypress .buddypress-wrap input[type=button].is-small,
   .buddypress .buddypress-wrap .button.is-small,
   .wp-block-button__link.is-small,
+  div.gs_team_area .gs-team-filter-cats li a.is-small,
   a.is-small[download],
   li.menu-item.nav-button a.is-small,
   div.gform_wrapper input.is-small[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
   a.wp-block-button__link.is-small,
+  div.gs_team_area .gs-team-filter-cats li a.is-small,
   a.is-small[download],
   li.menu-item.nav-button a.is-small,
   input[type="submit"].is-small,
@@ -8894,17 +8897,21 @@ button.wp-button {
 .buddypress .buddypress-wrap .button.bp-secondary-action,
 .buddypress .buddypress-wrap .button.wp-cancel-pw,
 .wp-block-button__link.bp-secondary-action,
+div.gs_team_area .gs-team-filter-cats li a.bp-secondary-action,
 a.bp-secondary-action[download],
 li.menu-item.nav-button a.bp-secondary-action,
 div.gform_wrapper input.bp-secondary-action[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-block-button__link.wp-cancel-pw,
+div.gs_team_area .gs-team-filter-cats li a.wp-cancel-pw,
 a.wp-cancel-pw[download],
 li.menu-item.nav-button a.wp-cancel-pw,
 div.gform_wrapper input.wp-cancel-pw[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 a.wp-block-button__link.bp-secondary-action,
+div.gs_team_area .gs-team-filter-cats li a.bp-secondary-action,
 a.bp-secondary-action[download],
 li.menu-item.nav-button a.bp-secondary-action,
 a.wp-block-button__link.wp-cancel-pw,
+div.gs_team_area .gs-team-filter-cats li a.wp-cancel-pw,
 a.wp-cancel-pw[download],
 li.menu-item.nav-button a.wp-cancel-pw,
 input[type="submit"].bp-secondary-action,
@@ -8920,17 +8927,21 @@ button.wp-button.wp-cancel-pw {
 .buddypress .buddypress-wrap .button.bp-secondary-action:hover,
 .buddypress .buddypress-wrap .button.wp-cancel-pw:hover,
 .wp-block-button__link.bp-secondary-action:hover,
+div.gs_team_area .gs-team-filter-cats li a.bp-secondary-action:hover,
 a.bp-secondary-action:hover[download],
 li.menu-item.nav-button a.bp-secondary-action:hover,
 div.gform_wrapper input.bp-secondary-action:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-block-button__link.wp-cancel-pw:hover,
+div.gs_team_area .gs-team-filter-cats li a.wp-cancel-pw:hover,
 a.wp-cancel-pw:hover[download],
 li.menu-item.nav-button a.wp-cancel-pw:hover,
 div.gform_wrapper input.wp-cancel-pw:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 a.wp-block-button__link.bp-secondary-action:hover,
+div.gs_team_area .gs-team-filter-cats li a.bp-secondary-action:hover,
 a.bp-secondary-action:hover[download],
 li.menu-item.nav-button a.bp-secondary-action:hover,
 a.wp-block-button__link.wp-cancel-pw:hover,
+div.gs_team_area .gs-team-filter-cats li a.wp-cancel-pw:hover,
 a.wp-cancel-pw:hover[download],
 li.menu-item.nav-button a.wp-cancel-pw:hover,
 input[type="submit"].bp-secondary-action:hover,
@@ -8946,10 +8957,12 @@ button.wp-button.wp-cancel-pw:hover {
   .buddypress .buddypress-wrap input[type=button],
   .buddypress .buddypress-wrap .button,
   .wp-block-button__link,
+  div.gs_team_area .gs-team-filter-cats li a,
   a[download],
   li.menu-item.nav-button a,
   div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
   a.wp-block-button__link,
+  div.gs_team_area .gs-team-filter-cats li a,
   a[download],
   li.menu-item.nav-button a,
   input[type="submit"],
@@ -8964,27 +8977,30 @@ button.wp-button.wp-cancel-pw:hover {
 .buddypress .buddypress-wrap input[type=button]:hover,
 .buddypress .buddypress-wrap .button:hover,
 .wp-block-button__link:hover,
+div.gs_team_area .gs-team-filter-cats li a:hover,
 a:hover[download],
 li.menu-item.nav-button a:hover,
 div.gform_wrapper input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 a.wp-block-button__link:hover,
+div.gs_team_area .gs-team-filter-cats li a:hover,
 a:hover[download],
 li.menu-item.nav-button a:hover,
 input[type="submit"]:hover,
 button.wp-button:hover {
-  background: transparent;
-  box-shadow: inset 0 0 0 2px #F79A6C;
-  color: #BF5B32;
+  background: #BF5B32;
+  color: white;
 }
 
 #CybotCookiebotDialogBodyButtonAccept:visited,
 .buddypress .buddypress-wrap input[type=button]:visited,
 .buddypress .buddypress-wrap .button:visited,
 .wp-block-button__link:visited,
+div.gs_team_area .gs-team-filter-cats li a:visited,
 a:visited[download],
 li.menu-item.nav-button a:visited,
 div.gform_wrapper input:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 a.wp-block-button__link:visited,
+div.gs_team_area .gs-team-filter-cats li a:visited,
 a:visited[download],
 li.menu-item.nav-button a:visited,
 input[type="submit"]:visited,
@@ -8996,10 +9012,12 @@ button.wp-button:visited {
 .buddypress .buddypress-wrap input[type=button][disabled],
 .buddypress .buddypress-wrap .button[disabled],
 .wp-block-button__link[disabled],
+div.gs_team_area .gs-team-filter-cats li a[disabled],
 a[disabled][download],
 li.menu-item.nav-button a[disabled],
 div.gform_wrapper input[disabled][type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 a.wp-block-button__link[disabled],
+div.gs_team_area .gs-team-filter-cats li a[disabled],
 a[disabled][download],
 li.menu-item.nav-button a[disabled],
 input[type="submit"][disabled],
@@ -9008,13 +9026,31 @@ button.wp-button[disabled] {
   cursor: not-allowed;
 }
 
-body.buddypress .buddypress-wrap input[type=submit].auto {
-  background: #0D1F40;
-  color: white;
-  font-family: "gill_sanssemibold", sans-serif;
-  text-transform: uppercase;
-  border: none;
-  padding: 15px 15px 10px;
+div.gs_team_area .gs-team-filter-cats li a {
+  border-top: 2px solid #BF5B32 !important;
+  border-left: 2px solid #BF5B32 !important;
+  border-right: 2px solid #BF5B32 !important;
+  border-bottom: 4px solid #BF5B32 !important;
+  border-radius: 0 !important;
+  color: #BF5B32 !important;
+}
+
+@media screen and (min-width: 768px) {
+  div.gs_team_area .gs-team-filter-cats li a {
+    font-size: 17px;
+    line-height: 22px;
+    padding: 10px 25px 10px !important;
+  }
+}
+
+div.gs_team_area .gs-team-filter-cats li a:hover {
+  background: #BF5B32 !important;
+  color: white !important;
+}
+
+ul.gs-team-filter-cats li.filter.active > a {
+  background: #BF5B32 !important;
+  border-color: #BF5B32 !important;
 }
 
 .fixed-buttons {
@@ -9062,7 +9098,7 @@ body.buddypress .buddypress-wrap input[type=submit].auto {
   }
 }
 
-.fixed-buttons .fixed-wrapper a.wp-block-button__link, .fixed-buttons .fixed-wrapper a[download], .fixed-buttons .fixed-wrapper li.menu-item.nav-button a, li.menu-item.nav-button .fixed-buttons .fixed-wrapper a {
+.fixed-buttons .fixed-wrapper a.wp-block-button__link, .fixed-buttons .fixed-wrapper div.gs_team_area .gs-team-filter-cats li a, div.gs_team_area .gs-team-filter-cats li .fixed-buttons .fixed-wrapper a, .fixed-buttons .fixed-wrapper a[download], .fixed-buttons .fixed-wrapper li.menu-item.nav-button a, li.menu-item.nav-button .fixed-buttons .fixed-wrapper a {
   font-size: 14px;
   line-height: 18px;
   padding-top: 6px;
@@ -9073,7 +9109,7 @@ body.buddypress .buddypress-wrap input[type=submit].auto {
 }
 
 @media screen and (min-width: 768px) {
-  .fixed-buttons .fixed-wrapper a.wp-block-button__link, .fixed-buttons .fixed-wrapper a[download], .fixed-buttons .fixed-wrapper li.menu-item.nav-button a, li.menu-item.nav-button .fixed-buttons .fixed-wrapper a {
+  .fixed-buttons .fixed-wrapper a.wp-block-button__link, .fixed-buttons .fixed-wrapper div.gs_team_area .gs-team-filter-cats li a, div.gs_team_area .gs-team-filter-cats li .fixed-buttons .fixed-wrapper a, .fixed-buttons .fixed-wrapper a[download], .fixed-buttons .fixed-wrapper li.menu-item.nav-button a, li.menu-item.nav-button .fixed-buttons .fixed-wrapper a {
     font-size: 16px;
     line-height: 20px;
     padding: 13px 25px 13px;
@@ -9082,6 +9118,8 @@ body.buddypress .buddypress-wrap input[type=submit].auto {
 
 .wp-button.is-style-solid-yellow-arrow:after,
 .wp-block-button.is-style-solid-yellow-arrow .wp-block-button__link:after,
+.wp-block-button.is-style-solid-yellow-arrow div.gs_team_area .gs-team-filter-cats li a:after,
+div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-yellow-arrow a:after,
 .wp-block-button.is-style-solid-yellow-arrow a[download]:after,
 .wp-block-button.is-style-solid-yellow-arrow li.menu-item.nav-button a:after,
 li.menu-item.nav-button .wp-block-button.is-style-solid-yellow-arrow a:after,
@@ -9100,6 +9138,8 @@ div.gform_wrapper .wp-block-button.is-style-solid-yellow-arrow input:not([type=f
 
 .wp-button.is-style-solid-yellow-arrow:hover:after,
 .wp-block-button.is-style-solid-yellow-arrow:hover .wp-block-button__link:after,
+.wp-block-button.is-style-solid-yellow-arrow:hover div.gs_team_area .gs-team-filter-cats li a:after,
+div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-yellow-arrow:hover a:after,
 .wp-block-button.is-style-solid-yellow-arrow:hover a[download]:after,
 .wp-block-button.is-style-solid-yellow-arrow:hover li.menu-item.nav-button a:after,
 li.menu-item.nav-button .wp-block-button.is-style-solid-yellow-arrow:hover a:after,
@@ -9110,6 +9150,8 @@ div.gform_wrapper .wp-block-button.is-style-solid-yellow-arrow:hover input:not([
 
 .wp-button.is-style-solid-yellow-arrow:hover:after,
 .wp-block-button.is-style-solid-yellow-arrow .wp-block-button__link:hover:after,
+.wp-block-button.is-style-solid-yellow-arrow div.gs_team_area .gs-team-filter-cats li a:hover:after,
+div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-yellow-arrow a:hover:after,
 .wp-block-button.is-style-solid-yellow-arrow a[download]:hover:after,
 .wp-block-button.is-style-solid-yellow-arrow li.menu-item.nav-button a:hover:after,
 li.menu-item.nav-button .wp-block-button.is-style-solid-yellow-arrow a:hover:after,
@@ -9120,6 +9162,8 @@ div.gform_wrapper .wp-block-button.is-style-solid-yellow-arrow input:not([type=f
 
 .wp-button.is-style-solid-yellow,
 .wp-block-button.is-style-solid-yellow .wp-block-button__link,
+.wp-block-button.is-style-solid-yellow div.gs_team_area .gs-team-filter-cats li a,
+div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-yellow a,
 .wp-block-button.is-style-solid-yellow a[download],
 .wp-block-button.is-style-solid-yellow li.menu-item.nav-button a,
 li.menu-item.nav-button .wp-block-button.is-style-solid-yellow a,
@@ -9129,9 +9173,11 @@ div.gform_wrapper .wp-block-button.is-style-solid-yellow input[type="submit"]:no
   color: #1B2C58;
 }
 
-.wp-block-button__link.is-style-solid-blue-green, a.is-style-solid-blue-green[download], li.menu-item.nav-button a.is-style-solid-blue-green, div.gform_wrapper input.is-style-solid-blue-green[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+.wp-block-button__link.is-style-solid-blue-green, div.gs_team_area .gs-team-filter-cats li a.is-style-solid-blue-green, a.is-style-solid-blue-green[download], li.menu-item.nav-button a.is-style-solid-blue-green, div.gform_wrapper input.is-style-solid-blue-green[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-button.is-style-solid-blue-green,
 .wp-block-button.is-style-solid-blue-green .wp-block-button__link,
+.wp-block-button.is-style-solid-blue-green div.gs_team_area .gs-team-filter-cats li a,
+div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-blue-green a,
 .wp-block-button.is-style-solid-blue-green a[download],
 .wp-block-button.is-style-solid-blue-green li.menu-item.nav-button a,
 li.menu-item.nav-button .wp-block-button.is-style-solid-blue-green a,
@@ -9141,9 +9187,11 @@ div.gform_wrapper .wp-block-button.is-style-solid-blue-green input[type="submit"
   color: white;
 }
 
-.wp-block-button__link.is-style-solid-blue-green:hover, a.is-style-solid-blue-green:hover[download], li.menu-item.nav-button a.is-style-solid-blue-green:hover, div.gform_wrapper input.is-style-solid-blue-green:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+.wp-block-button__link.is-style-solid-blue-green:hover, div.gs_team_area .gs-team-filter-cats li a.is-style-solid-blue-green:hover, a.is-style-solid-blue-green:hover[download], li.menu-item.nav-button a.is-style-solid-blue-green:hover, div.gform_wrapper input.is-style-solid-blue-green:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-button.is-style-solid-blue-green:hover,
 .wp-block-button.is-style-solid-blue-green .wp-block-button__link:hover,
+.wp-block-button.is-style-solid-blue-green div.gs_team_area .gs-team-filter-cats li a:hover,
+div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-blue-green a:hover,
 .wp-block-button.is-style-solid-blue-green a:hover[download],
 .wp-block-button.is-style-solid-blue-green li.menu-item.nav-button a:hover,
 li.menu-item.nav-button .wp-block-button.is-style-solid-blue-green a:hover,
@@ -9153,9 +9201,11 @@ div.gform_wrapper .wp-block-button.is-style-solid-blue-green input:hover[type="s
   background: #EBA23A;
 }
 
-.wp-block-button__link.is-style-solid-navy, a.is-style-solid-navy[download], li.menu-item.nav-button a.is-style-solid-navy, div.gform_wrapper input.is-style-solid-navy[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+.wp-block-button__link.is-style-solid-navy, div.gs_team_area .gs-team-filter-cats li a.is-style-solid-navy, a.is-style-solid-navy[download], li.menu-item.nav-button a.is-style-solid-navy, div.gform_wrapper input.is-style-solid-navy[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-button.is-style-solid-navy,
 .wp-block-button.is-style-solid-navy .wp-block-button__link,
+.wp-block-button.is-style-solid-navy div.gs_team_area .gs-team-filter-cats li a,
+div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-navy a,
 .wp-block-button.is-style-solid-navy a[download],
 .wp-block-button.is-style-solid-navy li.menu-item.nav-button a,
 li.menu-item.nav-button .wp-block-button.is-style-solid-navy a,
@@ -9165,9 +9215,11 @@ div.gform_wrapper .wp-block-button.is-style-solid-navy input[type="submit"]:not(
   color: white;
 }
 
-.wp-block-button__link.is-style-solid-navy:hover, a.is-style-solid-navy:hover[download], li.menu-item.nav-button a.is-style-solid-navy:hover, div.gform_wrapper input.is-style-solid-navy:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+.wp-block-button__link.is-style-solid-navy:hover, div.gs_team_area .gs-team-filter-cats li a.is-style-solid-navy:hover, a.is-style-solid-navy:hover[download], li.menu-item.nav-button a.is-style-solid-navy:hover, div.gform_wrapper input.is-style-solid-navy:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-button.is-style-solid-navy:hover,
 .wp-block-button.is-style-solid-navy .wp-block-button__link:hover,
+.wp-block-button.is-style-solid-navy div.gs_team_area .gs-team-filter-cats li a:hover,
+div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-navy a:hover,
 .wp-block-button.is-style-solid-navy a:hover[download],
 .wp-block-button.is-style-solid-navy li.menu-item.nav-button a:hover,
 li.menu-item.nav-button .wp-block-button.is-style-solid-navy a:hover,
@@ -9177,9 +9229,11 @@ div.gform_wrapper .wp-block-button.is-style-solid-navy input:hover[type="submit"
   background: #00304A;
 }
 
-.wp-block-button__link.is-style-text-yellow-arrow, a.is-style-text-yellow-arrow[download], li.menu-item.nav-button a.is-style-text-yellow-arrow, div.gform_wrapper input.is-style-text-yellow-arrow[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+.wp-block-button__link.is-style-text-yellow-arrow, div.gs_team_area .gs-team-filter-cats li a.is-style-text-yellow-arrow, a.is-style-text-yellow-arrow[download], li.menu-item.nav-button a.is-style-text-yellow-arrow, div.gform_wrapper input.is-style-text-yellow-arrow[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-button.is-style-text-yellow-arrow,
 .wp-block-button.is-style-text-yellow-arrow .wp-block-button__link,
+.wp-block-button.is-style-text-yellow-arrow div.gs_team_area .gs-team-filter-cats li a,
+div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-text-yellow-arrow a,
 .wp-block-button.is-style-text-yellow-arrow a[download],
 .wp-block-button.is-style-text-yellow-arrow li.menu-item.nav-button a,
 li.menu-item.nav-button .wp-block-button.is-style-text-yellow-arrow a,
@@ -9194,9 +9248,11 @@ div.gform_wrapper .wp-block-button.is-style-text-yellow-arrow input[type="submit
   background: url(img/right-arrow.svg) no-repeat center right/7px;
 }
 
-.wp-block-button__link.is-style-text-yellow-arrow:hover, a.is-style-text-yellow-arrow:hover[download], li.menu-item.nav-button a.is-style-text-yellow-arrow:hover, div.gform_wrapper input.is-style-text-yellow-arrow:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+.wp-block-button__link.is-style-text-yellow-arrow:hover, div.gs_team_area .gs-team-filter-cats li a.is-style-text-yellow-arrow:hover, a.is-style-text-yellow-arrow:hover[download], li.menu-item.nav-button a.is-style-text-yellow-arrow:hover, div.gform_wrapper input.is-style-text-yellow-arrow:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-button.is-style-text-yellow-arrow:hover,
 .wp-block-button.is-style-text-yellow-arrow .wp-block-button__link:hover,
+.wp-block-button.is-style-text-yellow-arrow div.gs_team_area .gs-team-filter-cats li a:hover,
+div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-text-yellow-arrow a:hover,
 .wp-block-button.is-style-text-yellow-arrow a:hover[download],
 .wp-block-button.is-style-text-yellow-arrow li.menu-item.nav-button a:hover,
 li.menu-item.nav-button .wp-block-button.is-style-text-yellow-arrow a:hover,
@@ -9208,6 +9264,8 @@ div.gform_wrapper .wp-block-button.is-style-text-yellow-arrow input:hover[type="
 
 .wp-button.is-style-text-yellow-arrow:hover:after,
 .wp-block-button.is-style-text-yellow-arrow .wp-block-button__link:hover:after,
+.wp-block-button.is-style-text-yellow-arrow div.gs_team_area .gs-team-filter-cats li a:hover:after,
+div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-text-yellow-arrow a:hover:after,
 .wp-block-button.is-style-text-yellow-arrow a[download]:hover:after,
 .wp-block-button.is-style-text-yellow-arrow li.menu-item.nav-button a:hover:after,
 li.menu-item.nav-button .wp-block-button.is-style-text-yellow-arrow a:hover:after,
@@ -9218,6 +9276,8 @@ div.gform_wrapper .wp-block-button.is-style-text-yellow-arrow input:not([type=fi
 
 .wp-button.is-style-outline,
 .wp-block-button.is-style-outline .wp-block-button__link,
+.wp-block-button.is-style-outline div.gs_team_area .gs-team-filter-cats li a,
+div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-outline a,
 .wp-block-button.is-style-outline a[download],
 .wp-block-button.is-style-outline li.menu-item.nav-button a,
 li.menu-item.nav-button .wp-block-button.is-style-outline a,
@@ -9229,6 +9289,8 @@ div.gform_wrapper .wp-block-button.is-style-outline input[type="submit"]:not([ty
 
 .wp-button.is-style-outline:hover,
 .wp-block-button.is-style-outline .wp-block-button__link:hover,
+.wp-block-button.is-style-outline div.gs_team_area .gs-team-filter-cats li a:hover,
+div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-outline a:hover,
 .wp-block-button.is-style-outline a:hover[download],
 .wp-block-button.is-style-outline li.menu-item.nav-button a:hover,
 li.menu-item.nav-button .wp-block-button.is-style-outline a:hover,
@@ -9240,6 +9302,8 @@ div.gform_wrapper .wp-block-button.is-style-outline input:hover[type="submit"]:n
 
 .wp-button.is-style-outline:visited,
 .wp-block-button.is-style-outline .wp-block-button__link:visited,
+.wp-block-button.is-style-outline div.gs_team_area .gs-team-filter-cats li a:visited,
+div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-outline a:visited,
 .wp-block-button.is-style-outline a:visited[download],
 .wp-block-button.is-style-outline li.menu-item.nav-button a:visited,
 li.menu-item.nav-button .wp-block-button.is-style-outline a:visited,
@@ -9250,6 +9314,7 @@ div.gform_wrapper .wp-block-button.is-style-outline input:visited[type="submit"]
 
 
 .wp-block-button__link:hover,
+div.gs_team_area .gs-team-filter-cats li a:hover,
 a:hover[download],
 li.menu-item.nav-button a:hover,
 div.gform_wrapper input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
@@ -9259,6 +9324,7 @@ button.wp-button:hover {
 
 
 .wp-block-button__link:visited,
+div.gs_team_area .gs-team-filter-cats li a:visited,
 a:visited[download],
 li.menu-item.nav-button a:visited,
 div.gform_wrapper input:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
@@ -11268,22 +11334,6 @@ i.fa.fa-external-link:before {
 
 .single-member--wraper {
   margin: 20px 15px;
-}
-
-ul.gs-team-filter-cats li.filter.active > a {
-  background: #F79A6C !important;
-  border-color: #F79A6C !important;
-}
-
-div.gs_team_area .gs-team-filter-cats li a {
-  font-family: "gill_sanssemibold", sans-serif;
-  border-radius: 15px !important;
-  color: #1B2C58 !important;
-  padding-left: 15px !important;
-  padding-right: 15px !important;
-  min-width: 90px;
-  -ms-flex-pack: center !important;
-      justify-content: center !important;
 }
 
 div#CybotCookiebotDialog {
@@ -13898,159 +13948,6 @@ button.slickwprev-prev:before {
   }
 }
 
-#item-header-cover-image {
-  max-width: 1680px;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  margin: 0 auto;
-}
-
-div.bp-wrap {
-  max-width: 1680px;
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 3.7rem;
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 768px) {
-  div.bp-wrap {
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
-  }
-}
-
-.page .entry-content .bp-navs li {
-  margin-bottom: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .page .entry-content .bp-navs li {
-    margin-bottom: 0;
-  }
-}
-
-.bp-navs.main-navs {
-  background: #0D1F40;
-  border-top: none !important;
-  border-bottom: none !important;
-}
-
-.bp-navs.main-navs li a {
-  color: white;
-}
-
-.bp-navs.bp-subnavs {
-  margin-top: 0;
-  border-top: none !important;
-}
-
-.bp-navs.bp-subnavs li {
-  font-size: 18px;
-}
-
-.buddypress-wrap .item-body {
-  margin-top: 0;
-}
-
-.buddypress-wrap .bp-feedback {
-  box-shadow: none;
-}
-
-.buddypress-wrap .item-entry .user-update {
-  width: 100%;
-}
-
-body.bp-user .buddypress-wrap,
-body.activity .buddypress-wrap,
-body.groups .buddypress-wrap,
-body.members .buddypress-wrap {
-  max-width: 1680px;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  margin: 0 auto 0;
-  padding-top: 2.75rem;
-  padding-bottom: 2.75rem;
-}
-
-@media screen and (min-width: 768px) {
-  body.bp-user .buddypress-wrap,
-  body.activity .buddypress-wrap,
-  body.groups .buddypress-wrap,
-  body.members .buddypress-wrap {
-    padding-top: 3.75rem;
-    padding-bottom: 3.75rem;
-  }
-}
-
-body #buddypress div, body #buddypress dl, body #buddypress input[type=reset], body #buddypress input[type=search], body #buddypress input[type=submit], body #buddypress li, body #buddypress select, body #buddypress textarea {
-  border-radius: 0;
-}
-
-body.bp-user .buddypress-wrap,
-body.groups.bp-user .buddypress-wrap {
-  padding-top: 0;
-}
-
-@media screen and (min-width: 768px) {
-  body.bp-user .buddypress-wrap,
-  body.groups.bp-user .buddypress-wrap {
-    padding-top: 0;
-  }
-}
-
-.buddypress-wrap .bp-navs li.selected a {
-  background: white;
-  color: #0D1F40;
-}
-
-.members-list {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  grid-row-gap: 35px;
-  grid-column-gap: 15px;
-}
-
-@media screen and (min-width: 1201px) {
-  .members-list {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 60px;
-    grid-column-gap: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .members-list {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    grid-row-gap: 40px;
-    grid-column-gap: 40px;
-  }
-}
-
-.members-list.bp-list:after,
-.members-list.bp-list:before {
-  display: none;
-}
-
-.buddypress-wrap .screen-content:after {
-  content: "";
-  clear: both;
-  display: block;
-}
-
-.bp-navs ul li .count {
-  line-height: 0;
-  border-radius: 25px;
-}
-
-#buddypress #item-header-cover-image #item-header-avatar img.avatar {
-  box-shadow: 10px 10px 24px rgba(0, 0, 0, 0.15);
-}
-
 .single-member-alt a {
   text-decoration: none;
 }
@@ -14070,6 +13967,99 @@ body.groups.bp-user .buddypress-wrap {
   font-weight: normal;
   font-size: 16px;
   color: #008FA0;
+}
+
+.gs_team_filter .gs-filter-single-item.gs-col-lg-3 {
+  box-sizing: border-box;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.gs-team--fixed-height .single-member .gs_team_image__wrapper img {
+  transition-property: all;
+}
+
+.single-member .single-member-name-desig {
+  display: none;
+}
+
+.gs-filter-single-item:hover .gs_team_image__wrapper img {
+  filter: none;
+}
+
+.single-member:hover .gs_team_overlay {
+  display: none;
+}
+
+.single-member:hover .single-member-name-desig {
+  display: block;
+  left: 0;
+  transform: translateX(0);
+}
+
+#gs_team_area_1 .single-member .gs-member-name {
+  color: white;
+  background: #BF5B32 !important;
+  font-family: "gill_sanslight", sans-serif;
+  font-size: 18px;
+}
+
+.single-member:hover .gs-member-name {
+  transform: none !important;
+}
+
+.team-section:before {
+  content: "";
+  width: 100vw;
+  height: 51.3vw;
+  max-width: 399px;
+  max-height: 206px;
+  position: absolute;
+  top: calc(50% - 206px);
+  left: -10px;
+  background: url(img/mountains-team.svg) no-repeat center center/100%;
+}
+
+.team-section {
+  position: relative;
+  background: linear-gradient(to bottom, #F2EBDC 50%, transparent 50%);
+}
+
+div.gs_team_popup {
+  border-radius: 0 !important;
+}
+
+.shortcode-section .header-intro-block h3 {
+  margin-top: 0;
+}
+
+.shortcode-section .wpex.horizontal-timeline {
+  overflow: hidden;
+}
+
+ul.gs-team-filter-cats, ul.search-filter {
+  margin-top: 0 !important;
+}
+
+div.gs_tm_theme12 .single-member {
+  margin-bottom: 40px;
+}
+
+div.gs_team_area .gs-containeer .gs-roow {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 1120px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 1025px) {
+  .gs_team_area div.gs-col-lg-3 {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    width: 25%;
+    max-width: 25%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -15690,12 +15680,12 @@ body.groups.bp-user .buddypress-wrap {
   text-decoration: none;
 }
 
-.cta-text .wp-block-button__link, .cta-text a[download], .cta-text li.menu-item.nav-button a, li.menu-item.nav-button .cta-text a, .cta-text div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]), div.gform_wrapper .cta-text input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
+.cta-text .wp-block-button__link, .cta-text div.gs_team_area .gs-team-filter-cats li a, div.gs_team_area .gs-team-filter-cats li .cta-text a, .cta-text a[download], .cta-text li.menu-item.nav-button a, li.menu-item.nav-button .cta-text a, .cta-text div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]), div.gform_wrapper .cta-text input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   margin-top: 1rem;
 }
 
 @media screen and (min-width: 768px) {
-  .cta-text .wp-block-button__link, .cta-text a[download], .cta-text li.menu-item.nav-button a, li.menu-item.nav-button .cta-text a, .cta-text div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]), div.gform_wrapper .cta-text input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
+  .cta-text .wp-block-button__link, .cta-text div.gs_team_area .gs-team-filter-cats li a, div.gs_team_area .gs-team-filter-cats li .cta-text a, .cta-text a[download], .cta-text li.menu-item.nav-button a, li.menu-item.nav-button .cta-text a, .cta-text div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]), div.gform_wrapper .cta-text input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
     margin-top: 1.25rem;
   }
 }
@@ -16605,21 +16595,13 @@ p.contact-item {
 }
 
 .shortcode-section .header-intro-block {
-  padding-bottom: 0.75rem;
+  padding-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
   .shortcode-section .header-intro-block {
-    padding-bottom: 1rem;
+    padding-bottom: 0;
   }
-}
-
-.shortcode-section .header-intro-block h3 {
-  margin-top: 0;
-}
-
-.shortcode-section .wpex.horizontal-timeline {
-  overflow: hidden;
 }
 
 .wp-block.checklist {

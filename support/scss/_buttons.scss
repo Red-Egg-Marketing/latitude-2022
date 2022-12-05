@@ -1,3 +1,4 @@
+
 #CybotCookiebotDialogBodyButtonAccept,
 .buddypress .buddypress-wrap input[type=button],
 .buddypress .buddypress-wrap .button,
@@ -20,7 +21,6 @@ button.wp-button {
 	transition-duration: .25s;
 	text-decoration: none;
 	border-radius: 0;
-	font-weight: 500;
 	&.is-small {
 		@media screen and (min-width: $small-width) {
 			font-size: 17px;
@@ -41,9 +41,8 @@ button.wp-button {
 		padding: 10px 25px 10px;
 	}
 	&:hover {
-		background: transparent;
-		box-shadow: inset 0 0 0 2px $bg-color-5;
-		color: $burnt-orange;
+		background: $burnt-orange;
+		color: white;
 	}
 	&:visited {
 		color: $burnt-orange;
@@ -54,14 +53,30 @@ button.wp-button {
 	}
 }
 
-body.buddypress .buddypress-wrap input[type=submit].auto {
-	background: $navy;
-	color: white;
-	font-family: $font-head;
-	text-transform: uppercase;
-	border: none;
-	padding: 15px 15px 10px;
+div.gs_team_area .gs-team-filter-cats li a {
+	@extend .wp-block-button__link;
+	border-top: 2px solid $burnt-orange !important;
+	border-left: 2px solid $burnt-orange !important;
+	border-right: 2px solid $burnt-orange !important;
+	border-bottom: 4px solid $burnt-orange !important;
+	border-radius: 0 !important;
+	color: $burnt-orange !important;
+	@media screen and (min-width: $small-width) {
+		font-size: 17px;
+		line-height: 22px;
+		padding: 10px 25px 10px !important;
+	}
+	&:hover {
+		background: $burnt-orange !important; 
+		color: white !important;
+	}
 }
+
+ul.gs-team-filter-cats li.filter.active>a {
+	background: $burnt-orange !important;
+	border-color: $burnt-orange !important;
+}
+
 
 .fixed-buttons {
 	position: relative;

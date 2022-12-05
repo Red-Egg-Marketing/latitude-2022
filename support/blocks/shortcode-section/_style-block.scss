@@ -35,16 +35,9 @@
 }
 
 .shortcode-section .header-intro-block {
-	padding-bottom: 0.75rem;
+	padding-bottom: 0;
 	@media screen and (min-width: $small-width) {
-		padding-bottom: 1rem;
+		padding-bottom: 0
 	}
 }
 
-.shortcode-section .header-intro-block h3 {
-	margin-top: 0;
-}
-
-.shortcode-section .wpex.horizontal-timeline {
-	overflow: hidden;
-}

@@ -18,3 +18,98 @@
 	font-size: 16px;
 	color: $teal-blue;
 }
+
+.gs_team_filter .gs-filter-single-item.gs-col-lg-3 {
+	box-sizing: border-box;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.gs-team--fixed-height .single-member .gs_team_image__wrapper img {
+	// filter: grayscale(100%);
+	transition-property: all;
+}
+
+.single-member .single-member-name-desig {
+	display: none;
+}
+
+.gs-filter-single-item:hover .gs_team_image__wrapper img {
+	filter: none;
+}
+
+.single-member:hover .gs_team_overlay {
+	display: none;
+}
+
+.single-member:hover .single-member-name-desig {
+	display: block;
+	left: 0;
+	transform: translateX(0);
+}
+
+
+#gs_team_area_1 .single-member .gs-member-name {
+	color: white;
+	background: $burnt-orange !important;
+	font-family: $font-body-light;
+	font-size: 18px;
+}
+
+.single-member:hover .gs-member-name {
+	transform: none !important;
+}
+
+.team-section:before {
+	content: "";
+	width: 100vw;
+	height: 51.3vw;
+	max-width: 399px;
+	max-height: 206px;
+	position: absolute;
+	top: calc(50% - 206px);
+	left: -10px;
+	background: url(img/mountains-team.svg) no-repeat center center / 100%;
+}
+
+.team-section {
+	position: relative;
+	background: linear-gradient(to bottom, $tan 50%, transparent 50%);
+}
+
+div.gs_team_popup {
+	border-radius: 0 !important;
+}
+
+.shortcode-section .header-intro-block h3 {
+	margin-top: 0;
+}
+
+.shortcode-section .wpex.horizontal-timeline {
+	overflow: hidden;
+}
+
+ul.gs-team-filter-cats, ul.search-filter {
+	margin-top: 0 !important;
+}
+
+div.gs_tm_theme12 .single-member {
+	margin-bottom: 40px;
+}
+
+div.gs_team_area .gs-containeer .gs-roow {
+	margin-left: 0;
+	margin-right: 0;
+	max-width: 1120px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.gs_team_area div.gs-col-lg-3 {
+	@media (min-width: 1025px) {
+		padding-right: 20px !important;
+		padding-left: 20px !important;
+		width: 25%;
+		max-width: 25%;
+	}
+}
