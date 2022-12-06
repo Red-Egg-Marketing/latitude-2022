@@ -3,17 +3,17 @@ require('es6-promise/auto');
 (function() {
 
 
-	function ScrollImageColumns() {
+	function ScrollTabColumns() {
 
 		gsap.registerPlugin(ScrollTrigger);
 
-		var columns = document.querySelectorAll('.image-columns.scroll-activate');
+		var columns = document.querySelectorAll('.tabs');
 
 		if (columns.length > 0 ) {
 			columns.forEach(function(column, index) {
-				let block = column.querySelector('.block-content');
+				let block = column.querySelector('.tab-container');
 				let content = column.querySelector('.content-columns');
-				let image = column.querySelector('.image-col');
+				let image = column.querySelector('.wp-block-image');
 				let classList = column.classList.contains('img-right');
 				let x = classList == true ? -15 : 15;
 
@@ -46,7 +46,7 @@ require('es6-promise/auto');
 	function animateFrom(progress, element, xPos, parent) {
 		let prog = (progress.progress * 4) < 1 ? progress.progress * 4 : 1;
 		let content = element.querySelector('.content-columns');
-		let image = element.querySelector('.image-col');
+		let image = element.querySelector('.wp-block-image');
 		let PosNeg = Math.sign(xPos);
 		let newX = PosNeg < 0 ? Math.abs(xPos) : -xPos;
 		let progX = xPos + (newX * prog);
@@ -70,6 +70,6 @@ require('es6-promise/auto');
 
 	}
 
-	ScrollImageColumns();
+	ScrollTabColumns();
 	
 })();

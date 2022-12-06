@@ -81,6 +81,7 @@
 .img-container img {
 	display: block;
 	margin: 0 auto;
+	position: relative;
 }
 
 .image-columns.img-right .content-columns {
@@ -98,39 +99,62 @@
 	}
 }
 
+.image-columns .image-col {
+	position: relative;
+}
+
 .image-columns.img-right .image-col {
-	box-shadow: 18px 18px 0 0 $light-blue;
 	@media screen and (min-width: $small-width) and (max-width: $med-small-width) {
-		box-shadow: 15px 15px 0 0 $light-blue;
 		margin-right: 15px;
 	}
 	@media screen and (min-width: $med-small-width) and (max-width: $med-width) {
-		box-shadow: 20px 20px 0 0 $light-blue;
 		margin-right: 20px;
 	}
 	@media screen and (min-width: $med-width) {
-		box-shadow: 36px 36px 0 0 $light-blue;
 		margin-right: 36px;
 	}
 }
 
 
-.image-columns.img-left .image-col {
-	box-shadow: -18px 18px 0 0 $light-blue;
+.image-columns.img-right.animate-complete .image-col:before {
+	left: initial;
+	opacity: 1;
 	@media screen and (min-width: $small-width) and (max-width: $med-small-width) {
-		box-shadow: -15px 15px 0 0 $light-blue;
-		margin-left: 15px;
-		padding-right: 1.25rem;
+		right: -15px;
 	}
 	@media screen and (min-width: $med-small-width) and (max-width: $med-width) {
-		box-shadow: -20px 20px 0 0 $light-blue;
-		margin-left: 20px;
-		padding-right: 1.25rem;
+		right: -20px;
 	}
 	@media screen and (min-width: $med-width) {
-		box-shadow: -36px 36px 0 0 $light-blue;
-		margin-left: 36px;
-		padding-right: 2.5rem;
+		right: -34px;
+	}
+}
+
+.image-columns.img-right .image-col:before {
+	content: "";
+	position: absolute;
+	background: $light-blue;
+	height: 100%;
+	opacity: 0;
+	transition-duration: 0.75s;
+	transition-property: left, right, opacity;
+	@media screen and (min-width: $small-width) and (max-width: $med-small-width) {
+		width: 100%;
+		top: 15px;
+		right: 0;
+		left: inherit;
+	}
+	@media screen and (min-width: $med-small-width) and (max-width: $med-width) {
+		width: 100%;
+		top: 20px;
+		right: 0;
+		left: inherit;
+	}
+	@media screen and (min-width: $med-width) {
+		width: 100%;
+		top: 34px;
+		left: inherit;
+		right: 0;
 	}
 }
 

@@ -313,7 +313,6 @@ div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):no
 	@extend .wp-block-button__link;
 	min-height: 52px;
 	width: auto;
-	padding-right: 45px; 
 	@media only screen and (max-width: $form-width) {
 		line-height: 1;
 		width: 100%;

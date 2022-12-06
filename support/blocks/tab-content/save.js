@@ -8,7 +8,7 @@ const { __ } = wp.i18n;
 const SaveTabContent = ( { attributes } ) => {
 
 		const blockProps = useBlockProps.save({
-			className: 'tab-content'		
+			className: 'tab-content content-columns'		
 		});
 		
 		return (

@@ -307,6 +307,8 @@ background.active {
   animation: backgroundShift 3s ease forwards;
 }
 
+.team-section background,
+.testimonials-section background,
 .contact-section background,
 .tan background,
 .light-grey background,
@@ -1885,7 +1887,6 @@ div.gform_wrapper textarea {
 div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   min-height: 52px;
   width: auto;
-  padding-right: 45px;
 }
 
 @media only screen and (max-width: 641px) {
@@ -5136,6 +5137,7 @@ td.year-sum {
 .img-container img {
   display: block;
   margin: 0 auto;
+  position: relative;
 }
 
 .image-columns.img-right .content-columns {
@@ -5156,56 +5158,85 @@ td.year-sum {
   }
 }
 
-.image-columns.img-right .image-col {
-  box-shadow: 18px 18px 0 0 #E7F2F7;
+.image-columns .image-col {
+  position: relative;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
   .image-columns.img-right .image-col {
-    box-shadow: 15px 15px 0 0 #E7F2F7;
     margin-right: 15px;
   }
 }
 
 @media screen and (min-width: 1080px) and (max-width: 1200px) {
   .image-columns.img-right .image-col {
-    box-shadow: 20px 20px 0 0 #E7F2F7;
     margin-right: 20px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .image-columns.img-right .image-col {
-    box-shadow: 36px 36px 0 0 #E7F2F7;
     margin-right: 36px;
   }
 }
 
-.image-columns.img-left .image-col {
-  box-shadow: -18px 18px 0 0 #E7F2F7;
+.image-columns.img-right.animate-complete .image-col:before {
+  left: initial;
+  opacity: 1;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
-  .image-columns.img-left .image-col {
-    box-shadow: -15px 15px 0 0 #E7F2F7;
-    margin-left: 15px;
-    padding-right: 1.25rem;
+  .image-columns.img-right.animate-complete .image-col:before {
+    right: -15px;
   }
 }
 
 @media screen and (min-width: 1080px) and (max-width: 1200px) {
-  .image-columns.img-left .image-col {
-    box-shadow: -20px 20px 0 0 #E7F2F7;
-    margin-left: 20px;
-    padding-right: 1.25rem;
+  .image-columns.img-right.animate-complete .image-col:before {
+    right: -20px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .image-columns.img-left .image-col {
-    box-shadow: -36px 36px 0 0 #E7F2F7;
-    margin-left: 36px;
-    padding-right: 2.5rem;
+  .image-columns.img-right.animate-complete .image-col:before {
+    right: -34px;
+  }
+}
+
+.image-columns.img-right .image-col:before {
+  content: "";
+  position: absolute;
+  background: #E7F2F7;
+  height: 100%;
+  opacity: 0;
+  transition-duration: 0.75s;
+  transition-property: left, right, opacity;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  .image-columns.img-right .image-col:before {
+    width: 100%;
+    top: 15px;
+    right: 0;
+    left: inherit;
+  }
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1200px) {
+  .image-columns.img-right .image-col:before {
+    width: 100%;
+    top: 20px;
+    right: 0;
+    left: inherit;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .image-columns.img-right .image-col:before {
+    width: 100%;
+    top: 34px;
+    left: inherit;
+    right: 0;
   }
 }
 
@@ -5428,10 +5459,6 @@ td.year-sum {
     font-size: 24px;
     line-height: 32px;
   }
-}
-
-.contact-section .form-column p:last-of-type {
-  margin-bottom: 0;
 }
 
 .contact-section .block-wrapper {
@@ -5791,6 +5818,39 @@ p.contact-item {
 
 .shortcode-section.testimonials-section {
   background: url(img/paint-texture.jpg) no-repeat center center/cover;
+}
+
+.testimonials-section {
+  position: relative;
+}
+
+.testimonials-section:before {
+  content: "";
+  width: 100vw;
+  height: 51.3vw;
+  max-width: 399px;
+  max-height: 206px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url(img/mountains.svg) no-repeat center center/100%;
+}
+
+.team-section:before {
+  content: "";
+  width: 100vw;
+  height: 51.3vw;
+  max-width: 399px;
+  max-height: 206px;
+  position: absolute;
+  top: calc(50% - 206px);
+  left: -10px;
+  background: url(img/mountains-team.svg) no-repeat center center/100%;
+}
+
+.team-section {
+  position: relative;
+  background: linear-gradient(to bottom, #F2EBDC 50%, transparent 50%);
 }
 
 .wp-block.checklist {
@@ -6286,8 +6346,40 @@ p.contact-item {
   padding-bottom: 0;
 }
 
-.tabs .content-cols *:first-of-type {
+.tabs .content-cols h3:first-of-type {
   margin-bottom: 0;
+  margin-top: 0;
+}
+
+.tabs .tab-content.content-cols {
+  display: block;
+}
+
+.tab-content.content-cols ul {
+  column-count: 2;
+}
+
+@media screen and (min-width: 768px) {
+  .tab-content.content-cols ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+  }
+}
+
+.tab-content.content-cols ul li {
+  margin-bottom: 0;
+  list-style-type: disc;
+  break-inside: avoid;
+}
+
+@media screen and (min-width: 768px) {
+  .tab-content.content-cols ul li {
+    margin-right: 25px;
+  }
+}
+
+.tab-content.content-cols ul li::marker {
+  color: #BF5B32;
 }
 
 .tabs .tab-container {
@@ -6316,17 +6408,24 @@ p.contact-item {
       align-items: flex-start;
 }
 
+.tab.has-child-selected + .tab-container,
 .tab.is-selected + .tab-container,
 .tab.active + .tab-container {
   display: block;
 }
 
+.tabs .tab-container p + ul {
+  margin-top: -28px;
+}
+
+.tab-content.content-cols ul li,
 .tabs .tab-container p {
   font-size: 18px;
   line-height: 24px;
 }
 
 @media screen and (min-width: 768px) {
+  .tab-content.content-cols ul li,
   .tabs .tab-container p {
     font-size: 24px;
     line-height: 32px;
@@ -6335,16 +6434,16 @@ p.contact-item {
 
 .tabs .wp-block-image img {
   width: 100%;
+  position: relative;
 }
 
 .tabs .wp-block-image {
   padding-right: 0;
-  box-shadow: -18px 18px 0 0 #E7F2F7;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
   .tabs .wp-block-image {
-    box-shadow: -15px 15px 0 0 #E7F2F7;
     margin-left: 15px;
     width: calc(50% - 15px);
   }
@@ -6352,7 +6451,6 @@ p.contact-item {
 
 @media screen and (min-width: 1080px) and (max-width: 1200px) {
   .tabs .wp-block-image {
-    box-shadow: -20px 20px 0 0 #E7F2F7;
     margin-left: 20px;
     width: calc(50% - 20px);
   }
@@ -6360,9 +6458,68 @@ p.contact-item {
 
 @media screen and (min-width: 1200px) {
   .tabs .wp-block-image {
-    box-shadow: -36px 36px 0 0 #E7F2F7;
     margin-left: 36px;
     width: calc(50% - 36px);
+  }
+}
+
+.tabs .wp-block-image:before {
+  content: "";
+  position: absolute;
+  background: #E7F2F7;
+  height: 100%;
+  opacity: 0;
+  transition-duration: 0.75s;
+  transition-property: left, right, opacity;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  .tabs .wp-block-image:before {
+    width: 100%;
+    top: 15px;
+    right: 0;
+    left: inherit;
+  }
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1200px) {
+  .tabs .wp-block-image:before {
+    width: 100%;
+    top: 20px;
+    right: 0;
+    left: inherit;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tabs .wp-block-image:before {
+    width: 100%;
+    top: 34px;
+    left: inherit;
+    right: 0;
+  }
+}
+
+.tabs.animate-complete .wp-block-image:before {
+  left: initial;
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  .tabs.animate-complete .wp-block-image:before {
+    right: 15px;
+  }
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1200px) {
+  .tabs.animate-complete .wp-block-image:before {
+    right: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tabs.animate-complete .wp-block-image:before {
+    right: 34px;
   }
 }
 
@@ -6385,6 +6542,16 @@ p.contact-item {
 @media screen and (min-width: 768px) {
   .tabs .tab-content {
     width: 50%;
+  }
+}
+
+.tabs + .selected-resources .resources-block {
+  padding-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .tabs + .selected-resources .resources-block {
+    padding-top: 0;
   }
 }
 
@@ -6775,6 +6942,11 @@ p.contact-item {
   }
 }
 
+.resources-block .header-description {
+  max-width: 1065px;
+  margin: 0 auto;
+}
+
 .resources-block .header {
   text-align: center;
   padding-top: 2rem;
@@ -6798,8 +6970,8 @@ p.contact-item {
 
 @media screen and (min-width: 768px) {
   .resources-block .block-wrapper {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
 

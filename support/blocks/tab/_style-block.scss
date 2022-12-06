@@ -32,8 +32,34 @@
 	padding-bottom: 0;
 }
 
-.tabs .content-cols *:first-of-type {
+.tabs .content-cols h3:first-of-type {
 	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.tabs .tab-content.content-cols {
+	display: block;
+}
+
+.tab-content.content-cols ul {
+	column-count: 2;
+	@media screen and (min-width: $small-width) {
+		padding-left: 1.5rem;
+		list-style-type: disc;
+	}
+}
+
+.tab-content.content-cols ul li {
+	margin-bottom: 0;
+	list-style-type: disc;
+	break-inside: avoid;
+	@media screen and (min-width: $small-width) {
+		margin-right: 25px;
+	}
+}
+
+.tab-content.content-cols ul li::marker {
+	color: $burnt-orange;
 }
 
 .tabs .tab-container {
@@ -55,11 +81,18 @@
 	align-items: flex-start;
 }
 
+.tab.has-child-selected + .tab-container,
 .tab.is-selected + .tab-container,
 .tab.active + .tab-container {
 	display: block;
 }
 
+
+.tabs .tab-container p + ul {
+	margin-top: -28px;
+}
+
+.tab-content.content-cols ul li,
 .tabs .tab-container p {
 	font-size: 18px;
 	line-height: 24px;
@@ -71,25 +104,65 @@
 
 .tabs .wp-block-image img {
 	width: 100%;
+	position: relative;
 }
 
 .tabs .wp-block-image {
 	padding-right: 0;
-	box-shadow: -18px 18px 0 0 $light-blue;
+	position: relative;
 	@media screen and (min-width: $small-width) and (max-width: $med-small-width) {
-		box-shadow: -15px 15px 0 0 $light-blue;
 		margin-left: 15px;
 		width: calc(50% - 15px);
 	}
 	@media screen and (min-width: $med-small-width) and (max-width: $med-width) {
-		box-shadow: -20px 20px 0 0 $light-blue;
 		margin-left: 20px;
 		width: calc(50% - 20px);
 	}
 	@media screen and (min-width: $med-width) {
-		box-shadow: -36px 36px 0 0 $light-blue;
 		margin-left: 36px;
 		width: calc(50% - 36px);
+	}
+}
+
+.tabs .wp-block-image:before {
+	content: "";
+	position: absolute;
+	background: $light-blue;
+	height: 100%;
+	opacity: 0;
+	transition-duration: 0.75s;
+	transition-property: left, right, opacity;
+	@media screen and (min-width: $small-width) and (max-width: $med-small-width) {
+		width: 100%;
+		top: 15px;
+		right: 0;
+		left: inherit;
+	}
+	@media screen and (min-width: $med-small-width) and (max-width: $med-width) {
+		width: 100%;
+		top: 20px;
+		right: 0;
+		left: inherit;
+	}
+	@media screen and (min-width: $med-width) {
+		width: 100%;
+		top: 34px;
+		left: inherit;
+		right: 0;
+	}
+}
+
+.tabs.animate-complete .wp-block-image:before {
+	left: initial;
+	opacity: 1;
+	@media screen and (min-width: $small-width) and (max-width: $med-small-width) {
+		right: 15px;
+	}
+	@media screen and (min-width: $med-small-width) and (max-width: $med-width) {
+		right: 20px;
+	}
+	@media screen and (min-width: $med-width) {
+		right: 34px;
 	}
 }
 
@@ -106,5 +179,12 @@
 	box-sizing: border-box;
 	@media screen and (min-width: $small-width) {
 		width: 50%;
+	}
+}
+
+.tabs + .selected-resources .resources-block {
+	padding-top: 0;
+	@media screen and (min-width: $small-width) {
+		padding-top: 0;
 	}
 }

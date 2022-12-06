@@ -105,7 +105,7 @@ const ResourceCard = (props) => {
 								} }
 							/>
 						)}
-						{ props.updateResourceText == null && (
+						{ props.updateResourceText == true && (
 							<h3
 								className="resource-title"
 							>
@@ -134,9 +134,11 @@ const ResourceCard = (props) => {
 								{ props.resourceExcerpt }
 							</p>
 						)}
-						<button className="wp-button">
-							{ buttonText }
-						</button>
+						<div className="wp-buttons">
+							<button className="wp-button">
+								{ buttonText }
+							</button>
+						</div>
 					</div>	
 				</div>
 				</div>

@@ -279,6 +279,8 @@ background.active {
   animation: backgroundShift 3s ease forwards;
 }
 
+.team-section background,
+.testimonials-section background,
 .contact-section background,
 .tan background,
 .light-grey background,
@@ -1857,7 +1859,6 @@ div.gform_wrapper textarea {
 div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   min-height: 52px;
   width: auto;
-  padding-right: 45px;
 }
 
 @media only screen and (max-width: 641px) {

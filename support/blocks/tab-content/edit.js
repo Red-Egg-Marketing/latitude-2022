@@ -13,7 +13,7 @@ const template = [
 const EditTabContent = ( { attributes, setAttributes, clientId, isSelected } ) => {
 
 		const blockProps = useBlockProps({
-			className: 'tab-content'
+			className: 'tab-content content-columns'
 		});
 		
 		return (

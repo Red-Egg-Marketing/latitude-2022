@@ -60,22 +60,6 @@
 	transform: none !important;
 }
 
-.team-section:before {
-	content: "";
-	width: 100vw;
-	height: 51.3vw;
-	max-width: 399px;
-	max-height: 206px;
-	position: absolute;
-	top: calc(50% - 206px);
-	left: -10px;
-	background: url(img/mountains-team.svg) no-repeat center center / 100%;
-}
-
-.team-section {
-	position: relative;
-	background: linear-gradient(to bottom, $tan 50%, transparent 50%);
-}
 
 div.gs_team_popup {
 	border-radius: 0 !important;

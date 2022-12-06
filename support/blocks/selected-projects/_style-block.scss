@@ -23,6 +23,11 @@
 	}
 }
 
+.resources-block .header-description {
+	max-width: 1065px;
+	margin: 0 auto;
+}
+
 .resources-block .header {
 	text-align: center;
 	padding-top: 2rem;
@@ -40,8 +45,8 @@
 	padding-right: 1.25rem;
 	margin: 0 auto;
 	@media screen and (min-width: $small-width) {
-		padding-left: 2.5rem;
-		padding-right: 2.5rem;
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
 	}
 }
 

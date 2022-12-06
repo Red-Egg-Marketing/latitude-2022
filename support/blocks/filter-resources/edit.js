@@ -167,7 +167,7 @@ const EditResources = ( { attributes, setAttributes } ) => {
 														resourceType={ resource.label  }
 														resourceExcerpt={ resource.post_excerpt }
 														updateResourceImage={ null }
-														updateResourceText={ null }
+														updateResourceText={ false }
 														updateResourceExcerpt={ null }
 														updateResourceType={ null }
 													/>
