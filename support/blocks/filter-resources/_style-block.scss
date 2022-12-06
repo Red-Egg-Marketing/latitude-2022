@@ -122,8 +122,8 @@
 		z-index: 998;
 		min-width: 300px;
 		max-width: 450px;
-		border-radius: 12px;
-		border: 2px solid #EDF5FE;
+		border-radius: 0;
+		border: 2px solid $burnt-orange;
 		background: white;
 	}
 }
@@ -136,7 +136,7 @@
 		top: -24px;
 		left: 10%;
 		transform: translateX(-50%);
-  		border-bottom: solid 24px #EDF5FE;
+  		border-bottom: solid 24px $burnt-orange;
   		border-left: solid 16px transparent;
   		border-right: solid 16px transparent;
 	}
@@ -165,13 +165,13 @@
 	height: calc(100% - 2.5rem);
 	background: white;
 	position: relative;
-	border: 2px solid #EDF5FE;
+	border: 2px solid $burnt-orange;
 	border-radius: 12px;
 	@media screen and (min-width: $small-width) {
 		box-shadow: none;
 		background: transparent;
 		border: none;
-		border-radius: none;
+		border-radius: 0;
 		width: 100%;
 		height: auto;
 		margin: 0;
@@ -254,11 +254,11 @@ ul.tax-list .checkbox-component {
 ul.tax-list .checkbox-component:checked + label:after {
 	content: "";
 	position: absolute;
-	top: 5px;
+	top: 9px;
 	left: 3px;
 	width: 16px;
 	height: 16px;
-	background: $button-color-1;
+	background: $burnt-orange;
 }
 
 ul.tax-list label {
@@ -286,7 +286,7 @@ ul.tax-list .tax-wrap:before {
 	width: 22px;
 	height: 22px;
 	background: white;
-	border: 1px solid $head-color;
+	border: 1px solid $burnt-orange;
 }
 
 h2.no-success-header {
@@ -294,7 +294,7 @@ h2.no-success-header {
 	text-align: center;
 	grid-column: 1/4;
 	font-size: 24px;
-	color: $button-color-1;
+	color: $burnt-orange;
 	font-family: $font-body;
 }
 
@@ -431,17 +431,6 @@ ul.tax-list .checkbox-component {
 	cursor: pointer;
 }
 
-ul.tax-list .checkbox-component:checked + label:after {
-	content: "";
-	position: absolute;
-	display: inline-block;
-	top: 5px;
-	left: 3px;
-	width: 16px;
-	height: 16px;
-	background: $button-color-1;
-}
-
 ul.tax-list label {
 	font-family: $font-body;
 	font-size: 18px;
@@ -452,24 +441,4 @@ ul.tax-list label {
 ul.tax-list .tax-wrap {
 	padding-left: 2rem;
 	position: relative;
-}
-
-ul.tax-list .tax-wrap:before {
-	content: "";
-	position: absolute;
-	top: 2px;
-	left: 0;
-	width: 22px;
-	height: 22px;
-	background: white;
-	border: 1px solid $head-color;
-}
-
-h2.no-success-header {
-	width: 100%;
-	text-align: center;
-	grid-column: 1/4;
-	font-size: 24px;
-	color: $button-color-1;
-	font-family: $font-body;
 }

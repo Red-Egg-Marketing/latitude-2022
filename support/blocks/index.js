@@ -25,4 +25,5 @@ import "./tab-content";
 import "./tab";
 import "./tabs";
 import "./tab-group";
+import "./filter-resources";
 

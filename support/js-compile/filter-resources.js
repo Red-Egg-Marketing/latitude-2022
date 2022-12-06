@@ -66,11 +66,11 @@ require('es6-promise/auto');
   			
   			if (resources.length > 0) {
   			resources.map(function(resource, index){
+
+  				console.log(resource);
   				let media_url = resource.media_url;
   				let link = resource.link;
-  				let title = resource.post_title;
   				let excerpt = resource.post_excerpt;
-  				let label = resource.label;
   				let typeClass = '';
   			
   				// buld html and then append to wrap
@@ -82,6 +82,8 @@ require('es6-promise/auto');
   				extra.setAttribute('class', 'resource-extra');
   				let a = document.createElement('a');
   				a.setAttribute('href', link);
+  				let bWrap = document.createElement('div');
+  				bWrap.setAttribute('class', 'wp-buttons');
   				if (typeof media_url != 'undefined' && media_url) {
   					let imgCont = document.createElement('div');
   					imgCont.setAttribute('class', 'image-cont');
@@ -93,27 +95,21 @@ require('es6-promise/auto');
 
   				let content = document.createElement('div');
   				content.setAttribute('class', 'content');
-  				let type = document.createElement('h4');
-  				type.setAttribute('class', 'tax-item');
-  				type.textContent = label;
-  				let head = document.createElement('h3');
-  				head.setAttribute('class', 'resource-title');
-  				head.textContent = title;
+  			
   				let p = document.createElement('p');
   				p.setAttribute('class', 'resource-excerpt');
   				p.textContent = excerpt;
   				let button = document.createElement('button');
   				button.setAttribute('class', 'wp-button');
-  				let buttonText = label == 'Video' ? 'Watch Video' : 'Read More';
+  				let buttonText = 'Read More';
   				button.textContent = buttonText;
 
-  				content.appendChild(type);
-  				content.appendChild(head);
   				content.appendChild(p);
   				contWrap.appendChild(content);
   				a.appendChild(contWrap);
-  				a.appendChild(button);
   				extra.appendChild(a);
+  				a.appendChild(bWrap);
+  				bWrap.appendChild(button);
   				card.appendChild(extra);
   				wrap.appendChild(card);
   			});
@@ -184,7 +180,7 @@ require('es6-promise/auto');
   			grid.insertBefore(form, grid.children[1]);
 
 	  		Object.entries(taxonomies).map(function(value, key) {
-	  			if (value[0] != 'Category') {
+	  			if (value[0] != '') {
 	  				let tax = key;
 	  				let taxLabel = value[0];
 	  				let taxItem = value[1];

@@ -35,7 +35,7 @@ function latitude_build_post_tax_array($posts, $tax) {
 			$id = $post->ID;
 			
 			$post->link = get_permalink($id);
-			$post->post_excerpt = wp_trim_words($post->post_excerpt, 25, '...');
+			$post->post_excerpt = wp_trim_words($post->post_content, 25, '...');
 			$post->taxonomies = [];
 			$post_type = get_post_type($id);
 			$post_label = get_post_type_object($post_type);
@@ -88,7 +88,7 @@ function latitude_build_post_tax_array($posts, $tax) {
 
 
 function latitude_return_resources() {
-	$post_types = ['post', 'case-studies', 'videos'];
+	$post_types = ['post'];
 
 	$offset = isset($get['offset']) ? $get['offset'] : 0;
 
@@ -124,90 +124,6 @@ add_action( 'rest_api_init', function () {
   	] 
   );
  });
-
-
-function latitude_return_case_studies($data) {
-
-	$get = $_GET;
-	$post_types = [];
-	$cats = isset($get['category']) ? explode(',', $get['category']) : false;
-	$html = isset($get['html']) ? $get['html'] : false;
-	$offset = isset($get['offset']) ? $get['offset'] : 0;
-	$posts_per_page = 6;
-	$post_types = 'case-studies';
-		
-	$args = [
-		'post_type' => $post_types,
-		'post_status' => 'publish',
-		'posts_per_page' => $posts_per_page,
-		'offset'	=> $offset
-	];
-
-	if ($cats != false) {
-		$args['cat'] = $cats;
-	}
-
-	$posts = $html == false ? [] : '';
-	$query = new WP_Query($args);
-
-	if ($query->have_posts()) {
-		while($query->have_posts()) {
-			$query->the_post();
-			$id = get_the_ID();
-			if ($html == false) {
-				$post = $query->post;
-				$postObj = new stdClass;
-				$postObj->ID = $id;
-				$postObj->title = $post->post_title;
-				$postObj->excerpt = wp_trim_words($post->post_content, 25, '...');
-				$postObj->link = get_the_permalink($id);
-				$post_type = get_post_type_object($post_types);
-				$postObj->label = $post_type->labels->singular_name;
-				$thumbnail = get_the_post_thumbnail_url($id, 'post-landscape') != false ? get_the_post_thumbnail_url($id, 'post-landscape') : get_the_post_thumbnail_url($id, 'thumbnail');
-				$postObj->featured_image = $thumbnail;
-				$posts[] = $postObj;
-			} elseif($html == true && $html != 'cards') {
-				$posts .= latitude_case_study_stat_block($id);
-			} elseif($html == 'cards') {
-				$posts .= latitude_resource_card($id, false);
-			}
-		}
-
-		wp_reset_postdata();
-
-	}
-	return $posts;
-}
-
-add_action( 'rest_api_init', function () {
-  register_rest_route( 'latitude/v2', '/case-studies/', 
-  	[
-    	'methods' => 'GET',
-    	'callback' => 'latitude_return_case_studies',
-    	'permission_callback' => '__return_true'
-  	] 
-  );
- });
-
-function latitude_case_study_stat_block($id) {
-	if ($id != null) {
-		$content = get_the_content($id);
-		$blocks = parse_blocks($content);
-		$html = '';
-		foreach($blocks as $key => $block) {
-			$name = $block['blockName'];
-
-			if ($name == 'latitude-blocks/case-study') {
-				$inner_html = render_block($block);
-				$html = $inner_html;
-				break;
-			}
-		}
-
-		return $html;
-
-	}
-}
 
 
 function latitude_return_posts($data) {

@@ -5055,7 +5055,7 @@ td.year-sum {
 }
 
 .image-columns .block-wrapper {
-  max-width: 1680px;
+  max-width: 1050px;
   width: 100%;
   margin: 0 auto;
 }
@@ -5787,6 +5787,10 @@ p.contact-item {
   .shortcode-section .header-intro-block {
     padding-bottom: 0;
   }
+}
+
+.shortcode-section.testimonials-section {
+  background: url(img/paint-texture.jpg) no-repeat center center/cover;
 }
 
 .wp-block.checklist {
@@ -7396,8 +7400,8 @@ p.savings {
     z-index: 998;
     min-width: 300px;
     max-width: 450px;
-    border-radius: 12px;
-    border: 2px solid #EDF5FE;
+    border-radius: 0;
+    border: 2px solid #BF5B32;
     background: white;
   }
 }
@@ -7410,7 +7414,7 @@ p.savings {
     top: -24px;
     left: 10%;
     transform: translateX(-50%);
-    border-bottom: solid 24px #EDF5FE;
+    border-bottom: solid 24px #BF5B32;
     border-left: solid 16px transparent;
     border-right: solid 16px transparent;
   }
@@ -7438,7 +7442,7 @@ p.savings {
   height: calc(100% - 2.5rem);
   background: white;
   position: relative;
-  border: 2px solid #EDF5FE;
+  border: 2px solid #BF5B32;
   border-radius: 12px;
 }
 
@@ -7447,7 +7451,7 @@ p.savings {
     box-shadow: none;
     background: transparent;
     border: none;
-    border-radius: none;
+    border-radius: 0;
     width: 100%;
     height: auto;
     margin: 0;
@@ -7544,11 +7548,11 @@ ul.tax-list .checkbox-component {
 ul.tax-list .checkbox-component:checked + label:after {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 9px;
   left: 3px;
   width: 16px;
   height: 16px;
-  background: #F8AE2B;
+  background: #BF5B32;
 }
 
 ul.tax-list label {
@@ -7579,7 +7583,7 @@ ul.tax-list .tax-wrap:before {
   width: 22px;
   height: 22px;
   background: white;
-  border: 1px solid #1B2C58;
+  border: 1px solid #BF5B32;
 }
 
 h2.no-success-header {
@@ -7587,7 +7591,7 @@ h2.no-success-header {
   text-align: center;
   grid-column: 1/4;
   font-size: 24px;
-  color: #F8AE2B;
+  color: #BF5B32;
   font-family: "gill_sansregular", sans-serif;
 }
 
@@ -7733,17 +7737,6 @@ ul.tax-list .checkbox-component {
   cursor: pointer;
 }
 
-ul.tax-list .checkbox-component:checked + label:after {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  top: 5px;
-  left: 3px;
-  width: 16px;
-  height: 16px;
-  background: #F8AE2B;
-}
-
 ul.tax-list label {
   font-family: "gill_sansregular", sans-serif;
   font-size: 18px;
@@ -7754,26 +7747,6 @@ ul.tax-list label {
 ul.tax-list .tax-wrap {
   padding-left: 2rem;
   position: relative;
-}
-
-ul.tax-list .tax-wrap:before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 0;
-  width: 22px;
-  height: 22px;
-  background: white;
-  border: 1px solid #1B2C58;
-}
-
-h2.no-success-header {
-  width: 100%;
-  text-align: center;
-  grid-column: 1/4;
-  font-size: 24px;
-  color: #F8AE2B;
-  font-family: "gill_sansregular", sans-serif;
 }
 
 .wp-block.feature-section {

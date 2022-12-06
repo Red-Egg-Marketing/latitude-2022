@@ -270,9 +270,6 @@ a.custom-logo-link {
 	}
 }
 
-.main-navigation .menu-item a {
-	display: inline;
-}
 
 li.menu-item.nav-button a {
 	@extend .wp-block-button__link;
@@ -294,23 +291,22 @@ li.menu-item.nav-button a {
 
 .main-navigation .menu-item a,
 .main-navigation .menu-item {
-	color: $head-color;
-	font-family: $font-head-2;
-	font-size: 16px;
+	color: $burnt-orange;
+	font-family: $font-head;
+	font-size: 18px;
 	text-align: left;
-	font-weight: 400;
 	text-transform: capitalize;
+	display: inline;
 	@media screen and (min-width: $med-small-width) {
 		text-align: left;
-		color: $head-color;
-		font-weight: 400;
-		font-size: 19px;
-		line-height: 24px;
+		color: $burnt-orange;
+		font-size: 22px;
+		line-height: 27px;
 	}
 }
 
 .main-navigation .menu-item a:hover {
-	color: $teal-blue;
+	color: $body-color;
 }
 
 .menu-primary-menu-container .menu-item,
@@ -457,42 +453,20 @@ li.menu-item.nav-button a {
 	display: inline-block;
 	text-transform: uppercase;
 	position: relative;
-	font-weight: 700;
 	padding-right: 10px;
 	padding-left: 10px;
+	letter-spacing: 0.35px;
 	@media screen and (min-width:  $small-width) {
 		padding-right: 15px;
 		padding-left: 15px;
+		font-size: 19px;
 	}
 }
 
-.secondary-navigation p a:after {
-	content: "";
-	width: 2px;
-	height: 100%;
-	background: $blue;
-	display: inline-block;
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-
-.secondary-navigation p a:last-of-type:after {
-	display: none;
-}
-
-.secondary-navigation p a:last-of-type {
+.secondary-navigation p:last-of-type a {
 	padding-right: 0;
 	@media screen and (min-width:  $small-width) {
 		padding-right: 0;
-	}
-}
-
-
-.secondary-navigation p a:first-of-type {
-	padding-left: 0;
-	@media screen and (min-width:  $small-width) {
-		padding-left: 0;
 	}
 }
 
