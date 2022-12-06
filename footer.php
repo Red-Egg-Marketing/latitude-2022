@@ -13,6 +13,9 @@ if (function_exists('get_field')) {
         'locations'     => get_field('locations', 'options'),
         'icons'         => get_field('icons', 'options'),
     ];
+
+    $privacy = get_field('privacy_page', 'options');
+    $privacy = get_permalink($privacy);
     
 ?>
 
@@ -36,10 +39,26 @@ if (function_exists('get_field')) {
 
                         echo $html;
                       }
+
+                      if (!empty($company_settings['icons'])){
+                        echo '<li class="location socials">';
+                        echo '<ul class="social-icons">';
+                        foreach($company_settings['icons'] as $icon) {
+                            $src = $icon['social']['link'];
+                            $class = $icon['social']['icon_class'];
+                        ?>
+                                <li class="social"><a href="<?= $src; ?>" class="fa-brands fa-<?= $class; ?>" target="_blank"></a></li>
+                        <?php
+                        }
+                        echo '</ul>';
+                        echo '</li>';
+                      }
                     ?>
                 </ul>
             </div>
-    
+            <div class="footer-copyright">
+                <p>Copyright Latitude Insurance | <a href="<?= $privacy; ?>">Privacy Policy</a> | Web Design by <a href="https://redeggmarketing.com/" target="_blank">Red Egg Marketing</a></p>
+            </div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

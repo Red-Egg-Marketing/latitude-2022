@@ -4,12 +4,12 @@
 	background: $bg-color-7;
 	@media screen and (min-width: $small-width) {
 		padding-top: 4.125rem;
-		padding-bottom: 4.125rem;
+		padding-bottom: 1.25rem;
 	}
 }
 
 .site-footer .wrapper {
-	max-width: 1350px;
+	max-width: 1430px;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -51,10 +51,15 @@
 
 .col-locations {
 	display: grid;
-	grid-auto-flow: column;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, 1fr);
 	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	grid-template-columns: 1fr;
+	@media screen and (min-width: $small-width) {
+		grid-auto-flow: column;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
 }
 
 .site-footer .contact-col {
@@ -73,6 +78,29 @@
 
 .site-footer .menu-tertiary-footer-container .menu {
 	width: 100%;
+}
+
+.footer-copyright {
+	text-align: center;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	border-top: 1px solid white;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.site-footer .footer-copyright p {
+	margin-bottom: 0;
+	font-family: $font-body-light;
+	font-size: 18px;
+	@media screen and (min-width: $small-width) {
+		font-size: 20px;
+	}
+}
+
+.site-footer .footer-copyright p a {
+	color: white;
+	text-decoration: none;
 }
 
 ul.social {
@@ -200,9 +228,9 @@ a.footer-home {
 	font-weight: 400;
 	line-height: 25px;
 	margin-top: 0;
-	font-size: 16px;
+	font-size: 18px;
 	@media screen and (min-width: $small-width) {
-		font-size: 17px;
+		font-size: 20px;
 		margin-top: 1rem;
 	}
 }
@@ -277,6 +305,55 @@ a.footer-home {
 	font-family: $font-body;
 	@media screen and (min-width: $med-small-width) {
 		font-size: 15px;
+		line-height: 25px;
+	}
+}
+
+.social-icons {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.site-footer .location {
+	margin-bottom: 25px;
+	font-size: 18px;
+	@media screen and (min-width: $small-width) {
+		margin-bottom: 40px;
+		font-size: 20px;
+	}
+}
+
+.site-footer .location:not(.socials) a {
+	text-decoration: none;
+	font-family: $font-body-light;
+}
+
+.social-icons .social .fa-brands {
+	background: white;
+	border-radius: 5px;
+	color: $bg-color-7;
+	text-decoration: none;
+	padding: 0px 5px;
+	line-height: 43px;
+	font-size: 38px;
+}
+
+.social-icons .social .fa-brands:hover {
+	color: $bg-color-7;
+}
+
+.site-footer .location a:hover {
+	color: white;
+}
+
+.site-footer .location h4 {
+	font-family: $font-head;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 0;
+	@media screen and (min-width: $small-width) {
+		font-size: 20px;
 		line-height: 25px;
 	}
 }
