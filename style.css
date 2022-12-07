@@ -17425,7 +17425,13 @@ p.contact-item {
 }
 
 .tabs .tab-container p + ul {
-  margin-top: -28px;
+  margin-top: -14px;
+}
+
+@media screen and (min-width: 768px) {
+  .tabs .tab-container p + ul {
+    margin-top: -28px;
+  }
 }
 
 .tabs .tab-container {
