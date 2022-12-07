@@ -27,6 +27,9 @@ registerBlockType( 'latitude-blocks/cards-grid', {
 			default: ''
 		},
 	},
+	supports: {
+		anchor: true
+	},
 	icon: 'grid-view',
 	category: 'layout',
 	edit: edit,

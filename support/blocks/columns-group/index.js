@@ -11,6 +11,9 @@ registerBlockType( 'latitude-blocks/columns-group', {
 	apiVersion: 2,
 	icon: 'grid-view',
 	category: 'layout',
+	supports: {
+		anchor: true
+	},
 	edit: edit,
 	save: save,
 } );

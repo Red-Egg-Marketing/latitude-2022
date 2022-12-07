@@ -21,6 +21,9 @@ registerBlockType( 'latitude-blocks/shortcode-section', {
 			default: ''
 		},
 	},
+	supports: {
+		anchor: true
+	},
 	edit: edit,
 	save: save,
 } );

@@ -16,6 +16,9 @@ registerBlockType( 'latitude-blocks/tab-group', {
 			type: 'string',
 		}
 	},
+	supports: {
+		anchor: true
+	},
 	category: 'layout',
 	edit: edit,
 	save: save,

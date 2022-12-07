@@ -85,6 +85,9 @@ registerBlockType( 'latitude-blocks/image-text', {
 			default: false
 		}
 	},
+	supports: {
+		anchor: true
+	},
 	edit: edit,
 	save: save,
 } );
