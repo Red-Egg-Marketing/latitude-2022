@@ -39,15 +39,11 @@
 	max-width: $max-cont-w;
 	margin: 0 auto 25px;
 	width: 100%;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-column-gap: 15px;
+	display: flex;
 	border-top: 1px solid $navy;
 	border-bottom: 1px solid $navy;
-	@media screen and (min-width: $small-width) {
-		grid-template-columns: 1fr 1fr;
-		grid-column-gap: 15px;
-	}
+	align-items: center;
+	justify-content: center;
 }
 
 .form-filters .wrapper.one-col {
@@ -355,13 +351,6 @@ header.section-header {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-}
-
-.form-filters .wrapper {
-	width: 100%;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-column-gap: 15px;
 }
 
 .tax-wrapper .tax-close {

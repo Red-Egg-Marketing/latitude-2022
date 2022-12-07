@@ -9636,7 +9636,7 @@ a.custom-logo-link {
       justify-content: flex-start;
   position: absolute;
   background: white;
-  height: calc(100vh - 80px);
+  height: calc(45vh - 80px);
   top: 80px;
   left: 0;
   overflow: auto;
@@ -9651,7 +9651,7 @@ a.custom-logo-link {
   .menu-logged-out-container,
   .menu-logged-in-container,
   .menu-all-pages-container {
-    height: calc(100vh - 90px);
+    height: calc(45vh - 90px);
     top: 90px;
     overflow: visible;
     padding-bottom: 90px;
@@ -9709,7 +9709,8 @@ li.menu-item.nav-button a:hover {
   font-size: 18px;
   text-align: left;
   text-transform: capitalize;
-  display: inline;
+  display: inline-block;
+  width: 100%;
 }
 
 @media screen and (min-width: 1080px) {
@@ -9717,6 +9718,8 @@ li.menu-item.nav-button a:hover {
   .main-navigation .menu-item {
     text-align: left;
     color: #BF5B32;
+    display: inline;
+    width: auto;
     font-size: 22px;
     line-height: 27px;
   }
@@ -10707,6 +10710,10 @@ button.swiper-pagination-bullet {
   z-index: 0;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+}
+
+.entry-content {
+  overflow-x: hidden;
 }
 
 .entry-content > p,
@@ -14157,6 +14164,10 @@ div.gs-team-popup--default .gs-member-desc {
       flex-wrap: wrap;
 }
 
+div.mfp-gsteam .mfp-container .mfp-arrow {
+  background: rgba(255, 255, 255, 0.3) !important;
+}
+
 div.gs-team-popup--default .mfp-container .mfp-content .gs_team_popup .mfp-content--container .gs_team_popup_details {
   padding-left: 0 !important;
 }
@@ -14179,6 +14190,7 @@ div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper 
 @media screen and (min-width: 768px) {
   div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper {
     width: 30%;
+    padding-right: 20px;
   }
 }
 
@@ -14931,8 +14943,8 @@ div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper 
 .hero h1 {
   margin-top: 0;
   color: white;
-  font-size: 28px;
-  line-height: 33px;
+  font-size: 34px;
+  line-height: 42px;
   margin-bottom: 15px;
 }
 
@@ -14959,15 +14971,22 @@ div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper 
 
 .hero-block-image:before {
   content: "";
-  width: 100vw;
-  height: 51.3vw;
-  max-width: 442px;
-  max-height: 227px;
   position: absolute;
   bottom: 0;
   right: 0;
   opacity: .7;
   background: url(img/mountains.svg) no-repeat center center/100%;
+  width: 60vw;
+  height: 30.78vw;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-block-image:before {
+    width: 100vw;
+    height: 51.3vw;
+    max-width: 442px;
+    max-height: 227px;
+  }
 }
 
 .hero .description a {
@@ -18411,21 +18430,14 @@ p.savings {
   max-width: 1680px;
   margin: 0 auto 25px;
   width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  grid-column-gap: 15px;
+  display: -ms-flexbox;
+  display: flex;
   border-top: 1px solid #00304A;
   border-bottom: 1px solid #00304A;
-}
-
-@media screen and (min-width: 768px) {
-  .form-filters .wrapper {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    grid-column-gap: 15px;
-  }
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -18769,15 +18781,6 @@ header.section-header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.form-filters .wrapper {
-  width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-column-gap: 15px;
 }
 
 .tax-wrapper .tax-close {

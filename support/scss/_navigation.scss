@@ -241,7 +241,7 @@ a.custom-logo-link {
 	justify-content: flex-start;
 	position: absolute;
 	background: white;
-	height: calc(100vh - 80px);
+	height: calc(45vh - 80px);
 	top: 80px;
 	left: 0;
 	overflow: auto;
@@ -249,7 +249,7 @@ a.custom-logo-link {
 	width: 100%;
 	padding-bottom: 80px;
 	@media screen and (min-width: $small-width) and (max-width: $med-small-width) {
-		height: calc(100vh - 90px);
+		height: calc(45vh - 90px);
 		top: 90px;
 		overflow: visible;
 		padding-bottom: 90px;
@@ -296,10 +296,13 @@ li.menu-item.nav-button a {
 	font-size: 18px;
 	text-align: left;
 	text-transform: capitalize;
-	display: inline;
+	display: inline-block;
+	width: 100%;
 	@media screen and (min-width: $med-small-width) {
 		text-align: left;
 		color: $burnt-orange;
+		display: inline;
+		width: auto;
 		font-size: 22px;
 		line-height: 27px;
 	}

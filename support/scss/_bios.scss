@@ -117,6 +117,10 @@ div.gs-team-popup--default .gs-member-desc {
 	flex-wrap: wrap;
 }
 
+div.mfp-gsteam .mfp-container .mfp-arrow {
+	background: rgba(255, 255, 255, .3) !important;
+}
+
 div.gs-team-popup--default .mfp-container .mfp-content .gs_team_popup .mfp-content--container .gs_team_popup_details {
 	padding-left: 0 !important;
 }
@@ -133,6 +137,7 @@ div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper 
 	width: 100%;
 	@media screen and (min-width: $small-width) {
 		width: 30%;
+		padding-right: 20px;
 	}
 }
 
