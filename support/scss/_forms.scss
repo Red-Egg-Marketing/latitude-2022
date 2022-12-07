@@ -29,6 +29,11 @@ div.gform_wrapper textarea {
   }
 }
 
+.gform_wrapper.gravity-theme .gfield textarea {
+	padding-left: 0;
+	padding-right: 0;
+}
+
 div.gform_wrapper div.ginput_complex {
 	@media screen and (min-width: $form-width) {
 		grid-column-gap: 35px;	
