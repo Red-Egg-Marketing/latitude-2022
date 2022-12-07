@@ -63,14 +63,16 @@ div.wprevpro_t1_SPAN_5 {
 	padding-top: 30px
 }
 
-div.wprevpro_t1_rname {
+div.wprev_preview_tcolor2_T1 > div.wprevpro_t1_rname {
 	color: $bg-color-7;
 	font-family: $font-body;
 	font-weight: 900;
 	text-transform: none;
 	font-size: 18px;
+	line-height: 22px;
 	@media screen and (min-width: $small-width) {
 		font-size: 24px;
+		line-height: 28px;
 	}
 }
 

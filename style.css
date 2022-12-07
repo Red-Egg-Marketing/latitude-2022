@@ -13931,17 +13931,19 @@ div.wprevpro_t1_SPAN_5 {
   padding-top: 30px;
 }
 
-div.wprevpro_t1_rname {
+div.wprev_preview_tcolor2_T1 > div.wprevpro_t1_rname {
   color: #00304A;
   font-family: "gill_sansregular", sans-serif;
   font-weight: 900;
   text-transform: none;
   font-size: 18px;
+  line-height: 22px;
 }
 
 @media screen and (min-width: 768px) {
-  div.wprevpro_t1_rname {
+  div.wprev_preview_tcolor2_T1 > div.wprevpro_t1_rname {
     font-size: 24px;
+    line-height: 28px;
   }
 }
 
@@ -15554,7 +15556,7 @@ div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper 
 
 @media screen and (min-width: 768px) {
   .text-cards-grid + .shortcode-section .header-intro-block {
-    padding-top: 1.75rem;
+    padding-top: 3.75rem;
   }
 }
 
@@ -16788,6 +16790,12 @@ p.contact-item {
   background: url(img/paint-texture.jpg) no-repeat center center/cover;
 }
 
+@media screen and (min-width: 768px) {
+  .shortcode-section.testimonials-section {
+    padding-bottom: 8rem;
+  }
+}
+
 .testimonials-section {
   position: relative;
 }
@@ -17427,6 +17435,10 @@ p.contact-item {
 .tabs .wp-block-image img {
   width: 100%;
   position: relative;
+}
+
+.tabs .wp-block-image figcaption {
+  display: none;
 }
 
 .tabs .wp-block-image {

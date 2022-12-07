@@ -43,6 +43,9 @@
 
 .shortcode-section.testimonials-section {
 	background: url(img/paint-texture.jpg) no-repeat center center /cover;
+	@media screen and (min-width: $small-width) {
+		padding-bottom: 8rem;
+	}
 }
 
 .testimonials-section {

@@ -4623,7 +4623,7 @@ td.year-sum {
 
 @media screen and (min-width: 768px) {
   .text-cards-grid + .shortcode-section .header-intro-block {
-    padding-top: 1.75rem;
+    padding-top: 3.75rem;
   }
 }
 
@@ -5857,6 +5857,12 @@ p.contact-item {
   background: url(img/paint-texture.jpg) no-repeat center center/cover;
 }
 
+@media screen and (min-width: 768px) {
+  .shortcode-section.testimonials-section {
+    padding-bottom: 8rem;
+  }
+}
+
 .testimonials-section {
   position: relative;
 }
@@ -6496,6 +6502,10 @@ p.contact-item {
 .tabs .wp-block-image img {
   width: 100%;
   position: relative;
+}
+
+.tabs .wp-block-image figcaption {
+  display: none;
 }
 
 .tabs .wp-block-image {
