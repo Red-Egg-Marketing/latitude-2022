@@ -172,13 +172,14 @@
 	document.querySelectorAll('a').forEach(anchor => {
 
 		if (anchor.hash != '') {
-
-			var baseUrl = window.location.href;
+			var baseUrl = window.location.origin + window.location.pathname;
 			var anchorLink = anchor.href.replace(anchor.hash, '');
 			var isModal = anchor.hasAttribute('data-fancybox') != null ? true : false;
-
-			if (anchorLink == baseUrl && isModal == false) {
+			console.log('the anchorLink' + anchorLink);
+			console.log('the base url' + baseUrl);
+			if (anchorLink == baseUrl) {
    				anchor.addEventListener('click', function (e) {
+
     			   	e.preventDefault();
     			   	document.querySelector(anchor.hash).scrollIntoView({
     			       	behavior: 'smooth'
@@ -186,7 +187,9 @@
     			});
 
    			}
+
    		}
+   		
 	});
 
 }() );
