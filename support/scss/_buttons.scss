@@ -13,8 +13,8 @@ button.wp-button {
 	border-bottom: 4px solid $burnt-orange;
 	color: $burnt-orange;
 	font-family: $font-head;
-	font-size: 15px;
-	line-height: 18px;
+	font-size: 18px;
+	line-height: 22px;
 	padding: 17px 25px 13px;
 	cursor: pointer;
 	transition-property: background, color;
@@ -25,7 +25,7 @@ button.wp-button {
 		@media screen and (min-width: $small-width) {
 			font-size: 17px;
 			line-height: 19px;
-			padding: 15px 22px 11px;
+			padding: 10px 22px 11px;
 		}
 	}
 	&.bp-secondary-action, &.wp-cancel-pw {
@@ -36,9 +36,9 @@ button.wp-button {
 		}
 	}
 	@media screen and (min-width: $small-width) {
-		font-size: 17px;
+		font-size: 22px;
 		line-height: 22px;
-		padding: 10px 25px 10px;
+		padding: 13px 25px 13px;
 	}
 	&:hover {
 		background: $burnt-orange;
@@ -62,9 +62,9 @@ div.gs_team_area .gs-team-filter-cats li a {
 	border-radius: 0 !important;
 	color: $burnt-orange !important;
 	@media screen and (min-width: $small-width) {
-		font-size: 17px;
-		line-height: 22px;
-		padding: 10px 25px 10px !important;
+		font-size: 22px;
+		line-height: 22px !important;
+		padding: 13px 25px 13px !important;
 	}
 	&:hover {
 		background: $burnt-orange !important; 

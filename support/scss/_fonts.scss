@@ -51,12 +51,12 @@
 .edit-post-visual-editor__content-area dd, .entry-content dd {
 	font-family: $font-body-light;
 	font-size: 18px;
-	line-height: 25px;
-	color: $head-color;
+	line-height: 24px;
+	color: $body-color;
 	font-weight: 300;
 	@media screen and (min-width: $small-width) {
-		font-size: 20px;
-		line-height: 28px;
+		font-size: 24px;
+		line-height: 32px;
 	}
 }
 
@@ -139,8 +139,8 @@
 .gs_team h1, .gs_team h2,
 .edit-post-visual-editor__content-area h1, .entry-content h1,
 .edit-post-visual-editor__content-area h2, .entry-content h2 {
-	font-size: 31px;
-	line-height: 39px;
+	font-size: 28px;
+	line-height: 36px;
 	color: $head-color;
 	margin-top: 2rem;
 	font-family: $font-head;

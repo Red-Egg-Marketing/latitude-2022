@@ -30,6 +30,10 @@
 	transition-property: all;
 }
 
+.gs_team_area .gs-team-filter-cats li {
+	line-height: 22px;
+}
+
 .single-member .single-member-name-desig {
 	display: none;
 }
@@ -40,6 +44,15 @@
 
 .single-member:hover .gs_team_overlay {
 	display: none;
+}
+
+.gs_team_area {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	@media screen and (min-width: $small-width) {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 .single-member:hover .single-member-name-desig {
@@ -87,6 +100,40 @@ div.gs_team_area .gs-containeer .gs-roow {
 	max-width: 1120px;
 	margin: 0 auto;
 	width: 100%;
+}
+
+div.gs-team-popup--default .gs-member-desc {
+	color: $body-color;
+	font-family: $font-body-light;
+	font-size: 18px;
+	line-height: 24px;
+	@media screen and (min-width: $small-width) {
+		font-size: 24px;
+		line-height: 32px;
+	}
+}
+
+.mfp-content--container {
+	flex-wrap: wrap;
+}
+
+div.gs-team-popup--default .mfp-container .mfp-content .gs_team_popup .mfp-content--container .gs_team_popup_details {
+	padding-left: 0 !important;
+}
+
+div.gs-team-popup--default .mfp-content--container .gs_team_popup_details {
+	width: 100%;
+	padding-left: 0 !important;
+	@media screen and (min-width: $small-width) {
+		width: 70%;
+	}
+}
+
+div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper {
+	width: 100%;
+	@media screen and (min-width: $small-width) {
+		width: 30%;
+	}
 }
 
 .gs_team_area div.gs-col-lg-3 {

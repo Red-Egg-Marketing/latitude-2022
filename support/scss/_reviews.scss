@@ -28,7 +28,7 @@ div.wprevpro_t1_DIV_2 p {
 	font-family: $font-body-light;
 	font-size: 18px;
 	line-height: 26px;
-	color: $head-color;
+	color: $body-color;
 	font-style: normal;
 	@media screen and (min-width: $small-width) {
 		font-size: 24px;
@@ -36,10 +36,15 @@ div.wprevpro_t1_DIV_2 p {
 	}
 }
 
+.wprevpro button.slickwprev-arrow {
+	z-index: 998;
+}
+
 .wprevpro_star_imgs span.svgicons {
 	width: 20px !important;
 	height: 20px !important;
-	background: $bg-color-5 !important;
+	background: $yellow !important;
+	color: $yellow;
 	margin-right: 3px !important;
 }
 
@@ -65,7 +70,7 @@ div.wprevpro_t1_rname {
 	text-transform: none;
 	font-size: 18px;
 	@media screen and (min-width: $small-width) {
-		font-size: 20px;
+		font-size: 24px;
 	}
 }
 

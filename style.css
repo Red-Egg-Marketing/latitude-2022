@@ -931,7 +931,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     background-position: 0 100%;
   }
   100% {
-    background-position: 0 -50%;
+    background-position: 0 -62.5%;
   }
 }
 
@@ -8498,8 +8498,8 @@ textarea {
 .edit-post-visual-editor__content-area dd, .entry-content dd {
   font-family: "gill_sanslight", sans-serif;
   font-size: 18px;
-  line-height: 25px;
-  color: #1B2C58;
+  line-height: 24px;
+  color: #000000;
   font-weight: 300;
 }
 
@@ -8510,8 +8510,8 @@ textarea {
   .edit-post-visual-editor__content-area li, .entry-content li,
   .edit-post-visual-editor__content-area dl, .entry-content dl,
   .edit-post-visual-editor__content-area dd, .entry-content dd {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 24px;
+    line-height: 32px;
   }
 }
 
@@ -8609,8 +8609,8 @@ textarea {
 .gs_team h1, .gs_team h2,
 .edit-post-visual-editor__content-area h1, .entry-content h1,
 .edit-post-visual-editor__content-area h2, .entry-content h2 {
-  font-size: 31px;
-  line-height: 39px;
+  font-size: 28px;
+  line-height: 36px;
   color: #1B2C58;
   margin-top: 2rem;
   font-family: "gill_sanssemibold", sans-serif;
@@ -8862,8 +8862,8 @@ button.wp-button {
   border-bottom: 4px solid #BF5B32;
   color: #BF5B32;
   font-family: "gill_sanssemibold", sans-serif;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 18px;
+  line-height: 22px;
   padding: 17px 25px 13px;
   cursor: pointer;
   transition-property: background, color;
@@ -8889,7 +8889,7 @@ button.wp-button {
   button.wp-button.is-small {
     font-size: 17px;
     line-height: 19px;
-    padding: 15px 22px 11px;
+    padding: 10px 22px 11px;
   }
 }
 
@@ -8969,9 +8969,9 @@ button.wp-button.wp-cancel-pw:hover {
   li.menu-item.nav-button a,
   input[type="submit"],
   button.wp-button {
-    font-size: 17px;
+    font-size: 22px;
     line-height: 22px;
-    padding: 10px 25px 10px;
+    padding: 13px 25px 13px;
   }
 }
 
@@ -9039,9 +9039,9 @@ div.gs_team_area .gs-team-filter-cats li a {
 
 @media screen and (min-width: 768px) {
   div.gs_team_area .gs-team-filter-cats li a {
-    font-size: 17px;
-    line-height: 22px;
-    padding: 10px 25px 10px !important;
+    font-size: 22px;
+    line-height: 22px !important;
+    padding: 13px 25px 13px !important;
   }
 }
 
@@ -9199,7 +9199,7 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-blue-gr
 li.menu-item.nav-button .wp-block-button.is-style-solid-blue-green a:hover,
 .wp-block-button.is-style-solid-blue-green div.gform_wrapper input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-blue-green input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
-  color: #0D1F40;
+  color: #00304A;
   background: #EBA23A;
 }
 
@@ -9213,7 +9213,7 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-navy a,
 li.menu-item.nav-button .wp-block-button.is-style-solid-navy a,
 .wp-block-button.is-style-solid-navy div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-navy input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
-  background: #0D1F40;
+  background: #00304A;
   color: white;
 }
 
@@ -9375,7 +9375,7 @@ a.custom-logo-link {
 }
 
 .site-header .custom-logo {
-  max-width: 130px;
+  max-width: 190px;
   width: 100%;
   height: auto;
   display: block;
@@ -9691,7 +9691,7 @@ li.menu-item.nav-button a {
 }
 
 li.menu-item.nav-button a:hover {
-  background: #0D1F40;
+  background: #00304A;
   color: #F79A6C;
 }
 
@@ -10805,7 +10805,7 @@ h4 {
 }
 
 .navy {
-  background: #0D1F40;
+  background: #00304A;
 }
 
 .white {
@@ -10886,12 +10886,15 @@ h4 {
 .resource-card .wp-buttons {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  text-align: center;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .resource-card .wp-buttons {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+    text-align: left;
   }
 }
 
@@ -11070,12 +11073,14 @@ h4 {
   color: #000000;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .resource-card p.resource-excerpt {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+    text-align: left;
   }
 }
 
@@ -11504,7 +11509,7 @@ div.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]
   div.gform_wrapper select,
   div.gform_wrapper textarea,
   div.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]):not([class=chosen-search-input]) {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 32px;
   }
 }
@@ -11532,7 +11537,7 @@ div.gform_wrapper.gravity-theme .chosen-container .chosen-results li {
 
 @media screen and (min-width: 641px) {
   div.gform_wrapper.gravity-theme .chosen-container .chosen-results li {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 32px;
   }
 }
@@ -11571,7 +11576,7 @@ div.gform_wrapper .ginput_container_select select {
 
 @media screen and (min-width: 641px) {
   div.gform_wrapper .ginput_container_select select {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 32px;
     margin-bottom: 0;
   }
@@ -11746,8 +11751,8 @@ div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):no
 
 @media only screen and (max-width: 641px) {
   div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
-    line-height: 1;
-    width: 100%;
+    line-height: inherit !important;
+    width: auto;
   }
 }
 
@@ -11801,7 +11806,7 @@ body div.gform_wrapper .top_label div.ginput_container.ginput_container_checkbox
   body div.gform_wrapper .top_label div.ginput_container,
   body div.gform_wrapper .top_label div.ginput_container.ginput_container_checkbox {
     margin-top: 0;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
   }
 }
 
@@ -11964,7 +11969,7 @@ div.gform_wrapper .gform_fields {
 
 @media screen and (min-width: 641px) {
   .gform_wrapper ::-webkit-input-placeholder {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 32px;
   }
 }
@@ -11979,7 +11984,7 @@ div.gform_wrapper .gform_fields {
 
 @media screen and (min-width: 641px) {
   .gform_wrapper ::-moz-placeholder {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 32px;
   }
 }
@@ -11994,7 +11999,7 @@ div.gform_wrapper .gform_fields {
 
 @media screen and (min-width: 641px) {
   .gform_wrapper :-ms-input-placeholder {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 32px;
   }
 }
@@ -12009,7 +12014,7 @@ div.gform_wrapper .gform_fields {
 
 @media screen and (min-width: 641px) {
   .gform_wrapper :-moz-placeholder {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 32px;
   }
 }
@@ -12143,7 +12148,7 @@ div.gform_wrapper .gform_page_footer {
 .contact-section div.gform_wrapper select,
 .contact-section div.gform_wrapper textarea,
 .contact-section div.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
-  color: #4d4d4d;
+  color: #000000;
 }
 
 div.gform_wrapper ul.gfield_checkbox li {
@@ -13177,7 +13182,7 @@ h3.footer-header {
 
 .tax-link a {
   text-decoration: none;
-  color: #0D1F40;
+  color: #00304A;
   text-transform: capitalize;
   font-family: "gill_sansregular", sans-serif;
   display: block;
@@ -13269,7 +13274,7 @@ h3.footer-header {
 
 .entry-footer .resources-grid {
   padding-bottom: 4rem;
-  border-bottom: 1px solid #0D1F40;
+  border-bottom: 1px solid #00304A;
 }
 
 @media screen and (min-width: 768px) {
@@ -13888,7 +13893,7 @@ div.wprevpro_t1_DIV_2 p {
   font-family: "gill_sanslight", sans-serif;
   font-size: 18px;
   line-height: 26px;
-  color: #1B2C58;
+  color: #000000;
   font-style: normal;
 }
 
@@ -13899,10 +13904,15 @@ div.wprevpro_t1_DIV_2 p {
   }
 }
 
+.wprevpro button.slickwprev-arrow {
+  z-index: 998;
+}
+
 .wprevpro_star_imgs span.svgicons {
   width: 20px !important;
   height: 20px !important;
-  background: #F79A6C !important;
+  background: #EDA321 !important;
+  color: #EDA321;
   margin-right: 3px !important;
 }
 
@@ -13931,7 +13941,7 @@ div.wprevpro_t1_rname {
 
 @media screen and (min-width: 768px) {
   div.wprevpro_t1_rname {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
@@ -14048,6 +14058,10 @@ button.slickwprev-prev:before {
   transition-property: all;
 }
 
+.gs_team_area .gs-team-filter-cats li {
+  line-height: 22px;
+}
+
 .single-member .single-member-name-desig {
   display: none;
 }
@@ -14058,6 +14072,18 @@ button.slickwprev-prev:before {
 
 .single-member:hover .gs_team_overlay {
   display: none;
+}
+
+.gs_team_area {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .gs_team_area {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .single-member:hover .single-member-name-desig {
@@ -14103,6 +14129,50 @@ div.gs_team_area .gs-containeer .gs-roow {
   max-width: 1120px;
   margin: 0 auto;
   width: 100%;
+}
+
+div.gs-team-popup--default .gs-member-desc {
+  color: #000000;
+  font-family: "gill_sanslight", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  div.gs-team-popup--default .gs-member-desc {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.mfp-content--container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div.gs-team-popup--default .mfp-container .mfp-content .gs_team_popup .mfp-content--container .gs_team_popup_details {
+  padding-left: 0 !important;
+}
+
+div.gs-team-popup--default .mfp-content--container .gs_team_popup_details {
+  width: 100%;
+  padding-left: 0 !important;
+}
+
+@media screen and (min-width: 768px) {
+  div.gs-team-popup--default .mfp-content--container .gs_team_popup_details {
+    width: 70%;
+  }
+}
+
+div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper {
+    width: 30%;
+  }
 }
 
 @media (min-width: 1025px) {
@@ -14774,6 +14844,7 @@ div.gs_team_area .gs-containeer .gs-roow {
   margin-bottom: 0;
   position: relative;
   min-height: 450px;
+  height: 100vh;
 }
 
 @media screen and (min-width: 768px) {
@@ -14814,8 +14885,8 @@ div.gs_team_area .gs-containeer .gs-roow {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-align: end;
-      align-items: flex-end;
+  -ms-flex-align: center;
+      align-items: center;
   position: relative;
 }
 
@@ -14853,8 +14924,8 @@ div.gs_team_area .gs-containeer .gs-roow {
 .hero h1 {
   margin-top: 0;
   color: white;
-  font-size: 55px;
-  line-height: 65px;
+  font-size: 28px;
+  line-height: 33px;
   margin-bottom: 15px;
 }
 
@@ -14934,8 +15005,8 @@ div.gs_team_area .gs-containeer .gs-roow {
 
 .hero__inner .content-wrap {
   position: relative;
-  padding-left: 2.185rem;
-  padding-right: 2.185rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   width: 100%;
   max-width: 1680px;
   display: -ms-flexbox;
@@ -15019,7 +15090,7 @@ div.gs_team_area .gs-containeer .gs-roow {
 @media screen and (min-width: 768px) {
   .header-intro-block {
     padding-bottom: 6.75rem;
-    padding-top: 6.75rem;
+    padding-top: 8rem;
   }
 }
 
@@ -15159,7 +15230,7 @@ div.gs_team_area .gs-containeer .gs-roow {
   font-size: 14px;
   line-height: 23px;
   font-weight: 600;
-  color: #0D1F40;
+  color: #00304A;
 }
 
 @media screen and (min-width: 768px) {
@@ -15477,6 +15548,16 @@ div.gs_team_area .gs-containeer .gs-roow {
   width: 100%;
 }
 
+.text-cards-grid + .shortcode-section .header-intro-block {
+  padding-top: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .text-cards-grid + .shortcode-section .header-intro-block {
+    padding-top: 1.75rem;
+  }
+}
+
 .text-cards-grid > .block-wrapper {
   max-width: 1680px;
   padding-left: 0;
@@ -15520,6 +15601,16 @@ div.gs_team_area .gs-containeer .gs-roow {
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 3;
+  }
+}
+
+.text-cards-grid .header-intro-block {
+  padding-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .text-cards-grid .header-intro-block {
+    padding-bottom: 6.75rem;
   }
 }
 
@@ -16162,8 +16253,9 @@ div.gs_team_area .gs-containeer .gs-roow {
 
 .image-columns li,
 .image-columns p {
-  font-size: 22px;
-  line-height: 31px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -16171,6 +16263,7 @@ div.gs_team_area .gs-containeer .gs-roow {
   .image-columns p {
     font-size: 24px;
     line-height: 32px;
+    text-align: left;
   }
 }
 
@@ -16281,7 +16374,7 @@ div.gs_team_area .gs-containeer .gs-roow {
 .contact-section {
   width: 100%;
   padding-top: 4.2rem;
-  padding-bottom: 4.2rem;
+  padding-bottom: 6.2rem;
   background: url(img/paint-texture.jpg) no-repeat center center/cover;
   position: relative;
 }
@@ -16289,7 +16382,7 @@ div.gs_team_area .gs-containeer .gs-roow {
 @media screen and (min-width: 768px) {
   .contact-section {
     padding-top: 6.125rem;
-    padding-bottom: 6.125rem;
+    padding-bottom: 9.125rem;
   }
 }
 
@@ -16349,6 +16442,11 @@ div.gs_team_area .gs-containeer .gs-roow {
   }
 }
 
+.form-column h1:first-of-type,
+.form-column h2:first-of-type {
+  margin-top: 0;
+}
+
 .contact-section div.gform_wrapper .gform_heading {
   -ms-flex-pack: start;
       justify-content: flex-start;
@@ -16397,6 +16495,7 @@ div.gs_team_area .gs-containeer .gs-roow {
 
 .contact-section .form-column {
   width: 100%;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -16404,6 +16503,7 @@ div.gs_team_area .gs-containeer .gs-roow {
     width: 72%;
     max-width: 72%;
     padding-right: 5%;
+    text-align: left;
   }
 }
 
@@ -16416,12 +16516,14 @@ div.gs_team_area .gs-containeer .gs-roow {
   width: 100%;
   border: 2px solid #BF5B32;
   text-align: center;
+  padding: 1rem;
 }
 
 @media screen and (min-width: 768px) {
   .contact-section .content-column {
     width: 28%;
     padding: 1.25rem;
+    margin-top: 8px;
   }
 }
 
@@ -17223,19 +17325,21 @@ p.contact-item {
 
 .tab-content.content-cols ul {
   column-count: 2;
+  padding-left: 0;
 }
 
 @media screen and (min-width: 768px) {
   .tab-content.content-cols ul {
-    padding-left: 1.5rem;
     list-style-type: disc;
   }
 }
 
 .tab-content.content-cols ul li {
   margin-bottom: 0;
-  list-style-type: disc;
+  list-style-type: none;
   break-inside: avoid;
+  position: relative;
+  padding-left: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -17244,8 +17348,16 @@ p.contact-item {
   }
 }
 
-.tab-content.content-cols ul li::marker {
-  color: #BF5B32;
+.tab-content.content-cols ul li:before {
+  content: "";
+  background: #BF5B32;
+  border-radius: 7px;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  display: inline-block;
 }
 
 .tabs .tab-container {
@@ -17282,6 +17394,20 @@ p.contact-item {
 
 .tabs .tab-container p + ul {
   margin-top: -28px;
+}
+
+.tabs .tab-container {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .tabs .tab-container {
+    text-align: left;
+  }
+}
+
+.tab-content.content-cols ul li {
+  text-align: left;
 }
 
 .tab-content.content-cols ul li,
@@ -18273,8 +18399,8 @@ p.savings {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   grid-column-gap: 15px;
-  border-top: 1px solid #0D1F40;
-  border-bottom: 1px solid #0D1F40;
+  border-top: 1px solid #00304A;
+  border-bottom: 1px solid #00304A;
 }
 
 @media screen and (min-width: 768px) {
@@ -18320,7 +18446,7 @@ p.savings {
 .form-filters .components-button {
   border: none;
   border-radius: 0;
-  color: #0D1F40;
+  color: #00304A;
   font-family: "gill_sansregular", sans-serif;
   font-size: 18px;
   letter-spacing: 0.3px;

@@ -1,12 +1,12 @@
 .contact-section {
 	width: 100%;
 	padding-top: 4.2rem;
-	padding-bottom: 4.2rem;
+	padding-bottom: 6.2rem;
 	background: url(img/paint-texture.jpg) no-repeat center center / cover;
 	position: relative;
 	@media screen and (min-width: $small-width) {
 		padding-top: 6.125rem;
-		padding-bottom: 6.125rem;
+		padding-bottom: 9.125rem;
 	}
 }
 
@@ -57,6 +57,11 @@
 	}
 }
 
+.form-column h1:first-of-type,
+.form-column h2:first-of-type {
+	margin-top: 0;
+}
+
 .contact-section div.gform_wrapper .gform_heading {
 	justify-content: flex-start;
 
@@ -96,10 +101,12 @@
 
 .contact-section .form-column {
 	width: 100%;
+	text-align: center;
 	@media screen and (min-width: $small-width) {
 		width: 72%;
 		max-width: 72%;
 		padding-right: 5%;
+		text-align: left;
 	}
 }
 
@@ -112,9 +119,11 @@
 	width: 100%;
 	border: 2px solid $burnt-orange;
 	text-align: center;
+	padding: 1rem;
 	@media screen and (min-width: $small-width) {
 		width: 28%;
 		padding: 1.25rem;
+		margin-top: 8px;
 	}
 }
 

@@ -112,7 +112,7 @@ div.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]
 	font-weight: 300;
 	width: 100%;
 	@media screen and (min-width: $form-width) {
-		font-size: 18px;
+		font-size: 24px;
 		line-height: 32px;
 	}
 }
@@ -138,7 +138,7 @@ div.gform_wrapper.gravity-theme .chosen-container .chosen-results li {
 	font-weight: 300;
 	width: 100%;
 	@media screen and (min-width: $form-width) {
-		font-size: 18px;
+		font-size: 24px;
 		line-height: 32px;
 	}
 }
@@ -171,7 +171,7 @@ div.gform_wrapper .ginput_container_select select {
 	font-weight: 300;
 	margin-bottom: 0;
  	@media screen and (min-width: $form-width) {
-		font-size: 18px;
+		font-size: 24px;
 		line-height: 32px;
 		margin-bottom: 0;
 	}
@@ -314,8 +314,8 @@ div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):no
 	min-height: 52px;
 	width: auto;
 	@media only screen and (max-width: $form-width) {
-		line-height: 1;
-		width: 100%;
+		line-height: inherit !important;
+		width: auto;
 	}
 }
 
@@ -367,7 +367,7 @@ body div.gform_wrapper .top_label div.ginput_container.ginput_container_checkbox
 	margin-bottom: 6px;
 	@media screen and (min-width: $form-width) {
 		margin-top: 0;
-		margin-bottom: 0px;
+		margin-bottom: 15px;
 	}
 }
 
@@ -507,7 +507,7 @@ div.gform_wrapper .ginput_complex span {
   color: $body-color;
   font-size: 18px;
   @media screen and (min-width: $form-width) {
-  	font-size: 18px;
+  	font-size: 24px;
   	line-height: 32px;
   }
 }
@@ -518,7 +518,7 @@ div.gform_wrapper .ginput_complex span {
   color: $body-color;
   font-size: 18px;
   @media screen and (min-width: $form-width) {
-  	font-size: 18px;
+  	font-size: 24px;
   	line-height: 32px;
   }
 }
@@ -529,7 +529,7 @@ div.gform_wrapper .ginput_complex span {
   color: $body-color;
   font-size: 18px;
   @media screen and (min-width: $form-width) {
-  	font-size: 18px;
+  	font-size: 24px;
   	line-height: 32px;
   }
 }
@@ -540,7 +540,7 @@ div.gform_wrapper .ginput_complex span {
   color: $body-color;
   font-size: 18px;
   @media screen and (min-width: $form-width) {
-  	font-size: 18px;
+  	font-size: 24px;
   	line-height: 32px;
   }
 }
@@ -648,7 +648,7 @@ div.gform_wrapper .gform_page_footer {
 .contact-section div.gform_wrapper select,
 .contact-section div.gform_wrapper textarea,
 .contact-section div.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
-	color: $bg-color-4;
+	color: $body-color;
 }
 
 div.gform_wrapper ul.gfield_checkbox li {

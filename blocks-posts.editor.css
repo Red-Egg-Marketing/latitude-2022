@@ -34,8 +34,8 @@
 .edit-post-visual-editor__content-area dd, .entry-content dd {
   font-family: "gill_sanslight", sans-serif;
   font-size: 18px;
-  line-height: 25px;
-  color: #1B2C58;
+  line-height: 24px;
+  color: #000000;
   font-weight: 300;
 }
 
@@ -46,8 +46,8 @@
   .edit-post-visual-editor__content-area li, .entry-content li,
   .edit-post-visual-editor__content-area dl, .entry-content dl,
   .edit-post-visual-editor__content-area dd, .entry-content dd {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 24px;
+    line-height: 32px;
   }
 }
 
@@ -145,8 +145,8 @@
 .gs_team h1, .gs_team h2,
 .edit-post-visual-editor__content-area h1, .entry-content h1,
 .edit-post-visual-editor__content-area h2, .entry-content h2 {
-  font-size: 31px;
-  line-height: 39px;
+  font-size: 28px;
+  line-height: 36px;
   color: #1B2C58;
   margin-top: 2rem;
   font-family: "gill_sanssemibold", sans-serif;
@@ -473,7 +473,7 @@ h4 {
 }
 
 .navy {
-  background: #0D1F40;
+  background: #00304A;
 }
 
 .white {
@@ -554,12 +554,15 @@ h4 {
 .resource-card .wp-buttons {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  text-align: center;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .resource-card .wp-buttons {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+    text-align: left;
   }
 }
 
@@ -738,12 +741,14 @@ h4 {
   color: #000000;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .resource-card p.resource-excerpt {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+    text-align: left;
   }
 }
 
@@ -1037,8 +1042,8 @@ button.wp-button {
   border-bottom: 4px solid #BF5B32;
   color: #BF5B32;
   font-family: "gill_sanssemibold", sans-serif;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 18px;
+  line-height: 22px;
   padding: 17px 25px 13px;
   cursor: pointer;
   transition-property: background, color;
@@ -1062,7 +1067,7 @@ button.wp-button {
   button.wp-button.is-small {
     font-size: 17px;
     line-height: 19px;
-    padding: 15px 22px 11px;
+    padding: 10px 22px 11px;
   }
 }
 
@@ -1132,9 +1137,9 @@ button.wp-button.wp-cancel-pw:hover {
   a[download],
   input[type="submit"],
   button.wp-button {
-    font-size: 17px;
+    font-size: 22px;
     line-height: 22px;
-    padding: 10px 25px 10px;
+    padding: 13px 25px 13px;
   }
 }
 
@@ -1196,9 +1201,9 @@ div.gs_team_area .gs-team-filter-cats li a {
 
 @media screen and (min-width: 768px) {
   div.gs_team_area .gs-team-filter-cats li a {
-    font-size: 17px;
-    line-height: 22px;
-    padding: 10px 25px 10px !important;
+    font-size: 22px;
+    line-height: 22px !important;
+    padding: 13px 25px 13px !important;
   }
 }
 
@@ -1344,7 +1349,7 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-blue-gr
 .wp-block-button.is-style-solid-blue-green a:hover[download],
 .wp-block-button.is-style-solid-blue-green div.gform_wrapper input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-blue-green input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
-  color: #0D1F40;
+  color: #00304A;
   background: #EBA23A;
 }
 
@@ -1356,7 +1361,7 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-navy a,
 .wp-block-button.is-style-solid-navy a[download],
 .wp-block-button.is-style-solid-navy div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-navy input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
-  background: #0D1F40;
+  background: #00304A;
   color: white;
 }
 
@@ -1621,7 +1626,7 @@ div.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]
   div.gform_wrapper select,
   div.gform_wrapper textarea,
   div.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]):not([class=chosen-search-input]) {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 32px;
   }
 }
@@ -1649,7 +1654,7 @@ div.gform_wrapper.gravity-theme .chosen-container .chosen-results li {
 
 @media screen and (min-width: 641px) {
   div.gform_wrapper.gravity-theme .chosen-container .chosen-results li {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 32px;
   }
 }
@@ -1688,7 +1693,7 @@ div.gform_wrapper .ginput_container_select select {
 
 @media screen and (min-width: 641px) {
   div.gform_wrapper .ginput_container_select select {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 32px;
     margin-bottom: 0;
   }
@@ -1863,8 +1868,8 @@ div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):no
 
 @media only screen and (max-width: 641px) {
   div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
-    line-height: 1;
-    width: 100%;
+    line-height: inherit !important;
+    width: auto;
   }
 }
 
@@ -1918,7 +1923,7 @@ body div.gform_wrapper .top_label div.ginput_container.ginput_container_checkbox
   body div.gform_wrapper .top_label div.ginput_container,
   body div.gform_wrapper .top_label div.ginput_container.ginput_container_checkbox {
     margin-top: 0;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
   }
 }
 
@@ -2081,7 +2086,7 @@ div.gform_wrapper .gform_fields {
 
 @media screen and (min-width: 641px) {
   .gform_wrapper ::-webkit-input-placeholder {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 32px;
   }
 }
@@ -2096,7 +2101,7 @@ div.gform_wrapper .gform_fields {
 
 @media screen and (min-width: 641px) {
   .gform_wrapper ::-moz-placeholder {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 32px;
   }
 }
@@ -2111,7 +2116,7 @@ div.gform_wrapper .gform_fields {
 
 @media screen and (min-width: 641px) {
   .gform_wrapper :-ms-input-placeholder {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 32px;
   }
 }
@@ -2126,7 +2131,7 @@ div.gform_wrapper .gform_fields {
 
 @media screen and (min-width: 641px) {
   .gform_wrapper :-moz-placeholder {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 32px;
   }
 }
@@ -2260,7 +2265,7 @@ div.gform_wrapper .gform_page_footer {
 .contact-section div.gform_wrapper select,
 .contact-section div.gform_wrapper textarea,
 .contact-section div.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
-  color: #4d4d4d;
+  color: #000000;
 }
 
 div.gform_wrapper ul.gfield_checkbox li {

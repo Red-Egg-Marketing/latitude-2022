@@ -26,7 +26,7 @@ $bg-color-6: #ffffff; // white
 $bg-color-7: #00304A; // blue
 $tan: #F2EBDC;
 $tan-2: #F2EBDB;
-$navy: #0D1F40;
+$navy: $bg-color-7;
 $burnt-orange: #BF5B32;
 $light-grey: #F4F4F4;
 $dark-grey: #878787;
@@ -38,6 +38,7 @@ $head-color-2: $bg-color-3;
 $teal-blue: #008FA0;
 $blue-gradient: linear-gradient(to top, #29bcd1, #1c8f9e, #29bcd1);
 $blue: #1C8F9E;
+$yellow: #EDA321;
 
 $med-width: 1200px;
 $med-small-width: 1080px;

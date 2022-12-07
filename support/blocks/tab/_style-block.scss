@@ -43,23 +43,33 @@
 
 .tab-content.content-cols ul {
 	column-count: 2;
+	padding-left: 0;
 	@media screen and (min-width: $small-width) {
-		padding-left: 1.5rem;
 		list-style-type: disc;
 	}
 }
 
 .tab-content.content-cols ul li {
 	margin-bottom: 0;
-	list-style-type: disc;
+	list-style-type: none;
 	break-inside: avoid;
+	position: relative;
+	padding-left: 20px;
 	@media screen and (min-width: $small-width) {
 		margin-right: 25px;
 	}
 }
 
-.tab-content.content-cols ul li::marker {
-	color: $burnt-orange;
+.tab-content.content-cols ul li:before {
+	content: "";
+	background: $burnt-orange;
+	border-radius: 7px;
+	width: 7px;
+	height: 7px;
+	position: absolute;
+	left: 0;
+	top: 8px;
+	display: inline-block;
 }
 
 .tabs .tab-container {
@@ -90,6 +100,16 @@
 
 .tabs .tab-container p + ul {
 	margin-top: -28px;
+}
+
+.tabs .tab-container {
+	text-align: center;
+	@media screen and (min-width: $small-width) {
+		text-align: left;
+	}
+}
+.tab-content.content-cols ul li {
+	text-align: left;
 }
 
 .tab-content.content-cols ul li,
