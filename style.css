@@ -8975,6 +8975,23 @@ button.wp-button.wp-cancel-pw:hover {
   }
 }
 
+#CybotCookiebotDialogBodyButtonAccept:visited,
+.buddypress .buddypress-wrap input[type=button]:visited,
+.buddypress .buddypress-wrap .button:visited,
+.wp-block-button__link:visited,
+div.gs_team_area .gs-team-filter-cats li a:visited,
+a:visited[download],
+li.menu-item.nav-button a:visited,
+div.gform_wrapper input:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+a.wp-block-button__link:visited,
+div.gs_team_area .gs-team-filter-cats li a:visited,
+a:visited[download],
+li.menu-item.nav-button a:visited,
+input[type="submit"]:visited,
+button.wp-button:visited {
+  color: #BF5B32;
+}
+
 #CybotCookiebotDialogBodyButtonAccept:hover,
 .buddypress .buddypress-wrap input[type=button]:hover,
 .buddypress .buddypress-wrap .button:hover,
@@ -8991,23 +9008,6 @@ input[type="submit"]:hover,
 button.wp-button:hover {
   background: #BF5B32;
   color: white;
-}
-
-#CybotCookiebotDialogBodyButtonAccept:visited,
-.buddypress .buddypress-wrap input[type=button]:visited,
-.buddypress .buddypress-wrap .button:visited,
-.wp-block-button__link:visited,
-div.gs_team_area .gs-team-filter-cats li a:visited,
-a:visited[download],
-li.menu-item.nav-button a:visited,
-div.gform_wrapper input:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
-a.wp-block-button__link:visited,
-div.gs_team_area .gs-team-filter-cats li a:visited,
-a:visited[download],
-li.menu-item.nav-button a:visited,
-input[type="submit"]:visited,
-button.wp-button:visited {
-  color: #BF5B32;
 }
 
 #CybotCookiebotDialogBodyButtonAccept[disabled],
@@ -9315,16 +9315,6 @@ div.gform_wrapper .wp-block-button.is-style-outline input:visited[type="submit"]
 }
 
 
-.wp-block-button__link:hover,
-div.gs_team_area .gs-team-filter-cats li a:hover,
-a:hover[download],
-li.menu-item.nav-button a:hover,
-div.gform_wrapper input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
-button.wp-button:hover {
-  color: #F79A6C;
-}
-
-
 .wp-block-button__link:visited,
 div.gs_team_area .gs-team-filter-cats li a:visited,
 a:visited[download],
@@ -9332,6 +9322,16 @@ li.menu-item.nav-button a:visited,
 div.gform_wrapper input:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 button.wp-button:visited {
   color: #BF5B32;
+}
+
+
+.wp-block-button__link:hover,
+div.gs_team_area .gs-team-filter-cats li a:hover,
+a:hover[download],
+li.menu-item.nav-button a:hover,
+div.gform_wrapper input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+button.wp-button:hover {
+  color: #F79A6C;
 }
 
 a[download] {

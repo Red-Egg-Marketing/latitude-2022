@@ -40,12 +40,12 @@ button.wp-button {
 		line-height: 22px;
 		padding: 13px 25px 13px;
 	}
+	&:visited {
+		color: $burnt-orange;
+	}
 	&:hover {
 		background: $burnt-orange;
 		color: white;
-	}
-	&:visited {
-		color: $burnt-orange;
 	}
 	&[disabled] {
 		opacity: .5;
@@ -212,14 +212,16 @@ ul.gs-team-filter-cats li.filter.active>a {
 	}
 }
 
-.wp-block-button__link:hover,
-button.wp-button:hover {
-	color: $bg-color-5;
-}
+
 
 .wp-block-button__link:visited,
 button.wp-button:visited {	
 	color: $burnt-orange;
+}
+
+.wp-block-button__link:hover,
+button.wp-button:hover {
+	color: $bg-color-5;
 }
 
 a[download] {
