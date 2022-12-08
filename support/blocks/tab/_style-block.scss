@@ -8,6 +8,7 @@
 	cursor: pointer;
 	color: $burnt-orange;
 	margin-bottom: 0;
+	position: relative;
 	@media screen and (min-width: $small-width) {
 		font-size: 22px;
 		padding-bottom: 5px;
@@ -15,8 +16,22 @@
 	}
 }
 
-.tab.active .header-title {
-	border-bottom: 3px solid $burnt-orange;
+.tab .header-title:before {
+	content: "";
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+	width: 0;
+	height: 0;
+	position: absolute;
+	background: $burnt-orange;
+	transition-property: width;
+	transition-duration: 0.65s;
+}
+
+.tab.active .header-title:before {
+	width: 100%;
+	height: 3px;
 }
 
 .tab {
