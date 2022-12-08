@@ -6,7 +6,7 @@ body.logged-in .site-header {
 }
 
 body.nav-active {
-	overflow: hidden;
+	overflow:auto;
 	@media screen and (min-width: $med-small-width) {
 		overflow: scroll;
 	}
@@ -237,22 +237,20 @@ a.custom-logo-link {
 .menu-logged-in-container,
 .menu-all-pages-container {
 	display: none;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: flex-start;
 	position: absolute;
 	background: white;
-	height: calc(45vh - 80px);
+	height:45vh;
 	top: 80px;
 	left: 0;
 	overflow: auto;
 	flex: 1;
 	width: 100%;
-	padding-bottom: 80px;
 	@media screen and (min-width: $small-width) and (max-width: $med-small-width) {
-		height: calc(45vh - 90px);
+		height: 45vh;
 		top: 90px;
 		overflow: visible;
-		padding-bottom: 90px;
 	}
 	@media screen and (min-width: $med-small-width) {
 		display: flex;

@@ -9351,7 +9351,7 @@ body.logged-in .site-header {
 }
 
 body.nav-active {
-  overflow: hidden;
+  overflow: auto;
 }
 
 @media screen and (min-width: 1080px) {
@@ -9630,20 +9630,19 @@ a.custom-logo-link {
 .menu-logged-in-container,
 .menu-all-pages-container {
   display: none;
-  -ms-flex-align: start;
-      align-items: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
   -ms-flex-pack: start;
       justify-content: flex-start;
   position: absolute;
   background: white;
-  height: calc(45vh - 80px);
+  height: 45vh;
   top: 80px;
   left: 0;
   overflow: auto;
   -ms-flex: 1;
       flex: 1;
   width: 100%;
-  padding-bottom: 80px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
@@ -9651,10 +9650,9 @@ a.custom-logo-link {
   .menu-logged-out-container,
   .menu-logged-in-container,
   .menu-all-pages-container {
-    height: calc(45vh - 90px);
+    height: 45vh;
     top: 90px;
     overflow: visible;
-    padding-bottom: 90px;
   }
 }
 
