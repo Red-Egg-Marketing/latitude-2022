@@ -67,7 +67,6 @@ require('es6-promise/auto');
   			if (resources.length > 0) {
   			resources.map(function(resource, index){
 
-  				console.log(resource);
   				let media_url = resource.media_url;
   				let link = resource.link;
   				let excerpt = resource.post_excerpt;

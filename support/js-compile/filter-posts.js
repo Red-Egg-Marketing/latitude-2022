@@ -124,7 +124,6 @@ require('es6-promise/auto');
   			if (resources.length > 0) {
   			resources.map(function(resource, index){
   				let link = resource.link;
-  				let title = resource.title;
   				let excerpt = resource.excerpt;
   				let media = resource.featured_image;
   				let typeClass = '';
@@ -138,6 +137,8 @@ require('es6-promise/auto');
   				extra.setAttribute('class', 'resource-extra');
   				let a = document.createElement('a');
   				a.setAttribute('href', link);
+  				let bWrap = document.createElement('div');
+  				bWrap.setAttribute('class', 'wp-buttons');
 
   				if (media != false) {
   					let imgCont = document.createElement('div');
@@ -154,9 +155,6 @@ require('es6-promise/auto');
 
   				let content = document.createElement('div');
   				content.setAttribute('class', 'content');
-  				let head = document.createElement('h3');
-  				head.setAttribute('class', 'resource-title');
-  				head.innerText = title;
   				let p = document.createElement('p');
   				p.setAttribute('class', 'resource-excerpt');
   				p.innerHTML = excerpt;
@@ -165,12 +163,13 @@ require('es6-promise/auto');
   				let buttonText = 'Read More';
   				button.textContent = buttonText;
 
-  				content.appendChild(head);
   				content.appendChild(p);
   				contWrap.appendChild(content);
   				a.appendChild(contWrap);
-  				a.appendChild(button);
+  				
+  				bWrap.appendChild(button);
   				extra.appendChild(a);
+  				a.appendChild(bWrap);
   				card.appendChild(extra);
   				wrap.appendChild(card);
   				
