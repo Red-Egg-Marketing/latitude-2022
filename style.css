@@ -17317,12 +17317,13 @@ p.contact-item {
   color: #BF5B32;
   margin-bottom: 0;
   position: relative;
+  padding-bottom: 5px;
 }
 
 @media screen and (min-width: 768px) {
   .tab .header-title {
     font-size: 22px;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
     line-height: 27px;
   }
 }
