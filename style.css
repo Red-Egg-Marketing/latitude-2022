@@ -9008,6 +9008,7 @@ li.menu-item.nav-button a:visited,
 input[type="submit"]:visited,
 button.wp-button:visited {
   color: white;
+  background: #BF5B32;
 }
 
 #CybotCookiebotDialogBodyButtonAccept[disabled],
@@ -9332,6 +9333,7 @@ li.menu-item.nav-button a:visited,
 div.gform_wrapper input:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 button.wp-button:visited {
   color: white;
+  background: #BF5B32;
 }
 
 a[download] {
