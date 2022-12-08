@@ -1203,8 +1203,7 @@ div.gs_team_area .gs-team-filter-cats li a:visited,
 a:visited[download],
 input[type="submit"]:visited,
 button.wp-button:visited {
-  color: white;
-  background: #BF5B32;
+  color: #BF5B32;
 }
 
 #CybotCookiebotDialogBodyButtonAccept[disabled],
@@ -1496,8 +1495,7 @@ div.gs_team_area .gs-team-filter-cats li a:visited,
 a:visited[download],
 div.gform_wrapper input:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 button.wp-button:visited {
-  color: white;
-  background: #BF5B32;
+  color: #BF5B32;
 }
 
 a[download] {

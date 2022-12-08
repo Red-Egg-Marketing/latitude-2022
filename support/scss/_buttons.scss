@@ -45,8 +45,7 @@ button.wp-button {
 		color: white;
 	}
 	&:visited {
-		color: white;
-		background: $burnt-orange;
+		color: $burnt-orange;
 	}
 	&[disabled] {
 		opacity: .5;
@@ -220,8 +219,7 @@ button.wp-button:hover {
 
 .wp-block-button__link:visited,
 button.wp-button:visited {	
-	color: white;
-	background: $burnt-orange;
+	color: $burnt-orange;
 }
 
 a[download] {
