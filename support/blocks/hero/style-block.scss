@@ -129,6 +129,17 @@
 	}
 }
 
+.hero-block-image:after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .2);
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
 .hero-block-image:before {
 	content: "";
 	position: absolute;
@@ -138,6 +149,8 @@
 	background: url(img/mountains.svg) no-repeat center center / 100%;
 	width: 60vw;
 	height: 30.78vw;
+	z-index: 2;
+	pointer-event: none;
 	@media screen and (min-width: $small-width) {
 		width: 100vw;
 		height: 51.3vw;

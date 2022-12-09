@@ -14967,6 +14967,17 @@ div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper 
   }
 }
 
+.hero-block-image:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .hero-block-image:before {
   content: "";
   position: absolute;
@@ -14976,6 +14987,8 @@ div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper 
   background: url(img/mountains.svg) no-repeat center center/100%;
   width: 60vw;
   height: 30.78vw;
+  z-index: 2;
+  pointer-event: none;
 }
 
 @media screen and (min-width: 768px) {
