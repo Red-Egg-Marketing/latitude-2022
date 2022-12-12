@@ -9260,8 +9260,8 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-text-yellow-a
 li.menu-item.nav-button .wp-block-button.is-style-text-yellow-arrow a:hover,
 .wp-block-button.is-style-text-yellow-arrow div.gform_wrapper input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-text-yellow-arrow input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
-  color: #F79A6C;
-  box-shadow: none;
+  color: navy;
+  background: transparent url(img/right-arrow-blue.svg) no-repeat center right/7px;
 }
 
 .wp-button.is-style-text-yellow-arrow:hover:after,
@@ -9331,7 +9331,7 @@ a:hover[download],
 li.menu-item.nav-button a:hover,
 div.gform_wrapper input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 button.wp-button:hover {
-  color: #F79A6C;
+  color: white;
 }
 
 a[download] {

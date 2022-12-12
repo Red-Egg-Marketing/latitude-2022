@@ -187,10 +187,10 @@ ul.gs-team-filter-cats li.filter.active>a {
 	border-radius: 0;
 	border: none;
 	padding-right: 12px;
-	background: url(img/right-arrow.svg) no-repeat center right / 7px;
+	background:url(img/right-arrow.svg)  no-repeat center right / 7px;
 	&:hover {
-		color: $bg-color-5;
-		box-shadow: none;
+		color: navy;
+		background: transparent url(img/right-arrow-blue.svg) no-repeat center right / 7px;
 	}
 }
 
@@ -221,7 +221,7 @@ button.wp-button:visited {
 
 .wp-block-button__link:hover,
 button.wp-button:hover {
-	color: $bg-color-5;
+	color: white;
 }
 
 a[download] {
