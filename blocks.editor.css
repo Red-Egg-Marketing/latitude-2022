@@ -5925,6 +5925,14 @@ p.contact-item {
   background: linear-gradient(to bottom, #F2EBDC 50%, transparent 50%);
 }
 
+.single-member-div.active[data-category="remote"] {
+  display: block;
+}
+
+.single-member-div[data-category="remote"] {
+  display: none;
+}
+
 .wp-block.checklist {
   max-width: 100%;
   width: 100%;

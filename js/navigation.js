@@ -175,8 +175,7 @@
 			var baseUrl = window.location.origin + window.location.pathname;
 			var anchorLink = anchor.href.replace(anchor.hash, '');
 			var isModal = anchor.hasAttribute('data-fancybox') != null ? true : false;
-			console.log('the anchorLink' + anchorLink);
-			console.log('the base url' + baseUrl);
+		
 			if (anchorLink == baseUrl) {
    				anchor.addEventListener('click', function (e) {
 

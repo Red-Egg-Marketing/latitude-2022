@@ -14,6 +14,7 @@ const template = [
 	['latitude-blocks/text-card', {}],
 ];
 
+
 const EditCTAGrid = ( { attributes, setAttributes } ) => {
 
 		const {
@@ -33,6 +34,7 @@ const EditCTAGrid = ( { attributes, setAttributes } ) => {
 		return (
 			<Fragment>
 				<InspectorControls>
+
 					<BackgroundColor
 						bgColor={ bgColor }
 						bgSlug={ bgSlug }

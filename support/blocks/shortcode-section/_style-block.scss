@@ -82,4 +82,12 @@
 }
 
 
+.single-member-div.active[data-category="remote"] {
+	display: block;
+}
+
+.single-member-div[data-category="remote"] {
+	display: none;
+}
+
 
