@@ -35,7 +35,7 @@ $global_button = get_field('global_estimate_button', 'options');
 			<div class="wrapper">
 				<?php 
 					
-					echo '<p><a href="https://google.com/" target="_blank">Client Portal</a></p>'; 
+					echo '<p><a href="https://my.gloveboxapp.com/?agencyId=2045" id="glovebox-btn" target="_blank" rel="noopener noreferrer">Client Login</a></p>'; 
 
 				?>
 			</div><!-- .wrapper -->
