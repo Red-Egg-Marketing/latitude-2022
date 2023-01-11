@@ -90,7 +90,7 @@ const ResourceCard = (props) => {
 							</h4>
 						)}
 						
-						{ (props.resourceID != 0 && props.updateResourceText != null) && (
+						{ (props.resourceID != 0 && (props.updateTitle != null && props.updateTile == true)) && (
             				<RichText
 								tagName="h3"
 								className="resource-title"

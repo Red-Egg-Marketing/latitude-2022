@@ -232,7 +232,7 @@ function latitude_resource_card($id, $cats = false) {
 						$html .= '</picture>';
 					$html .= '</div>';
 				}
-				// $html .= '<h3 class="resource-title">' . $title . '</h3>';
+				$html .= '<h3 class="resource-title">' . $title . '</h3>';
 				$html .= '<p class="resource-excerpt">' . $excerpt . '</p>';
 				$html .= '</div>';
 				$html .= '<div class="wp-buttons">';

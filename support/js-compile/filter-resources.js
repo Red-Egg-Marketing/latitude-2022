@@ -1,4 +1,4 @@
-require('es6-promise/auto');
+	require('es6-promise/auto');
 
 (function() {
 
@@ -71,11 +71,13 @@ require('es6-promise/auto');
   				let link = resource.link;
   				let excerpt = resource.post_excerpt;
   				let typeClass = '';
-  			
+
   				// buld html and then append to wrap
   				let card = document.createElement('div');
+  				let title = document.createElement('h3');
   				let contWrap = document.createElement('div');
   				card.setAttribute('class', 'resource-card' + typeClass);
+  				title.setAttribute('class', 'resource-title');
   				contWrap.setAttribute('class', 'cont-wrap');
   				let extra = document.createElement('div');
   				extra.setAttribute('class', 'resource-extra');
@@ -98,11 +100,13 @@ require('es6-promise/auto');
   				let p = document.createElement('p');
   				p.setAttribute('class', 'resource-excerpt');
   				p.textContent = excerpt;
+  				title.textContent = resource.post_title;
   				let button = document.createElement('button');
   				button.setAttribute('class', 'wp-button');
   				let buttonText = 'Read More';
   				button.textContent = buttonText;
 
+  				content.appendChild(title);
   				content.appendChild(p);
   				contWrap.appendChild(content);
   				a.appendChild(contWrap);

@@ -11211,14 +11211,13 @@ h4.resource-type,
 
 h3.resource-title,
 .editor-styles-wrapper h3.resource-title {
-  color: #008FA0;
+  color: #BF5B32;
   font-size: 18px;
   line-height: 25px;
   font-weight: 700;
   font-family: "gill_sanssemibold", sans-serif;
   text-transform: none;
   margin-bottom: 0.75rem;
-  margin-top: 0;
   letter-spacing: 1px;
 }
 
@@ -11228,6 +11227,22 @@ h3.resource-title,
     font-size: 20px;
     line-height: 27px;
     margin-bottom: .9rem;
+  }
+}
+
+.resource-card h3.resource-title {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .resource-card h3.resource-title {
+    font-size: 28px;
+    line-height: 38px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
 
@@ -17923,10 +17938,6 @@ p.contact-item {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
   }
-}
-
-.resources-block .header-title {
-  margin-top: 0;
 }
 
 .selected-resources:last-child {

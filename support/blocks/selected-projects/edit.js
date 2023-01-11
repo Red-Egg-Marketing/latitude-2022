@@ -223,10 +223,10 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected } ) => {
 														resourceType={ resource.label  }
 														resourceExcerpt={ resource.excerpt }
 														updateResourceImage={ null }
-														updateResourceText={ null }
+														updateResourceText={ true }
 														updateResourceExcerpt={ null }
 														updateResourceType={ null }
-
+														updateTitle={ false }
 													/>	
 												</Fragment>
 											);
