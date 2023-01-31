@@ -306,6 +306,17 @@ li.menu-item.nav-button a {
 	}
 }
 
+.main-navigation .menu-item {
+	@media screen and (min-width: $med-small-width) and (max-width: $med-width) {
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+	}
+	@media screen and (min-width: $med-width + 1px) {
+		margin-left: 1.8rem;
+		margin-right: 1.8rem;
+	}
+}
+
 .main-navigation .menu-item a:hover {
 	color: $body-color;
 }

@@ -9723,6 +9723,20 @@ li.menu-item.nav-button a:hover {
   }
 }
 
+@media screen and (min-width: 1080px) and (max-width: 1200px) {
+  .main-navigation .menu-item {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .main-navigation .menu-item {
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+  }
+}
+
 .main-navigation .menu-item a:hover {
   color: #000000;
 }
