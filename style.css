@@ -9778,8 +9778,6 @@ li.menu-item.nav-button a:hover {
   .main-navigation .nav-menu > .menu-item {
     margin-bottom: 0;
     width: auto;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
     padding-top: 26px;
     padding-bottom: 26px;
     -ms-flex-pack: center;
@@ -9791,8 +9789,6 @@ li.menu-item.nav-button a:hover {
   .main-navigation .nav-menu > .menu-item {
     margin-bottom: 0;
     width: auto;
-    margin-left: 1.8rem;
-    margin-right: 1.8rem;
     padding-top: 26px;
     padding-bottom: 26px;
     -ms-flex-pack: center;

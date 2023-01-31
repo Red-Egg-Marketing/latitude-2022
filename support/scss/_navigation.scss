@@ -347,8 +347,6 @@ li.menu-item.nav-button a {
 	@media screen and (min-width: $med-small-width) and (max-width: $med-width) {
 		margin-bottom: 0;
 		width: auto;
-		margin-left: 0.5rem;
-		margin-right: 0.5rem;
 		padding-top: 26px;
 		padding-bottom: 26px;
 		justify-content: center;
@@ -356,8 +354,6 @@ li.menu-item.nav-button a {
 	@media screen and (min-width: $med-width + 1px) {
 		margin-bottom: 0;
 		width: auto;
-		margin-left: 1.8rem;
-		margin-right: 1.8rem;
 		padding-top: 26px;
 		padding-bottom: 26px;
 		justify-content: center;
