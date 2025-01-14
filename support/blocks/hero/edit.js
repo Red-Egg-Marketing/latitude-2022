@@ -19,7 +19,7 @@ const VidImg = [
 
 const EditHero = ( { attributes, setAttributes } ) => {
 
-		const { image, anchor, vidOrImg, videoID, videoURL } = attributes;
+		const { image, anchor, vidOrImg, videoID, videoURL, videothumb } = attributes;
 
         const blockProps = useBlockProps({
         	className: 'hero'

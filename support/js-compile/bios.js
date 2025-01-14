@@ -16,6 +16,11 @@
 
 			buttons.forEach(function(button){
 				button.addEventListener('click', function(){
+					var phone = typeof this.getAttribute('data-phone') != undefined ? this.getAttribute('data-phone') : '';
+					var phoneDisplay = document.getElementById('OfficePhone');
+					phoneDisplay.text = phone;
+					phoneDisplay.href = 'tel:' + phone;
+					phoneDisplay.style.display = phone == '' ? 'none' : 'inline';
 					var allParents = filter.querySelectorAll('.filter');
 					allParents.forEach(function(allParent){
 						allParent.classList.remove('special-filter');

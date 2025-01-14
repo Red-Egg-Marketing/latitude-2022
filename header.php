@@ -13,6 +13,8 @@ $phone = get_field('business_phone', 'options');
 $phone_tag = get_field('phone_tagline', 'options');
 $modal_form = get_field('menu_form', 'options');
 $global_button = get_field('global_estimate_button', 'options');
+$second_nav = get_field('secondary_nav', 'options');
+$second_label = get_field('secondary_nav_label', 'options');
 
 ?>
 <!doctype html>
@@ -35,7 +37,7 @@ $global_button = get_field('global_estimate_button', 'options');
 			<div class="wrapper">
 				<?php 
 					
-					echo '<p><a href="https://my.gloveboxapp.com/?agencyId=2045" id="glovebox-btn" target="_blank" rel="noopener noreferrer">Client Login</a></p>'; 
+					echo '<p><a href="' . $second_nav . '" id="glovebox-btn">' . $second_label . '</a></p>'; 
 
 				?>
 			</div><!-- .wrapper -->

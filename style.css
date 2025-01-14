@@ -14068,6 +14068,11 @@ button.slickwprev-prev:before {
   text-decoration: none;
 }
 
+.gs_tm_theme12 .single-member-name-desig {
+  bottom: 0 !important;
+  display: block !important;
+}
+
 #gs_team_area_1 h3.gs-member-name {
   background: transparent;
   color: #1B2C58;
@@ -14134,6 +14139,12 @@ button.slickwprev-prev:before {
   background: #BF5B32 !important;
   font-family: "gill_sanslight", sans-serif;
   font-size: 18px;
+}
+
+#gs_team_area_1 .single-member .gs-member-desig {
+  color: white;
+  font-family: "gill_sanslight", sans-serif;
+  font-size: 16px;
 }
 
 .single-member:hover .gs-member-name {
@@ -14224,6 +14235,30 @@ div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper 
     width: 25%;
     max-width: 25%;
   }
+}
+
+.office-phone a {
+  color: #BF5B32;
+  font-size: 20px;
+  font-family: "gill_sanssemibold", sans-serif;
+}
+
+.office-phone a:not(empty):before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-top: 3px;
+  margin-right: 10px;
+  background: url(img/phone.svg) no-repeat center center/100%;
+}
+
+.office-phone {
+  position: relative;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 /*--------------------------------------------------------------
