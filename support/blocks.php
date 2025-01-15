@@ -161,7 +161,7 @@ function latitude_dynamic_case_studies_grid_block() {
             'fancybox',
             get_template_directory_uri() . '/support/js-compile/libraries/fancybox-v4.0.26.js',
             ['jquery'],
-            'v1.0.1',
+            'v1.0.2',
             true
         );
         $front_path = '/support/assets/js/main.js';
@@ -169,7 +169,7 @@ function latitude_dynamic_case_studies_grid_block() {
             'wp-main-js',
             get_template_directory_uri() . $front_path,
             ['wp-api', 'scroll-magic', 'tweenmax', 'tweenmax-animation', 'scrolltrigger'],
-            'v1.0.1',
+            'v1.0.2',
             true
        );
     }

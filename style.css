@@ -12502,8 +12502,8 @@ div.gform_wrapper .gform_drop_area button.gform_button_select_files {
 @media screen and (min-width: 768px) {
   .col-locations {
     grid-auto-flow: column;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
     -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
   }
