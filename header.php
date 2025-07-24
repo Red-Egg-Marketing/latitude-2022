@@ -15,6 +15,8 @@ $modal_form = get_field('menu_form', 'options');
 $global_button = get_field('global_estimate_button', 'options');
 $second_nav = get_field('secondary_nav', 'options');
 $second_label = get_field('secondary_nav_label', 'options');
+$second_nav_2 = get_field('secondary_nav_2', 'options');
+$second_label_2 = get_field('secondary_nav_label_2', 'options');
 
 ?>
 <!doctype html>
@@ -35,10 +37,11 @@ $second_label = get_field('secondary_nav_label', 'options');
 	<header id="masthead" class="site-header">
 		<nav class="secondary-navigation">
 			<div class="wrapper">
-				<?php 
-					
-					echo '<p><a href="' . $second_nav . '" id="glovebox-btn">' . $second_label . '</a></p>'; 
-
+				<?php
+					if ( isset($second_nav_2) && isset($second_label_2) ) {
+						echo '<p><a href="' . $second_nav_2 . '" id="glovebox-btn">' . $second_label_2 . '</a></p>';
+					}
+					echo '<p><a href="' . $second_nav . '" id="glovebox-btn">' . $second_label . '</a></p>';
 				?>
 			</div><!-- .wrapper -->
 		</nav><!-- #site-navigation -->
@@ -68,8 +71,6 @@ $second_label = get_field('secondary_nav_label', 'options');
 						'theme_location' => 'menu-1',
 						'menu_id'        => 'primary-menu',					)
 				);
-	
-				
 				?>
 			</nav><!-- #site-navigation -->
 
