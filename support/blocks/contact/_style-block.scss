@@ -110,6 +110,15 @@
 	}
 }
 
+.contact-section .form-column:first-of-type:last-of-type {
+	margin: 0 auto;
+	padding-left: 0;
+	@media screen and (min-width: $small-width) {
+		max-width: 1065px;
+		padding-right: 0;
+	}
+}
+
 .contact-section .gform_title {
 	margin-top: 2rem;
 }

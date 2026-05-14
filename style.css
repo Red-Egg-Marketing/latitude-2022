@@ -8539,6 +8539,10 @@ textarea {
   }
 }
 
+.wp-block-post-title {
+  color: black;
+}
+
 .edit-post-visual-editor__content-area a, .entry-content a {
   color: #1B2C58;
 }
@@ -12903,13 +12907,13 @@ a.footer-home {
   }
 }
 
-.single .hero-block-content {
+.single:not(.single-location) .hero-block-content {
   background: white;
   width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-  .single .hero-block-content {
+  .single:not(.single-location) .hero-block-content {
     width: 100%;
   }
 }
@@ -13488,6 +13492,52 @@ Single Video
   display: block;
   width: 100%;
   height: auto;
+}
+
+/* Location post type */
+.location-info {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  list-style-type: none;
+  border: 6px solid white;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 3;
+  padding: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .location-info {
+    margin-bottom: 55px;
+    padding: 8px;
+  }
+}
+
+.location-info a {
+  text-decoration: none;
+}
+
+.location-info address,
+.location-info p {
+  color: #00304A;
+  font-family: "gill_sanssemibold", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  font-style: normal;
+}
+
+@media screen and (min-width: 768px) {
+  .location-info address,
+  .location-info p {
+    font-size: 25px;
+  }
 }
 
 body.archive .resources-grid .section-header {
@@ -14128,6 +14178,15 @@ button.slickwprev-prev:before {
   }
 }
 
+.gs_team_area .gs-containeer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
 .single-member:hover .single-member-name-desig {
   display: block;
   left: 0;
@@ -14259,6 +14318,73 @@ div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper 
   text-align: center;
   margin-top: 25px;
   margin-bottom: 25px;
+}
+
+.locations {
+  position: relative;
+}
+
+.locations .location {
+  border: 2px solid #BF5B32;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-align: center;
+  padding: 20px 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .locations .location {
+    padding: 40px 20px;
+  }
+}
+
+.locations .location a {
+  text-decoration: none;
+}
+
+.locations address {
+  font-style: normal;
+  width: 100%;
+}
+
+.location > p {
+  width: 100%;
+}
+
+.locations .location p {
+  margin-bottom: 15px;
+  margin-top: 0;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .locations .location p {
+    font-size: 24px;
+    line-height: 27px;
+  }
+}
+
+h3.location-title {
+  font-size: 18px;
+  line-height: 23px;
+  color: #BF5B32;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  h3.location-title {
+    font-size: 24px;
+    line-height: 27px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -16601,6 +16727,18 @@ div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper 
     max-width: 72%;
     padding-right: 5%;
     text-align: left;
+  }
+}
+
+.contact-section .form-column:first-of-type:last-of-type {
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-section .form-column:first-of-type:last-of-type {
+    max-width: 1065px;
+    padding-right: 0;
   }
 }
 

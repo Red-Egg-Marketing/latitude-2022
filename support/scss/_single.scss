@@ -34,7 +34,7 @@
 	}
 }
 
-.single .hero-block-content {
+.single:not(.single-location) .hero-block-content {
 	background: white;
 	width: 100%;
 	@media screen and (min-width: $small-width) {
@@ -534,4 +534,41 @@ Single Video
 	display: block;
 	width: 100%;
 	height: auto;
+}
+
+/* Location post type */
+
+.location-info {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style-type: none;
+	border: 6px solid white;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 25px;
+	position: relative;
+	z-index: 3;
+	padding: 5px;
+	@media screen and (min-width: $small-width) {
+		margin-bottom: 55px;
+		padding: 8px;
+	}
+}
+
+.location-info a {
+	text-decoration: none;
+}
+
+.location-info address,
+.location-info p {
+	color: $bg-color-7;
+	font-family: $font-head;
+	font-size: 18px;
+	margin: 0;
+	font-style: normal;
+	@media screen and (min-width: $small-width) {
+		font-size: 25px;
+	}
 }

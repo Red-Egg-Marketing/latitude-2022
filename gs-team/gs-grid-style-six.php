@@ -36,7 +36,7 @@ if ( $_filter_enabled ) $gs_row_classes[] = 'gs-all-items-filter-wrapper';
 
 <!-- Container for Team members -->
 <div class="gs-containeer cbp-so-scroller">
-
+	asdfkjlasfkasdfk
 	<?php if ( $_filter_enabled ) : ?>
 
 		<!-- Cat Filters Template -->
@@ -106,28 +106,29 @@ if ( $_filter_enabled ) $gs_row_classes[] = 'gs-all-items-filter-wrapper';
 							<div class="gs_team_image__overlay"></div>
 						<?php } ?>
 
+						<!-- Member Info -->
+						<div class="gs_member_info">
+	
+							<!-- Member Name -->
+							<?php member_name( $id, true, $gs_member_name_is_linked == 'on', $gs_member_link_type ); ?>
+							<?php do_action( 'gs_team_after_member_name' ); ?>
+	
+							<!-- Member Designation -->
+							<div class="gs-member-desig" itemprop="jobTitle"><?php echo wp_kses_post($designation); ?></div>
+							<?php do_action( 'gs_team_after_member_designation' ); ?>
+	
+							<!-- Social Links -->
+							<div class="single-mem-desc-social">
+								<?php include Template_Loader::locate_template( 'partials/gs-team-layout-social-links.php' ); ?>
+							</div>
+							
+						</div>
+
 						<!-- Ribbon -->
 						<?php include Template_Loader::locate_template( 'partials/gs-team-layout-ribon.php' ); ?>
 
 					</div>
 
-					<!-- Member Name -->
-					<div class="gs_member_info">
-
-						<!-- Member Name -->
-						<?php member_name( $id, true, $gs_member_name_is_linked == 'on', $gs_member_link_type ); ?>
-						<?php do_action( 'gs_team_after_member_name' ); ?>
-
-						<!-- Member Designation -->
-						<div class="gs-member-desig" itemprop="jobTitle"><?php echo wp_kses_post($designation); ?></div>
-						<?php do_action( 'gs_team_after_member_designation' ); ?>
-
-						<!-- Social Links -->
-						<div class="single-mem-desc-social">
-							<?php include Template_Loader::locate_template( 'partials/gs-team-layout-social-links.php' ); ?>
-						</div>
-						
-					</div>
 
 				</div>
 

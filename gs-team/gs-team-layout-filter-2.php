@@ -25,7 +25,6 @@ global $gs_team_loop;
 		<?php do_action( 'gs_team_before_team_members' ); ?>
 
 		<div class="gs-all-items-filter-wrapper gs-roow">
-
 			<?php while ( $gs_team_loop->have_posts() ): $gs_team_loop->the_post();
 				
 				$designation = get_post_meta( get_the_id(), '_gs_des', true );

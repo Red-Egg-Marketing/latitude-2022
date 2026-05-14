@@ -32,6 +32,8 @@ if ( $_carousel_enabled ) {
 if ( $_drawer_enabled ) $gs_row_classes[] = 'gstm-gridder gstm-gridder-' . $drawer_style;
 if ( $_filter_enabled ) $gs_row_classes[] = 'gs-all-items-filter-wrapper';
 
+
+
 ?>
 
 <!-- Container for Team members -->
@@ -50,12 +52,42 @@ if ( $_filter_enabled ) $gs_row_classes[] = 'gs-all-items-filter-wrapper';
 	<div class="<?php echo esc_attr( implode(' ', $gs_row_classes) ); ?>" <?php if ( !empty($carousel_params) ) echo wp_kses_post( $carousel_params ); ?>>
 	
 		<?php if ( $gs_team_loop->have_posts() ):
+			
+			$queried = $gs_team_loop->get_queried_object();
+			$tax_id = $queried->term_id;
+
+			if ($tax_id) {
+				$location_info = [];
+				$location_info['phone'] = get_field('phone_number', 'gs_team_group_' . $tax_id);
+				$location_info['address'] = get_field('address', 'gs_team_group_' . $tax_id);
+				$location_info['city'] = get_field('city', 'gs_team_group_' . $tax_id);
+				$location_info['zip_code'] = get_field('zip', 'gs_team_group_' . $tax_id);
+				$location_info['state'] = get_field('state', 'gs_team_group_' . $tax_id);
+				$location_info['link'] = get_field('link', 'gs_team_group_' . $tax_id);
+
+				if (!empty($location_info)) {
+					?>
+						<div class="location-info">
+							<?php 
+								if ($location_info['phone']) echo '<p>' . $location_info['phone'] . '&nbsp;&bull;&nbsp;</p>';
+								if ($location_info['link']) echo '<address><a href="' . $location_info['link'] .'" target="_blank">';
+								if ($location_info['address']) echo $location_info['address'] . '&nbsp;';
+								if ($location_info['city']) echo $location_info['city'] . ',&nbsp;';
+								if ($location_info['state']) echo $location_info['state'] . '&nbsp;';
+								if ($location_info['zip']) echo $location_info['zip'];
+								if ($location_info['link']) echo '</a></address>';
+							?>
+						</div>
+					<?php
+				}
+			}
 
 			if ( $_drawer_enabled ) echo '<div class="gridder">';
 
 			do_action( 'gs_team_before_team_members' );
 
 			while ( $gs_team_loop->have_posts() ): $gs_team_loop->the_post();
+
 
 			$designation = get_post_meta( get_the_id(), '_gs_des', true );
 
@@ -106,28 +138,29 @@ if ( $_filter_enabled ) $gs_row_classes[] = 'gs-all-items-filter-wrapper';
 							<div class="gs_team_image__overlay"></div>
 						<?php } ?>
 
+						<!-- Member Info -->
+						<div class="gs_member_info">
+	
+							<!-- Member Name -->
+							<?php member_name( $id, true, $gs_member_name_is_linked == 'on', $gs_member_link_type ); ?>
+							<?php do_action( 'gs_team_after_member_name' ); ?>
+	
+							<!-- Member Designation -->
+							<div class="gs-member-desig" itemprop="jobTitle"><?php echo wp_kses_post($designation); ?></div>
+							<?php do_action( 'gs_team_after_member_designation' ); ?>
+	
+							<!-- Social Links -->
+							<div class="single-mem-desc-social">
+								<?php include Template_Loader::locate_template( 'partials/gs-team-layout-social-links.php' ); ?>
+							</div>
+							
+						</div>
+
 						<!-- Ribbon -->
 						<?php include Template_Loader::locate_template( 'partials/gs-team-layout-ribon.php' ); ?>
 
 					</div>
 
-					<!-- Member Name -->
-					<div class="gs_member_info">
-
-						<!-- Member Name -->
-						<?php member_name( $id, true, $gs_member_name_is_linked == 'on', $gs_member_link_type ); ?>
-						<?php do_action( 'gs_team_after_member_name' ); ?>
-
-						<!-- Member Designation -->
-						<div class="gs-member-desig" itemprop="jobTitle"><?php echo wp_kses_post($designation); ?></div>
-						<?php do_action( 'gs_team_after_member_designation' ); ?>
-
-						<!-- Social Links -->
-						<div class="single-mem-desc-social">
-							<?php include Template_Loader::locate_template( 'partials/gs-team-layout-social-links.php' ); ?>
-						</div>
-						
-					</div>
 
 				</div>
 

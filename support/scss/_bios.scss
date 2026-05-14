@@ -59,6 +59,12 @@
 	}
 }
 
+.gs_team_area .gs-containeer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .single-member:hover .single-member-name-desig {
 	display: block;
 	left: 0;

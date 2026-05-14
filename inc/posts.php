@@ -34,4 +34,16 @@ function latitude_update_video() {
 	}
 }
 
+
+add_action('saved_gs_team_group', function ($term_id, $tt_id, $update) {
+
+    $associated_post_id = get_field('location', 'gs_team_group_' . $tt_id);
+
+    if ($associated_post_id) {
+
+        update_post_meta($associated_post_id, 'gs_team_group', $tt_id);
+
+    }
+}, 20, 3);
+
 ?>

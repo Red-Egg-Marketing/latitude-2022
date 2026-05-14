@@ -281,6 +281,12 @@ require get_template_directory() . '/inc/posts.php';
 require get_template_directory() . '/inc/menu-functions.php';
 
 
+/**
+ * Menu Functions
+ */
+require get_template_directory() . '/inc/shortcode.php';
+
+
 
 /**
  * Load Jetpack compatibility file.
