@@ -14083,6 +14083,20 @@ div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper 
 
 .locations {
   position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  -ms-flex-pack: center;
+      justify-content: center;
+  gap: 25px;
+}
+@media screen and (min-width: 768px) {
+  .locations {
+    gap: 55px;
+  }
 }
 
 .locations .location {
@@ -14097,10 +14111,13 @@ div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper 
   padding: 20px 15px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .locations .location {
     padding: 40px 20px;
+    -ms-flex: 0 1 calc((100% - 110px) / 3);
+        flex: 0 1 calc((100% - 110px) / 3);
   }
 }
 
@@ -16684,10 +16701,14 @@ body.archive .entry-header .contact-section h1 {
 .shortcode-section {
   width: 100%;
   max-width: 100%;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .shortcode-section {
     padding-bottom: 6.75rem;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -16701,8 +16722,8 @@ body.archive .entry-header .contact-section h1 {
 }
 @media screen and (min-width: 768px) {
   .shortcode-section > .block-wrapper {
-    padding-left: 5.125rem;
-    padding-right: 5.125rem;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 }
 

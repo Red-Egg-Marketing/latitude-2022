@@ -6,7 +6,9 @@ function get_locations_post_info($atts = array('description' => false, 'contact'
 	$args = [
 		'post_type' => 'location',
 		'post_status' => 'publish',
-		'posts_per_page' => -1
+		'posts_per_page' => -1,
+		'orderby'        => 'title',
+    	'order'          => 'ASC'
 	];
 
 	$contact = filter_var($atts['contact'], FILTER_VALIDATE_BOOLEAN);
@@ -17,7 +19,7 @@ function get_locations_post_info($atts = array('description' => false, 'contact'
 
 	if ($query->have_posts()) {
 
-		$html .= '<div class="grid locations">';
+		$html .= '<div class="locations">';
 
 		while($query->have_posts()) {
 

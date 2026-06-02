@@ -1,5 +1,13 @@
 .locations {
 	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: center;
+	gap: 25px;
+	@media screen and (min-width: $small-width) {
+		gap: 55px;
+	}
 }
 
 .locations .location {
@@ -10,8 +18,10 @@
 	text-align: center;
 	padding: 20px 15px;
 	flex-wrap: wrap;
+	width: 100%;
 	@media screen and (min-width: $small-width) {
 		padding: 40px 20px;
+		flex: 0 1 calc((100% - (2 * 55px)) / 3); 
 	}
 }
 
