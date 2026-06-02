@@ -38,6 +38,10 @@
 	}
 }
 
+.locations .location p:last-of-type {
+	margin-bottom: 25px;
+}
+
 h3.location-title {
 	font-size: 18px;
 	line-height: 23px;
@@ -49,5 +53,31 @@ h3.location-title {
 	@media screen and (min-width: $small-width) {
 		font-size: 24px;
 		line-height: 27px;
+	}
+}
+
+address.contact-info {
+	border: 6px solid $light-blue;
+	padding: 10px;
+	@media screen and (min-width: $small-width) {
+		padding: 15px 20px;
+	}
+}
+
+address.contact-info a {
+	text-decoration: none;
+}
+
+address.contact-info p {
+	font-style: normal;
+	font-size: 18px;
+	line-height: 22px;
+	font-family: $font-head;
+	color: $bg-color-7;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	@media screen and (min-width: $small-width) {
+		font-size: 24px;
+		line-height: 30px;
 	}
 }

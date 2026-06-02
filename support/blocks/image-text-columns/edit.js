@@ -43,7 +43,7 @@ const VidImg = [
 ];
 
 
-const allowBlocks = ['core/heading', 'core/paragraph', 'core/list', 'core/buttons'];
+const allowBlocks = ['core/heading', 'core/paragraph', 'core/list', 'core/buttons', 'core/shortcode'];
 
 const EditImageColumns = ( { attributes, setAttributes } ) => {
 		const {
