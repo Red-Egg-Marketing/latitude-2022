@@ -16,12 +16,19 @@
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	padding: 20px 15px;
 	flex-wrap: wrap;
 	width: 100%;
 	@media screen and (min-width: $small-width) {
-		padding: 40px 20px;
 		flex: 0 1 calc((100% - (2 * 55px)) / 3); 
+	}
+}
+
+
+.locations .content {
+	padding: 20px 15px;
+	width: 100%;
+	@media screen and (min-width: $small-width) {
+		padding: 40px 20px;
 	}
 }
 
@@ -34,7 +41,7 @@
 	width: 100%;
 }
 
- .location > p {
+ .location .content p {
  	width: 100%;
  }
 
@@ -42,14 +49,20 @@
 	margin-bottom: 15px;
 	margin-top: 0;
 	font-size: 18px;
+	font-family: $font-body-light;
 	@media screen and (min-width: $small-width) {
 		font-size: 24px;
 		line-height: 27px;
 	}
 }
 
-.locations .location p:last-of-type {
-	margin-bottom: 25px;
+.location .feat-image {
+	width: 100%;
+}
+
+.location .feat-image img {
+	display: block;
+	width: 100%;
 }
 
 h3.location-title {

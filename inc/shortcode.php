@@ -1,7 +1,7 @@
 <?php
 
 
-function get_locations_post_info($atts = array('description' => false, 'contact' => true)) {
+function get_locations_post_info($atts = array('image' => false, 'description' => false, 'contact' => true)) {
 
 	$args = [
 		'post_type' => 'location',
@@ -13,6 +13,7 @@ function get_locations_post_info($atts = array('description' => false, 'contact'
 
 	$contact = filter_var($atts['contact'], FILTER_VALIDATE_BOOLEAN);
 	$description = filter_var($atts['description'], FILTER_VALIDATE_BOOLEAN);
+	$with_image = filter_var($atts['image'], FILTER_VALIDATE_BOOLEAN);
 
 	$query = new WP_Query($args); 
 	$html = '';
@@ -33,21 +34,32 @@ function get_locations_post_info($atts = array('description' => false, 'contact'
 			$city = get_field('city', 'gs_team_group_' . $associated_tax);
 			$state = get_field('state', 'gs_team_group_' . $associated_tax);
 			$zip = get_field('zip_code', 'gs_team_group_' . $associated_tax);
+			$link = get_field('link', 'gs_team_group_' . $associated_tax);
+			$override = get_field('link_override', $id);
+			$permalink = $override != '' ? get_the_permalink($override) : $permalink;
+			$image = get_the_post_thumbnail_url($id, 'post-landscape');
 			$term_desc = term_description($associated_tax, 'gs_team_group');
 
 			$html .= '<div class="item location">';
+			if ($image != '' && $with_image == true) {
+				$html .= '<div class="feat-image">';
+				$html .= '<img src="' . $image . '" />';
+				$html .= '</div>';
+			}
+			$html .= '<div class="content">';
 			$html .= '<h3 class="location-title">' . $title . '</h3>';
 			if ($contact == true) {
 				$html .= '<p><a href="tel:' . $phone . '">' . $phone . '</a></p>';
-				$html .= '<address><p>' . $street . '<br />';
+				$html .= '<address><a href="' . $link . '" target="_blank"><p>' . $street . '<br />';
 				$html .= $city . ', ' . $state . ' ' . $zip;
-				$html .= '</p></address>';
+				$html .= '</p></a></address>';
 			}
 			if ($description == true) {
 				$html .= $term_desc;
 			}
 			$html .= '<div class="wp-block-button">';
 			$html .= '<a href="' . $permalink . '" class="wp-block-button__link wp-element-button">View Location</a>';  
+			$html .= '</div>';
 			$html .= '</div>';
 			$html .= '</div>';
 
@@ -77,8 +89,8 @@ function get_location_contact_info( $atts = array('tax_id' => false)) {
 	$html = '';
 	
 	$html .= '<address class="contact-info">';
+	$html .= '<p><href="tel:' . $phone . '" target="_blank">' . $phone . '</a></p>';
 	$html .= '<a href="' . $link . '" target="_blank">';
-	$html .= '<p>' . $phone . '</p>';
 	$html .= '<p>' . $street . '</p>';
 	$html .= '<p>' . $city . ', ' . $state . ' ' . $zip . '</p>';
 	$html .= '</a>';
