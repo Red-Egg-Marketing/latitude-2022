@@ -10622,11 +10622,34 @@ body.archive .entry-header .entry-content > h1,
 .entry-content > figure,
 .entry-content > table,
 .entry-content > .wp-block-buttons {
-  max-width: 950px;
+  max-width: 1050px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .entry-content > p,
+  .entry-content > h1,
+  body.blog .entry-header .entry-content > h1,
+  body.archive .entry-header .entry-content > h1,
+  .entry-content > h2,
+  .entry-content > h3,
+  .entry-content > h4,
+  .entry-content > h5,
+  .entry-content > h6,
+  .entry-content > ul,
+  .entry-content > dl,
+  .entry-content > ol,
+  .entry-content > address,
+  .entry-content > code,
+  .entry-content > pre,
+  .entry-content > figure,
+  .entry-content > table,
+  .entry-content > .wp-block-buttons {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 div.components-select-control {
