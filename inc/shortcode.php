@@ -76,24 +76,36 @@ function get_locations_post_info($atts = array('image' => false, 'description' =
 add_shortcode( 'get_locations_shortcode', 'get_locations_post_info'); 
 
 
-function get_location_contact_info( $atts = array('tax_id' => false)) {
-	$id = $atts['tax_id'];
-	if ($id == false) return;
+function get_location_contact_info( $atts = array('tax_id' => false, 'with_title' => false, 'class' => '')) {
+	$ids = explode(',', $atts['tax_id']);
 
-	$phone = get_field('phone_number', 'gs_team_group_' . $id);
-	$street = get_field('address', 'gs_team_group_' . $id);
-	$city = get_field('city', 'gs_team_group_' . $id);
-	$state = get_field('state', 'gs_team_group_' . $id);
-	$zip = get_field('zip_code', 'gs_team_group_' . $id);
-	$link = get_field('link', 'gs_team_group_' . $id);
+	if ((is_array($id) && empty($id))) return;
+	$class = $atts['class'];
+	$with_title = filter_var($atts['with_title'], FILTER_VALIDATE_BOOLEAN);
 	$html = '';
-	
-	$html .= '<address class="contact-info">';
-	$html .= '<p><href="tel:' . $phone . '" target="_blank">' . $phone . '</a></p>';
-	$html .= '<a href="' . $link . '" target="_blank">';
-	$html .= '<p>' . $street . '</p>';
-	$html .= '<p>' . $city . ', ' . $state . ' ' . $zip . '</p>';
-	$html .= '</a>';
+	$html .= '<address class="contact-info ' . $class . '">';
+ 	$duplicate_phone = '';
+
+	foreach($ids as $id) {
+		$phone = get_field('phone_number', 'gs_team_group_' . $id);
+		$street = get_field('address', 'gs_team_group_' . $id);
+		$city = get_field('city', 'gs_team_group_' . $id);
+		$state = get_field('state', 'gs_team_group_' . $id);
+		$zip = get_field('zip_code', 'gs_team_group_' . $id);
+		$link = get_field('link', 'gs_team_group_' . $id);
+		
+		$html .= ($duplicate_phone != $phone) ? '<p><a href="tel:' . $phone . '" target="_blank">' . $phone . '</a></p>' : '';
+		if ($with_title == true) {
+			$labels = get_term($id);
+			$html .= '<h4>' . $labels->name . ' Office</h4>';
+		}
+		$html .= '<a href="' . $link . '" target="_blank">';
+		$html .= '<p>' . $street . '</p>';
+		$html .= '<p>' . $city . ', ' . $state . ' ' . $zip . '</p>';
+		$html .= '</a>';
+		$duplicate_phone = $phone;
+	}
+
 	$html .= '</address>';
 
 	return $html;

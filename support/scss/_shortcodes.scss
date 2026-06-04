@@ -91,6 +91,7 @@ address.contact-info a {
 	text-decoration: none;
 }
 
+address.contact-info h4,
 address.contact-info p {
 	font-style: normal;
 	font-size: 18px;
@@ -102,5 +103,12 @@ address.contact-info p {
 	@media screen and (min-width: $small-width) {
 		font-size: 24px;
 		line-height: 30px;
+	}
+}
+
+address.contact-info h4 {
+	margin-top: 10px;
+	@media screen and (min-width: $small-width) {
+		margin-top: 20px;
 	}
 }

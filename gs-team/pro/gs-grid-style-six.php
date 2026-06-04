@@ -53,34 +53,6 @@ if ( $_filter_enabled ) $gs_row_classes[] = 'gs-all-items-filter-wrapper';
 	
 		<?php if ( $gs_team_loop->have_posts() ):
 			
-			$queried = $gs_team_loop->get_queried_object();
-			$tax_id = $queried->term_id;
-
-			if ($tax_id) {
-				$location_info = [];
-				$location_info['phone'] = get_field('phone_number', 'gs_team_group_' . $tax_id);
-				$location_info['address'] = get_field('address', 'gs_team_group_' . $tax_id);
-				$location_info['city'] = get_field('city', 'gs_team_group_' . $tax_id);
-				$location_info['zip_code'] = get_field('zip', 'gs_team_group_' . $tax_id);
-				$location_info['state'] = get_field('state', 'gs_team_group_' . $tax_id);
-				$location_info['link'] = get_field('link', 'gs_team_group_' . $tax_id);
-
-				if (!empty($location_info)) {
-					?>
-						<div class="location-info">
-							<?php 
-								if ($location_info['phone']) echo '<p>' . $location_info['phone'] . '&nbsp;&bull;&nbsp;</p>';
-								if ($location_info['link']) echo '<address><a href="' . $location_info['link'] .'" target="_blank">';
-								if ($location_info['address']) echo $location_info['address'] . '&nbsp;';
-								if ($location_info['city']) echo $location_info['city'] . ',&nbsp;';
-								if ($location_info['state']) echo $location_info['state'] . '&nbsp;';
-								if ($location_info['zip']) echo $location_info['zip'];
-								if ($location_info['link']) echo '</a></address>';
-							?>
-						</div>
-					<?php
-				}
-			}
 
 			if ( $_drawer_enabled ) echo '<div class="gridder">';
 
