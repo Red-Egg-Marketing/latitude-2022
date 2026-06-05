@@ -14206,6 +14206,10 @@ h3.location-title {
 address.contact-info {
   border: 6px solid #E7F2F7;
   padding: 10px;
+  position: relative;
+  z-index: 2;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 @media screen and (min-width: 768px) {
   address.contact-info {
@@ -14213,8 +14217,21 @@ address.contact-info {
   }
 }
 
+.location-wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+address.contact-info.white-border {
+  border-color: white;
+}
+
 address.contact-info a {
   text-decoration: none;
+}
+
+address.contact-info.center {
+  text-align: center;
 }
 
 address.contact-info h4,
@@ -14222,7 +14239,7 @@ address.contact-info p {
   font-style: normal;
   font-size: 18px;
   line-height: 22px;
-  font-family: "gill_sanssemibold", sans-serif;
+  font-family: "gill_sansregular", sans-serif;
   color: #00304A;
   margin-bottom: 3px;
   margin-top: 3px;

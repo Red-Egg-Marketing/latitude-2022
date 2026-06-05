@@ -83,7 +83,7 @@ function get_location_contact_info( $atts = array('tax_id' => false, 'with_title
 	$class = $atts['class'];
 	$with_title = filter_var($atts['with_title'], FILTER_VALIDATE_BOOLEAN);
 	$html = '';
-	$html .= '<address class="contact-info ' . $class . '">';
+	$html .= '<div class="location-wrap"><address class="contact-info ' . $class . '">';
  	$duplicate_phone = '';
 
 	foreach($ids as $id) {
@@ -94,19 +94,22 @@ function get_location_contact_info( $atts = array('tax_id' => false, 'with_title
 		$zip = get_field('zip_code', 'gs_team_group_' . $id);
 		$link = get_field('link', 'gs_team_group_' . $id);
 		
-		$html .= ($duplicate_phone != $phone) ? '<p><a href="tel:' . $phone . '" target="_blank">' . $phone . '</a></p>' : '';
+		$html .= ($duplicate_phone != $phone) ? '<p><a href="tel:' . $phone . '" target="_blank"><strong>' . $phone . '</strong></a></p>' : '';
 		if ($with_title == true) {
 			$labels = get_term($id);
-			$html .= '<h4>' . $labels->name . ' Office</h4>';
+			$html .= '<p><strong>' . $labels->name . ' Office:</strong> ';
 		}
 		$html .= '<a href="' . $link . '" target="_blank">';
-		$html .= '<p>' . $street . '</p>';
-		$html .= '<p>' . $city . ', ' . $state . ' ' . $zip . '</p>';
+		if ($with_title == false) {
+			$html .= '<p>';
+		}
+		$html .= $street . ' ';
+		$html .= $city . ', ' . $state . ' ' . $zip . '</p>';
 		$html .= '</a>';
 		$duplicate_phone = $phone;
 	}
 
-	$html .= '</address>';
+	$html .= '</address></div>';
 
 	return $html;
 }
