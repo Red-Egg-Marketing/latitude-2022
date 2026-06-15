@@ -50,9 +50,11 @@ function get_locations_post_info($atts = array('image' => false, 'description' =
 			$html .= '<h3 class="location-title">' . $title . '</h3>';
 			if ($contact == true) {
 				$html .= '<p><a href="tel:' . $phone . '">' . $phone . '</a></p>';
-				$html .= '<address><a href="' . $link . '" target="_blank"><p>' . $street . '<br />';
-				$html .= $city . ', ' . $state . ' ' . $zip;
-				$html .= '</p></a></address>';
+				if ($street != '' && $city != '') {
+					$html .= '<address><a href="' . $link . '" target="_blank"><p>' . $street . '<br />';
+					$html .= $city . ', ' . $state . ' ' . $zip;
+					$html .= '</p></a></address>';
+				}
 			}
 			if ($description == true) {
 				$html .= $term_desc;
@@ -95,17 +97,19 @@ function get_location_contact_info( $atts = array('tax_id' => false, 'with_title
 		$link = get_field('link', 'gs_team_group_' . $id);
 		
 		$html .= ($duplicate_phone != $phone) ? '<p><a href="tel:' . $phone . '" target="_blank"><strong>' . $phone . '</strong></a></p>' : '';
-		if ($with_title == true) {
+		if ($with_title == true && $stree != '') {
 			$labels = get_term($id);
 			$html .= '<p><strong>' . $labels->name . ' Office:</strong> ';
 		}
-		$html .= '<a href="' . $link . '" target="_blank">';
-		if ($with_title == false) {
+		$html .= $link != '' ? '<a href="' . $link . '" target="_blank">' : '';
+		if ($with_title == false && $street != '') {
 			$html .= '<p>';
 		}
-		$html .= $street . ' ';
-		$html .= $city . ', ' . $state . ' ' . $zip . '</p>';
-		$html .= '</a>';
+		if ($street != '') {
+			$html .= $street . ' ';
+			$html .= $city . ', ' . $state . ' ' . $zip . '</p>';
+			$html .= $link != '' ? '</a>' : '';
+		}
 		$duplicate_phone = $phone;
 	}
 
