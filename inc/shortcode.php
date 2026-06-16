@@ -97,7 +97,7 @@ function get_location_contact_info( $atts = array('tax_id' => false, 'with_title
 		$link = get_field('link', 'gs_team_group_' . $id);
 		
 		$html .= ($duplicate_phone != $phone) ? '<p><a href="tel:' . $phone . '" target="_blank"><strong>' . $phone . '</strong></a></p>' : '';
-		if ($with_title == true && $stree != '') {
+		if ($with_title == true && $street != '') {
 			$labels = get_term($id);
 			$html .= '<p><strong>' . $labels->name . ' Office:</strong> ';
 		}
