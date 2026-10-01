@@ -30,7 +30,7 @@ const extractConfig = {
     {
       loader: 'sass-loader',
       options: {
-        outputStyle: 'production' === process.env.NODE_ENV ? 'expanded' : 'nested',
+        outputStyle: 'expanded',
       },
     }
   ],

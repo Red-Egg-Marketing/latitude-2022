@@ -48,6 +48,13 @@
 	left: 0;
 }
 
+body.single-location .wp-block.hero {
+	min-height: 350px;
+	@media screen and (min-width: $small-width) {
+		min-height: 400px;
+	}
+}
+
 .wp-block.hero {
 	max-width: 100%;
 	width: 100%;
@@ -65,6 +72,13 @@
 	 z-index: 2;
 }
 
+body.single-location .hero {
+	min-height: 350px;
+	@media screen and (min-width: $small-width) {
+		min-height: 400px;
+	}
+}
+
 .hero {
 	position: relative;
 	min-height: 450px;
@@ -80,6 +94,7 @@
 	position: relative;
 }
 
+
 .hero .block-wrapper {
 	width: 100%;
 	display: flex;
@@ -91,6 +106,13 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: stretch;
+	}
+}
+
+body.single-location .hero .hero-block-image-wrap {
+	min-height: 350px;
+	@media screen and (min-width: $small-width) {
+		min-height: 400px;
 	}
 }
 

@@ -3986,6 +3986,15 @@ address.contact-info h4 {
   left: 0;
 }
 
+body.single-location .wp-block.hero {
+  min-height: 350px;
+}
+@media screen and (min-width: 768px) {
+  body.single-location .wp-block.hero {
+    min-height: 400px;
+  }
+}
+
 .wp-block.hero {
   max-width: 100%;
   width: 100%;
@@ -4003,6 +4012,15 @@ address.contact-info h4 {
 .hero .media-controls {
   position: absolute;
   z-index: 2;
+}
+
+body.single-location .hero {
+  min-height: 350px;
+}
+@media screen and (min-width: 768px) {
+  body.single-location .hero {
+    min-height: 400px;
+  }
 }
 
 .hero {
@@ -4044,6 +4062,15 @@ address.contact-info h4 {
         flex-wrap: wrap;
     -ms-flex-align: stretch;
         align-items: stretch;
+  }
+}
+
+body.single-location .hero .hero-block-image-wrap {
+  min-height: 350px;
+}
+@media screen and (min-width: 768px) {
+  body.single-location .hero .hero-block-image-wrap {
+    min-height: 400px;
   }
 }
 
