@@ -188,7 +188,26 @@
    			}
 
    		}
-   		
+
 	});
+
+	// An in-page link tapped in the open mobile menu closes the menu, so it
+	// isn't left covering the section it just scrolled to.
+	menu.addEventListener( 'click', function( event ) {
+		var link = event.target.closest( 'a' );
+
+		if ( ! link || ! link.hash ) {
+			return;
+		}
+
+		var samePage = link.origin === window.location.origin &&
+			link.pathname.replace( /\/$/, '' ) === window.location.pathname.replace( /\/$/, '' );
+
+		if ( samePage && siteNavigation.classList.contains( 'toggled' ) ) {
+			siteNavigation.classList.remove( 'toggled' );
+			body.classList.remove( 'nav-active' );
+			button.setAttribute( 'aria-expanded', 'false' );
+		}
+	} );
 
 }() );
