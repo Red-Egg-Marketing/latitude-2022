@@ -295,3 +295,19 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+
+add_filter( 'posts_orderby', function ( $orderby, $query ) {
+	if ( 'gs_team' !== $query->get( 'post_type' ) || 'title' !== $query->get( 'orderby' ) ) {
+		return $orderby;
+	}
+
+	global $wpdb;
+	$dir = 'DESC' === strtoupper( $query->get( 'order' ) ) ? 'DESC' : 'ASC';
+	$title = "TRIM( {$wpdb->posts}.post_title )";
+	$last  = "SUBSTRING_INDEX( {$title}, ' ', -1 )";
+	$prev  = "SUBSTRING_INDEX( SUBSTRING_INDEX( {$title}, ' ', -2 ), ' ', 1 )";
+
+	return "CASE WHEN {$last} IN ( 'Jr.', 'Jr', 'Sr.', 'Sr', 'II', 'III', 'IV' ) THEN {$prev} ELSE {$last} END {$dir}, {$wpdb->posts}.post_title {$dir}";
+}, 10, 2 );
+
