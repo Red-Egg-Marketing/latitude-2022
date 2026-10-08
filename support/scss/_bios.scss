@@ -6,7 +6,7 @@
 	display: block !important;
 }
 
-#gs_team_area_1 h3.gs-member-name {
+#gs_team_area_8 h3.gs-member-name {
 	background: transparent;
 	color: $head-color;
 	text-transform: none;
@@ -72,17 +72,33 @@
 }
 
 
-#gs_team_area_1 .single-member .gs-member-name {
+#gs_team_area_8 .single-member .gs-member-name {
 	color: white;
 	background: $burnt-orange !important;
 	font-family: $font-body-light;
 	font-size: 18px;
 }
 
-#gs_team_area_1 .single-member .gs-member-desig {
+#gs_team_area_8 .single-member .gs-member-desig {
 	color: white;
 	font-family: $font-body-light;
 	font-size: 16px;
+}
+
+// Match the grid-style-six spacing used on the other location pages
+#gs_team_area_8 .gs-containeer .gs-roow {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+#gs_team_area_8 .single-member-div {
+	margin-bottom: 20px;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+
+#gs_team_area_8 .single-member {
+	margin-bottom: 0;
 }
 
 .single-member:hover .gs-member-name {
