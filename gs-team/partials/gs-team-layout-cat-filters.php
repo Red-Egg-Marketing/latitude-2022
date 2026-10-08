@@ -12,6 +12,9 @@ namespace GSTEAM;
 
 if ( plugin()->builder->get_tax_option('enable_group_tax') !== 'on' ) return;
 
+// Location pages already show one area's team, so skip the group filters there
+if ( is_singular( 'location' ) ) return;
+
 do_action( 'gs_team_before_cats_filters' );
 
 $_group = (array) string_to_array($group);

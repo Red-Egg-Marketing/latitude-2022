@@ -13911,7 +13911,7 @@ button.slickwprev-prev:before {
   display: block !important;
 }
 
-#gs_team_area_8 h3.gs-member-name {
+.gs_team_area.gs_tm_theme12 h3.gs-member-name {
   background: transparent;
   color: #1B2C58;
   text-transform: none;
@@ -13980,31 +13980,31 @@ button.slickwprev-prev:before {
   transform: translateX(0);
 }
 
-#gs_team_area_8 .single-member .gs-member-name {
+.gs_team_area.gs_tm_theme12 .single-member .gs-member-name {
   color: white;
   background: #BF5B32 !important;
   font-family: "gill_sanslight", sans-serif;
   font-size: 18px;
 }
 
-#gs_team_area_8 .single-member .gs-member-desig {
+.gs_team_area.gs_tm_theme12 .single-member .gs-member-desig {
   color: white;
   font-family: "gill_sanslight", sans-serif;
   font-size: 16px;
 }
 
-#gs_team_area_8 .gs-containeer .gs-roow {
+.gs_team_area.gs_tm_theme12 .gs-containeer .gs-roow {
   margin-left: -10px;
   margin-right: -10px;
 }
 
-#gs_team_area_8 .single-member-div {
+.gs_team_area.gs_tm_theme12 .single-member-div {
   margin-bottom: 20px;
   padding-left: 10px !important;
   padding-right: 10px !important;
 }
 
-#gs_team_area_8 .single-member {
+.gs_team_area.gs_tm_theme12 .single-member {
   margin-bottom: 0;
 }
 
